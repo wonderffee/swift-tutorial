@@ -1,0 +1,1400 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>表达式 | 2.0 新的开始</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-prism/prism-okaidia.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter3/10_Statements.html" />
+    
+    
+    <link rel="prev" href="../chapter3/03_Types.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.4" data-chapter-title="表达式" data-filepath="chapter3/04_Expressions.md" data-basepath=".." data-revision="Tue Nov 03 2015 15:22:37 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/chapter1.html">
+            
+                
+                    <a href="../chapter1/chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        欢迎使用 Swift
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/01_swift.html">
+            
+                
+                    <a href="../chapter1/01_swift.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        关于 Swift
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/02_a_swift_tour.html">
+            
+                
+                    <a href="../chapter1/02_a_swift_tour.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Swift 初见
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/03_revision_history.html">
+            
+                
+                    <a href="../chapter1/03_revision_history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Swift 版本历史记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="v1.0.html">
+            
+                
+                    <a href="../v1.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Swift 1.0 发布内容
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/chapter2.html">
+            
+                
+                    <a href="../chapter2/chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Swift 教程
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_The_Basics.html">
+            
+                
+                    <a href="../chapter2/01_The_Basics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基础部分
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/02_Basic_Operators.html">
+            
+                
+                    <a href="../chapter2/02_Basic_Operators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        基本运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/03_Strings_and_Characters.html">
+            
+                
+                    <a href="../chapter2/03_Strings_and_Characters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        字符串和字符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter2/04_Collection_Types.html">
+            
+                
+                    <a href="../chapter2/04_Collection_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        集合类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="chapter2/05_Control_Flow.html">
+            
+                
+                    <a href="../chapter2/05_Control_Flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        控制流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="chapter2/06_Functions.html">
+            
+                
+                    <a href="../chapter2/06_Functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="chapter2/07_Closures.html">
+            
+                
+                    <a href="../chapter2/07_Closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="chapter2/08_Enumerations.html">
+            
+                
+                    <a href="../chapter2/08_Enumerations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        枚举
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="chapter2/09_Classes_and_Structures.html">
+            
+                
+                    <a href="../chapter2/09_Classes_and_Structures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        类和结构体
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="chapter2/10_Properties.html">
+            
+                
+                    <a href="../chapter2/10_Properties.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="chapter2/11_Methods.html">
+            
+                
+                    <a href="../chapter2/11_Methods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="chapter2/12_Subscripts.html">
+            
+                
+                    <a href="../chapter2/12_Subscripts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        下标脚本
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="chapter2/13_Inheritance.html">
+            
+                
+                    <a href="../chapter2/13_Inheritance.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="chapter2/14_Initialization.html">
+            
+                
+                    <a href="../chapter2/14_Initialization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        构造过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="chapter2/15_Deinitialization.html">
+            
+                
+                    <a href="../chapter2/15_Deinitialization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        析构过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="chapter2/16_Automatic_Reference_Counting.html">
+            
+                
+                    <a href="../chapter2/16_Automatic_Reference_Counting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        自动引用计数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="chapter2/17_Optional_Chaining.html">
+            
+                
+                    <a href="../chapter2/17_Optional_Chaining.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.17.</b>
+                        
+                        可选链
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="chapter2/18_Error_Handling.html">
+            
+                
+                    <a href="../chapter2/18_Error_Handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.18.</b>
+                        
+                        错误处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="chapter2/19_Type_Casting.html">
+            
+                
+                    <a href="../chapter2/19_Type_Casting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.19.</b>
+                        
+                        类型转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.20" data-path="chapter2/20_Nested_Types.html">
+            
+                
+                    <a href="../chapter2/20_Nested_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.20.</b>
+                        
+                        嵌套类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.21" data-path="chapter2/21_Extensions.html">
+            
+                
+                    <a href="../chapter2/21_Extensions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.21.</b>
+                        
+                        扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.22" data-path="chapter2/22_Protocols.html">
+            
+                
+                    <a href="../chapter2/22_Protocols.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.22.</b>
+                        
+                        协议
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.23" data-path="chapter2/23_Generics.html">
+            
+                
+                    <a href="../chapter2/23_Generics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.23.</b>
+                        
+                        泛型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.24" data-path="chapter2/24_Access_Control.html">
+            
+                
+                    <a href="../chapter2/24_Access_Control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.24.</b>
+                        
+                        权限控制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.25" data-path="chapter2/25_Advanced_Operators.html">
+            
+                
+                    <a href="../chapter2/25_Advanced_Operators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.25.</b>
+                        
+                        高级操作符
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 语言参考</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/01_About_the_Language_Reference.html">
+            
+                
+                    <a href="../chapter3/01_About_the_Language_Reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        关于语言参考
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_Lexical_Structure.html">
+            
+                
+                    <a href="../chapter3/02_Lexical_Structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        词法结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/03_Types.html">
+            
+                
+                    <a href="../chapter3/03_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="chapter3/04_Expressions.html">
+            
+                
+                    <a href="../chapter3/04_Expressions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        表达式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter3/10_Statements.html">
+            
+                
+                    <a href="../chapter3/10_Statements.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter3/05_Declarations.html">
+            
+                
+                    <a href="../chapter3/05_Declarations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        声明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="chapter3/06_Attributes.html">
+            
+                
+                    <a href="../chapter3/06_Attributes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        特性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="chapter3/07_Patterns.html">
+            
+                
+                    <a href="../chapter3/07_Patterns.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="chapter3/08_Generic_Parameters_and_Arguments.html">
+            
+                
+                    <a href="../chapter3/08_Generic_Parameters_and_Arguments.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        泛型参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="chapter3/09_Summary_of_the_Grammar.html">
+            
+                
+                    <a href="../chapter3/09_Summary_of_the_Grammar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        语法总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 苹果官方Blog官方翻译</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/01_Access_Control.html">
+            
+                
+                    <a href="../chapter4/01_Access_Control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Access Control 权限控制的黑与白
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/02_Type_Custom.html">
+            
+                
+                    <a href="../chapter4/02_Type_Custom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        造个类型不是梦-白话Swift类型创建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_Ballons.html">
+            
+                
+                    <a href="../chapter4/03_Ballons.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        WWDC里面的那个“大炮打气球”
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/04_Interacting_with_C_Pointers.html">
+            
+                
+                    <a href="../chapter4/04_Interacting_with_C_Pointers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Swift与C语言指针友好合作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/05_Value_and_Reference_Types.html">
+            
+                
+                    <a href="../chapter4/05_Value_and_Reference_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        引用类型和值类型的恩怨
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/06_Access_Control_and_Protected.html">
+            
+                
+                    <a href="../chapter4/06_Access_Control_and_Protected.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        访问控制和Protected
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/07_Optional_Case_Study.html">
+            
+                
+                    <a href="../chapter4/07_Optional_Case_Study.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        可选类型完美解决占位问题
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >2.0 新的开始</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x8868;&#x8FBE;&#x5F0F;&#xFF08;expressions&#xFF09;">&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Expressions&#xFF09;</h1>
+<hr>
+<blockquote>
+<p>1.0
+&#x7FFB;&#x8BD1;&#xFF1A;<a href="https://github.com/sg552" target="_blank">sg552</a>
+&#x6821;&#x5BF9;&#xFF1A;<a href="https://github.com/numbbbbb" target="_blank">numbbbbb</a>, <a href="https://github.com/stanzhai" target="_blank">stanzhai</a></p>
+<p>2.0
+&#x7FFB;&#x8BD1;+&#x6821;&#x5BF9;&#xFF1A;<a href="https://github.com/EudeMorgen" target="_blank">EudeMorgen</a></p>
+<p>2.1
+&#x7FFB;&#x8BD1;&#xFF1A;<a href="https://github.com/mmoaay" target="_blank">mmoaay</a></p>
+</blockquote>
+<p>&#x672C;&#x9875;&#x5305;&#x542B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><a href="#prefix_expressions">&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Prefix Expressions&#xFF09;</a></li>
+<li><a href="#binary_expressions">&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Binary Expressions&#xFF09;</a></li>
+<li><a href="#assignment_operator">&#x8D4B;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Assignment Operator&#xFF09;</a></li>
+<li><a href="#ternary_conditional_operator">&#x4E09;&#x5143;&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Ternary Conditional Operator&#xFF09;</a></li>
+<li><a href="#type-casting_operators">&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Type-Casting Operators&#xFF09;</a></li>
+<li><a href="#primary_expressions">&#x4E3B;&#x8981;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Primary Expressions&#xFF09;</a></li>
+<li><a href="#postfix_expressions">&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Postfix Expressions&#xFF09;</a></li>
+</ul>
+<p>Swift &#x4E2D;&#x5B58;&#x5728;&#x56DB;&#x79CD;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A; &#x524D;&#x7F00;&#xFF08;prefix&#xFF09;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E8C;&#x5143;&#xFF08;binary&#xFF09;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E3B;&#x8981;&#xFF08;primary&#xFF09;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x540E;&#x7F00;&#xFF08;postfix&#xFF09;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x4EE5;&#x53CA;&#x8FD0;&#x884C;&#x67D0;&#x4E9B;&#x903B;&#x8F91;&#xFF08;causes a side effect&#xFF09;&#x3002;</p>
+<p>&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x662F;&#x5BF9;&#x67D0;&#x4E9B;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;&#x5404;&#x79CD;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;operators&#xFF09;&#x3002; &#x4E3B;&#x8981;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x6700;&#x77ED;&#x5C0F;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x83B7;&#x53D6;&#xFF08;&#x53D8;&#x91CF;&#x7684;&#xFF09;&#x503C;&#x7684;&#x4E00;&#x79CD;&#x9014;&#x5F84;&#x3002; &#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5219;&#x5141;&#x8BB8;&#x4F60;&#x5EFA;&#x7ACB;&#x590D;&#x6742;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4F8B;&#x5982;&#x914D;&#x5408;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x548C;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x3002; &#x6BCF;&#x79CD;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x5728;&#x4E0B;&#x9762;&#x6709;&#x8BE6;&#x7EC6;&#x8BBA;&#x8FF0;&#x3002;</p>
+<blockquote>
+<p>&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#*"><em>&#x8BD5;&#x7B97;&#x5B50;(try operator)</em></a> <em>&#x53EF;&#x9009;</em> | <a href="04_Expressions.html#prefix_expression"><em>&#x524D;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> | <a href="04_Expressions.html#binary_expressions"><em>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;</em></a> <em>&#x53EF;&#x9009;</em><br><em>&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> | <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>,</strong> <a href="04_Expressions.html#expression_list"><em>&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;</em></a>  </p>
+</blockquote>
+<p><a name="prefix_expressions"></a></p>
+<h2 id="&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;prefix-expressions&#xFF09;">&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Prefix Expressions&#xFF09;</h2>
+<p>&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7531;&#x53EF;&#x9009;&#x7684;&#x524D;&#x7F00;&#x7B26;&#x53F7;&#x548C;&#x8868;&#x8FBE;&#x5F0F;&#x7EC4;&#x6210;&#x3002;&#xFF08;&#x8FD9;&#x4E2A;&#x524D;&#x7F00;&#x7B26;&#x53F7;&#x53EA;&#x80FD;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF09;</p>
+<p>&#x5BF9;&#x4E8E;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A; <a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Basic Operators</a> &#x548C; <a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Advanced Operators</a></p>
+<p>&#x5BF9;&#x4E8E; Swift &#x6807;&#x51C6;&#x5E93;&#x63D0;&#x4F9B;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Reference/Swift_StandardLibrary_Operators/index.html#//apple_ref/doc/uid/TP40016054" target="_blank">Swift Standard Library Operators Reference</a>&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;&#x5BF9;&#x4E0A;&#x9762;&#x6807;&#x51C6;&#x5E93;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x8865;&#x5145;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5BF9; &#x67D0;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4F7F;&#x7528; &apos;&amp;&apos;&#x8FD0;&#x7B97;&#x7B26;&#x3002; &#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A; <a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">In-Out parameters</a>.</p>
+<blockquote>
+<p>&#x524D;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x524D;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="LexicalStructure.html#prefix_operator"><em>&#x524D;&#x7F6E;&#x8FD0;&#x7B97;&#x7B26;</em></a> <em>&#x53EF;&#x9009;</em> <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x524D;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#in_out_expression"><em>&#x5199;&#x5165;&#x5199;&#x51FA;(in-out)&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x5199;&#x5165;&#x5199;&#x51FA;(in-out)&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>&amp;</strong> <a href="LexicalStructure.html#identifier"><em>&#x6807;&#x8BC6;&#x7B26;</em></a>  </p>
+</blockquote>
+<p><a name="try_operator"></a></p>
+<h2 id="try-&#x64CD;&#x4F5C;&#x7B26;&#xFF08;try-operator&#xFF09;">try &#x64CD;&#x4F5C;&#x7B26;&#xFF08;try operator&#xFF09;</h2>
+<p>try&#x8868;&#x8FBE;&#x5F0F;&#x7531;&#x7D27;&#x8DDF;&#x5728;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x9519;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x540E;&#x9762;&#x7684;<code>try</code>&#x64CD;&#x4F5C;&#x7B26;&#x7EC4;&#x6210;&#xFF0C;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;
+    <code>try expression</code>
+&#x5F3A;&#x5236;&#x7684;try&#x8868;&#x793A;&#x7531;&#x7D27;&#x8DDF;&#x5728;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x9519;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x540E;&#x9762;&#x7684;<code>try!</code>&#x64CD;&#x4F5C;&#x7B26;&#x7EC4;&#x6210;&#xFF0C;&#x51FA;&#x9519;&#x65F6;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#xFF0C;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;
+    <code>try! expression</code></p>
+<p>&#x5F53;&#x5728;&#x4E8C;&#x8FDB;&#x5236;&#x8FD0;&#x7B97;&#x7B26;&#x5DE6;&#x8FB9;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x88AB;&#x6807;&#x8BB0;&#x4E0A; <code>try</code>&#x3001;<code>try?</code> &#x6216;&#x8005; <code>try!</code> &#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x5BF9;&#x6574;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x4EA7;&#x751F;&#x4F5C;&#x7528;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5706;&#x62EC;&#x53F7;&#x6765;&#x660E;&#x786E;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x5E94;&#x7528;&#x8303;&#x56F4;&#x3002;</p>
+<pre><code>sum = try someThrowingFunction() + anotherThrowingFunction()   // try &#x5BF9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x90FD;&#x4EA7;&#x751F;&#x4F5C;&#x7528;
+sum = try (someThrowingFunction() + anotherThrowingFunction()) // try &#x5BF9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x90FD;&#x4EA7;&#x751F;&#x4F5C;&#x7528;
+sum = (try someThrowingFunction()) + anotherThrowingFunction() // Error: try &#x53EA;&#x5BF9;&#x7B2C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x4EA7;&#x751F;&#x4F5C;&#x7528;
+</code></pre><p><code>try</code> &#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x4E8C;&#x8FDB;&#x5236;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x7684;&#x53F3;&#x8FB9;&#xFF0C;&#x9664;&#x975E;&#x4E8C;&#x8FDB;&#x5236;&#x64CD;&#x4F5C;&#x7B26;&#x662F;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26;&#x6216;&#x8005; <code>try</code> &#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x88AB;&#x5706;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#x3002;</p>
+<p>&#x5173;&#x4E8E;<code>try</code>&#x3001;<code>try?</code> &#x548C; <code>try!</code> &#x66F4;&#x591A;&#x7684;&#x4F8B;&#x5B50;&#x548C;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A;<a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Error Handling</a></p>
+<blockquote>
+<p>try&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>try &#x64CD;&#x4F5C;&#x7B26;</em> &#x2192; <a href="LexicalStructure.html#try_operator"><em>try</em></a> | try&#xAD;? | <em>try!</em></p>
+</blockquote>
+<p><a name="binary_expressions"></a></p>
+<h2 id="&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;binary-expressions&#xFF09;">&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Binary Expressions&#xFF09;</h2>
+<p>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x7531; &quot;&#x5DE6;&#x8FB9;&#x53C2;&#x6570;&quot; + &quot;&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&quot; + &quot;&#x53F3;&#x8FB9;&#x53C2;&#x6570;&quot; &#x7EC4;&#x6210;, &#x5B83;&#x6709;&#x5982;&#x4E0B;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<blockquote>
+<p><code>left-hand argument</code> <code>operator</code> <code>right-hand argument</code></p>
+</blockquote>
+<p>&#x5173;&#x4E8E;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;operators&#xFF09;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A;<a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Basic Operators</a>&#x548C; <a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Advanced Operators</a>&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;<br>&#x5728;&#x89E3;&#x6790;&#x65F6;,  &#x4E00;&#x4E2A;&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x4E2A;&#x4E00;&#x7EA7;&#x6570;&#x7EC4;&#xFF08;a flat list&#xFF09;, &#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#xFF08;List&#xFF09;&#x6839;&#x636E;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x5148;&#x540E;&#x987A;&#x5E8F;&#xFF0C;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x4E86;&#x4E00;&#x4E2A;tree. &#x4F8B;&#x5982;&#xFF1A; 2 + 3 <em> 5 &#x9996;&#x5148;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#xFF1A;  2, + , <code>3</code>, </em>, 5. &#x968F;&#x540E;&#x5B83;&#x88AB;&#x8F6C;&#x6362;&#x6210; tree &#xFF08;2 + &#xFF08;3 * 5&#xFF09;&#xFF09;</p>
+<p>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="LexicalStructure.html#binary_operator"><em>&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;</em></a> <a href="04_Expressions.html#prefix_expression"><em>&#x524D;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#assignment_operator"><em>&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;</em></a> <a href="04_Expressions.html#prefix_expression"><em>&#x524D;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#conditional_operator"><em>&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;</em></a> <a href="04_Expressions.html#prefix_expression"><em>&#x524D;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#type_casting_operator"><em>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;</em></a><br><em>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;</em> &#x2192; <a href="04_Expressions.html#binary_expression"><em>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;</em></a> <a href="04_Expressions.html#binary_expressions"><em>&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;</em></a> <em>&#x53EF;&#x9009;</em><br><em>&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x7B26;</em></p>
+</blockquote>
+<p><a name="assignment_operator"></a></p>
+<h2 id="&#x8D4B;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;assignment-operator&#xFF09;">&#x8D4B;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Assignment Operator&#xFF09;</h2>
+<p>&#x8D4B;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x4F1A;&#x5BF9;&#x67D0;&#x4E2A;&#x7ED9;&#x5B9A;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x8D4B;&#x503C;&#x3002; &#x5B83;&#x6709;&#x5982;&#x4E0B;&#x7684;&#x5F62;&#x5F0F;&#xFF1B;</p>
+<blockquote>
+<p><code>expression</code> = <code>value</code></p>
+</blockquote>
+<p>&#x5C31;&#x662F;&#x628A;&#x53F3;&#x8FB9;&#x7684; <em>value</em> &#x8D4B;&#x503C;&#x7ED9;&#x5DE6;&#x8FB9;&#x7684; <em>expression</em>. &#x5982;&#x679C;&#x5DE6;&#x8FB9;&#x7684;<em>expression</em> &#x9700;&#x8981;&#x63A5;&#x6536;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#xFF08;&#x662F;&#x4E00;&#x4E2A;tuple &#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x53F3;&#x8FB9;&#x5FC5;&#x987B;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x540C;&#x6837;&#x6570;&#x91CF;&#x53C2;&#x6570;&#x7684;tuple. &#xFF08;&#x5141;&#x8BB8;&#x5D4C;&#x5957;&#x7684;tuple&#xFF09;</p>
+<pre><code class="lang-swift"><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token number">_</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>b<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span> <span class="token number">9.45</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// a is &quot;test&quot;, b is 12, c is 3, and 9.45 is ignored</span>
+</code></pre>
+<p>&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x4E0D;&#x8FD4;&#x56DE;&#x4EFB;&#x4F55;&#x503C;&#x3002;</p>
+<blockquote>
+<p>&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x8BED;&#x6CD5;<br><em>&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;</em> &#x2192; <strong>=</strong>  </p>
+</blockquote>
+<p><a name="ternary_conditional_operator"></a></p>
+<h2 id="&#x4E09;&#x5143;&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;ternary-conditional-operator&#xFF09;">&#x4E09;&#x5143;&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Ternary Conditional Operator&#xFF09;</h2>
+<p>&#x4E09;&#x5143;&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26; &#x662F;&#x6839;&#x636E;&#x6761;&#x4EF6;&#x6765;&#x83B7;&#x53D6;&#x503C;&#x3002; &#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>condition</code> ? <code>expression used if true</code> : <code>expression used if false</code></p>
+</blockquote>
+<p>&#x5982;&#x679C; <code>condition</code> &#x662F;true, &#x90A3;&#x4E48;&#x8FD4;&#x56DE; &#x7B2C;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#xFF08;&#x6B64;&#x65F6;&#x4E0D;&#x4F1A;&#x8C03;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;&#xFF0C; &#x5426;&#x5219;&#x8FD4;&#x56DE;&#x7B2C;&#x4E8C;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#xFF08;&#x6B64;&#x65F6;&#x4E0D;&#x4F1A;&#x8C03;&#x7528;&#x7B2C;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;&#x3002;</p>
+<p>&#x60F3;&#x770B;&#x4E09;&#x5143;&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A; Ternary Conditional Operator.</p>
+<blockquote>
+<p>&#x4E09;&#x5143;&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;&#x8BED;&#x6CD5;<br><em>&#x4E09;&#x5143;&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;</em> &#x2192; <strong>?</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>:</strong>  </p>
+</blockquote>
+<p><a name="type-casting_operators"></a></p>
+<h2 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;typecasting-operators&#xFF09;">&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;Type-Casting Operators&#xFF09;</h2>
+<p>&#x6709;4&#x79CD;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A; <code>is</code>,<code>as</code>,<code>?</code>&#x548C;<code>!</code>.  &#x5B83;&#x4EEC;&#x6709;&#x5982;&#x4E0B;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<blockquote>
+<p><code>expression</code> is <code>type</code><br><code>expression</code> as <code>type</code><br><code>expression</code> is? <code>type</code>
+<code>expression</code> as! <code>type</code>  </p>
+</blockquote>
+<p><code>is</code>&#x8FD0;&#x7B97;&#x7B26;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x68C0;&#x67E5;&#x8868;&#x8FBE;&#x5F0F;&#x80FD;&#x5426;&#x5411;&#x4E0B;&#x8F6C;&#x5316;&#x4E3A;&#x6307;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x5728;&#x8FD4;&#x56DE;<code>ture</code>&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x884C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<p><code>as</code>&#x8FD0;&#x7B97;&#x7B26;&#x5728;&#x7A0B;&#x5E8F;&#x7F16;&#x8BD1;&#x65F6;&#x6267;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#xFF0C;&#x4E14;&#x603B;&#x662F;&#x6210;&#x529F;&#xFF0C;&#x6BD4;&#x5982;&#x8FDB;&#x884C;&#x5411;&#x4E0A;&#x8F6C;&#x6362;&#xFF08;upcast&#xFF09;&#x548C;&#x6865;&#x63A5;&#xFF08;bridging&#xFF09;&#x3002;&#x5411;&#x4E0A;&#x8F6C;&#x6362;&#x6307;&#x628A;&#x8868;&#x8FBE;&#x5F0F;&#x8F6C;&#x6362;&#x6210;&#x7C7B;&#x578B;&#x7684;&#x8D85;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x662F;&#x5B9E;&#x4F8B;&#x800C;&#x4E0D;&#x4F7F;&#x7528;&#x4E2D;&#x95F4;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x4EE5;&#x4E0B;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">f<span class="token punctuation">(</span></span>any<span class="token punctuation">:</span> <span class="token builtin">Any</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Function for Any&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">f<span class="token punctuation">(</span></span>int<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Function for Int&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+<span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">10</span>
+<span class="token function">f<span class="token punctuation">(</span></span>x<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// prints &quot;Function for Int&quot;</span>
+
+<span class="token keyword">let</span> y<span class="token punctuation">:</span> <span class="token builtin">Any</span> <span class="token operator">=</span> x
+<span class="token function">f<span class="token punctuation">(</span></span>y<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// prints &quot;Function for Any&quot;</span>
+
+<span class="token function">f<span class="token punctuation">(</span></span>x <span class="token keyword">as</span> <span class="token builtin">Any</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// prints &quot;Function for Any&quot;</span>
+</code></pre>
+<p>&#x6865;&#x63A5;&#x8FD0;&#x7B97;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x628A;&#x4E00;&#x4E2A;Swift&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x7684;&#x7C7B;&#x578B;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x4E0E;&#x4E4B;&#x76F8;&#x5173;&#x7684;&#x57FA;&#x7840;&#x7C7B;&#xFF08;&#x6BD4;&#x5982;NSString&#xFF09;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;&#x5173;&#x4E8E;&#x6865;&#x63A5;&#x7684;&#x66F4;&#x591A;&#x5B9E;&#x4F8B;&#x53C2;&#x89C1;Using Swift with Cocoa and Objective-C&#x4E2D;&#x7684;Cocoa Data Types&#x3002;</p>
+<p><code>as?</code>&#x64CD;&#x4F5C;&#x7B26;&#x4E3A;&#x5E26;&#x6761;&#x4EF6;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;<code>as?</code>&#x64CD;&#x4F5C;&#x7B26;&#x8FD4;&#x56DE;&#x53EF;&#x9009;&#x7684;&#x8F6C;&#x6362;&#x7C7B;&#x578B;&#x3002;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x8F6C;&#x6362;&#x6210;&#x529F;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#x6389;&#x518D;&#x8FD4;&#x56DE;&#xFF0C;&#x5982;&#x679C;&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;&#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>nil</code>&#x3002;&#x5982;&#x679C;&#x6761;&#x4EF6;&#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x6761;&#x4EF6;&#x7684;&#x771F;&#x503C;&#x4E00;&#x5F00;&#x59CB;&#x5C31;&#x5DF2;&#x7ECF;&#x786E;&#x5B9A;&#x771F;&#x4F2A;&#x4E86;&#xFF0C;&#x5219;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<p><code>a!</code>&#x64CD;&#x4F5C;&#x7B26;&#x8868;&#x793A;&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#xFF0C;&#x5176;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x53EF;&#x9009;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5982;&#x679C;&#x8F6C;&#x6362;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#x3002;&#x8868;&#x8FBE;&#x5F0F;<code>x as T</code> &#x6548;&#x679C;&#x7B49;&#x540C;&#x4E8E;<code>(x as? T)!</code>&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x7684;&#x66F4;&#x591A;&#x5185;&#x5BB9;&#x548C;&#x4F8B;&#x5B50;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A; <a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Type Casting</a>.</p>
+<blockquote>
+<p>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;(type-casting-operator)&#x8BED;&#x6CD5;<br><em>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;</em> &#x2192; <strong>is</strong> <a href="03_Types.html#type"><em>&#x7C7B;&#x578B;</em></a> 
+<em>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;</em> &#x2192; <strong>as</strong> <a href="03_Types.html#type"><em>&#x7C7B;&#x578B;</em></a> 
+<em>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;</em> &#x2192; <strong>is</strong> <strong>?</strong> <a href="03_Types.html#type"><em>&#x7C7B;&#x578B;</em></a> 
+<em>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;</em> &#x2192; <strong>as</strong> <strong>!</strong> <a href="03_Types.html#type"><em>&#x7C7B;&#x578B;</em></a>  </p>
+</blockquote>
+<p><a name="primary_expressions"></a></p>
+<h2 id="&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;primary-expressions&#xFF09;">&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Primary Expressions&#xFF09;</h2>
+<p><code>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</code>&#x662F;&#x6700;&#x57FA;&#x672C;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x3002; &#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x8DDF; &#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E8C;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x4E3B;&#x8981;&#x8868;&#x8FBE;&#x5F0F;&#x7EC4;&#x5408;&#x4F7F;&#x7528;&#x3002;</p>
+<blockquote>
+<p>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="LexicalStructure.html#identifier"><em>&#x6807;&#x8BC6;&#x7B26;</em></a> <a href="GenericParametersAndArguments.html#generic_argument_clause"><em>&#x6CDB;&#x578B;&#x53C2;&#x6570;&#x5B50;&#x53E5;</em></a> <em>&#x53EF;&#x9009;</em><br><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#literal_expression"><em>&#x5B57;&#x7B26;&#x578B;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#self_expression"><em>self&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#superclass_expression"><em>&#x8D85;&#x7C7B;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#closure_expression"><em>&#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#parenthesized_expression"><em>&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#implicit_member_expression"><em>&#x9690;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#wildcard_expression"><em>&#x901A;&#x914D;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;</em></a>  </p>
+</blockquote>
+<h3 id="&#x5B57;&#x7B26;&#x578B;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;literal-expression&#xFF09;">&#x5B57;&#x7B26;&#x578B;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Literal Expression&#xFF09;</h3>
+<p>&#x7531;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x7EC4;&#x6210;&#xFF1A;&#x666E;&#x901A;&#x7684;&#x5B57;&#x7B26;&#xFF08;string, number&#xFF09; , &#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x5178;&#x6216;&#x8005;&#x6570;&#x7EC4;&#xFF0C;&#x6216;&#x8005;&#x4E0B;&#x9762;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x7B26;&#xFF08;Literal&#xFF09;</th>
+<th>&#x7C7B;&#x578B;&#xFF08;Type&#xFF09;</th>
+<th>&#x503C;&#xFF08;Value&#xFF09;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/<strong>FILE</strong></td>
+<td>String</td>
+<td>&#x6240;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+<tr>
+<td>/<strong>LINE</strong></td>
+<td>Int</td>
+<td>&#x6240;&#x5728;&#x7684;&#x884C;&#x6570;</td>
+</tr>
+<tr>
+<td>/<strong>COLUMN</strong></td>
+<td>Int</td>
+<td>&#x6240;&#x5728;&#x7684;&#x5217;&#x6570;</td>
+</tr>
+<tr>
+<td>/<strong>FUNCTION</strong></td>
+<td>String</td>
+<td>&#x6240;&#x5728;&#x7684;function &#x7684;&#x540D;&#x5B57;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x67D0;&#x4E2A;&#x51FD;&#x6570;&#xFF08;function&#xFF09;&#x4E2D;&#xFF0C;<code>__FUNCTION__</code> &#x4F1A;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x3002; &#x5728;&#x67D0;&#x4E2A;&#x65B9;&#x6CD5;&#xFF08;method&#xFF09;&#x4E2D;&#xFF0C;&#x5B83;&#x4F1A;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x5B57;&#x3002; &#x5728;&#x67D0;&#x4E2A;property &#x7684;getter/setter&#x4E2D;&#x4F1A;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x540D;&#x5B57;&#x3002; &#x5728;&#x7279;&#x6B8A;&#x7684;&#x6210;&#x5458;&#x5982;init/subscript&#x4E2D; &#x4F1A;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5728;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x9876;&#x7AEF;&#xFF08;the top level of a file&#xFF09;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5F53;&#x524D;module&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<p>&#x5F53;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x6216;&#x8005;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5B57;&#x7B26;&#x578B;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x5728;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">logFunctionName<span class="token punctuation">(</span></span>string<span class="token punctuation">:</span> <span class="token builtin">String</span> <span class="token operator">=</span> <span class="token keyword">__FUNCTION__</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print<span class="token punctuation">(</span></span>string<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">myFunction<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">logFunctionName<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Prints &quot;myFunction()&quot;.</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">myFunction<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token function">namedArgs<span class="token punctuation">(</span></span><span class="token number">1</span><span class="token punctuation">,</span> withJay<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4E00;&#x4E2A;<code>array literal</code>&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x7684;&#x503C;&#x7684;&#x96C6;&#x5408;&#x3002; &#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>[<code>value 1</code>, <code>value 2</code>, <code>...</code>]</p>
+</blockquote>
+<p>&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x7D27;&#x8DDF;&#x4E00;&#x4E2A;&#x9017;&#x53F7;&#xFF08;&apos;,&apos;&#xFF09;. []&#x8868;&#x793A;&#x7A7A;&#x6570;&#x7EC4; &#x3002; array literal&#x7684;type&#x662F; T[], &#x8FD9;&#x4E2A;T&#x5C31;&#x662F;&#x6570;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x7684;type. &#x5982;&#x679C;&#x8BE5;&#x6570;&#x7EC4;&#x4E2D;&#x6709;&#x591A;&#x79CD;type, T&#x5219;&#x662F;&#x8DDF;&#x8FD9;&#x4E9B;type&#x7684;&#x516C;&#x5171;<code>supertype</code>&#x6700;&#x63A5;&#x8FD1;&#x7684;type.&#x7A7A;&#x7684;<code>array literal</code>&#x7531;&#x4E00;&#x7EC4;&#x65B9;&#x62EC;&#x53F7;&#x5B9A;&#x4E49;&#xFF0C;&#x53EF;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x7A7A;&#x6570;&#x7EC4;&#x3002;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> emptyArray<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token builtin">Double</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+</code></pre>
+<p>&#x4E00;&#x4E2A;<code>dictionary literal</code> &#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x65E0;&#x5E8F;&#x7684;&#x952E;&#x503C;&#x5BF9;&#xFF08;key-value pairs&#xFF09;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x662F;:</p>
+<blockquote>
+<p>[<code>key 1</code>: <code>value 1</code>, <code>key 2</code>: <code>value 2</code>, <code>...</code>]</p>
+</blockquote>
+<p>dictionary &#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x9017;&#x53F7;&#xFF08;&apos;,&apos;&#xFF09;. [:] &#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;dictionary. &#x5B83;&#x7684;type&#x662F; Dictionary<KeyType, ValueType=""> &#xFF08;&#x8FD9;&#x91CC;KeyType&#x8868;&#x793A; key&#x7684;type, ValueType&#x8868;&#x793A; value&#x7684;type&#xFF09; &#x5982;&#x679C;&#x8FD9;&#x4E2A;dictionary &#x4E2D;&#x5305;&#x542B;&#x591A;&#x79CD; types, &#x90A3;&#x4E48;KeyType, Value &#x5219;&#x5BF9;&#x5E94;&#x7740;&#x5B83;&#x4EEC;&#x7684;&#x516C;&#x5171;supertype&#x6700;&#x63A5;&#x8FD1;&#x7684;type&#xFF08; closest common supertype&#xFF09;.&#x4E00;&#x4E2A;&#x7A7A;&#x7684;dictionary literal&#x7531;&#x65B9;&#x62EC;&#x53F7;&#x4E2D;&#x52A0;&#x4E00;&#x4E2A;&#x5192;&#x53F7;&#x7EC4;&#x6210;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x4E0E;&#x7A7A;array literal&#x533A;&#x5206;&#x5F00;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7A7A;&#x7684;dictionary literal&#x6765;&#x521B;&#x5EFA;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x3002;</KeyType,></p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> emptyDictionary<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">:</span> <span class="token builtin">Double</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+</code></pre>
+<blockquote>
+<p>&#x5B57;&#x9762;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x5B57;&#x9762;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="LexicalStructure.html#literal"><em>&#x5B57;&#x9762;&#x91CF;</em></a><br><em>&#x5B57;&#x9762;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#array_literal"><em>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;</em></a> | <a href="04_Expressions.html#dictionary_literal"><em>&#x5B57;&#x5178;&#x5B57;&#x9762;&#x91CF;</em></a><br><em>&#x5B57;&#x9762;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>__FILE__</strong> | <strong>__LINE__</strong> | <strong>__COLUMN__</strong> | <strong>__FUNCTION__</strong><br><em>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;</em> &#x2192; <strong>[</strong> <a href="04_Expressions.html#array_literal_items"><em>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;&#x9879;&#x5217;&#x8868;</em></a> <em>&#x53EF;&#x9009;</em> <strong>]</strong><br><em>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;&#x9879;&#x5217;&#x8868;</em> &#x2192; <a href="04_Expressions.html#array_literal_item"><em>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;&#x9879;</em></a> <strong>,</strong> <em>&#x53EF;&#x9009;</em> | <a href="04_Expressions.html#array_literal_item"><em>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;&#x9879;</em></a> <strong>,</strong> <a href="04_Expressions.html#array_literal_items"><em>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;&#x9879;&#x5217;&#x8868;</em></a><br><em>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;&#x9879;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x5B57;&#x5178;&#x5B57;&#x9762;&#x91CF;</em> &#x2192; <strong>[</strong> <a href="04_Expressions.html#dictionary_literal_items"><em>&#x5B57;&#x5178;&#x5B57;&#x9762;&#x91CF;&#x9879;&#x5217;&#x8868;</em></a> <strong>]</strong> | <strong>[</strong> <strong>:</strong> <strong>]</strong><br><em>&#x5B57;&#x5178;&#x5B57;&#x9762;&#x91CF;&#x9879;&#x5217;&#x8868;</em> &#x2192; <a href="04_Expressions.html#dictionary_literal_item"><em>&#x5B57;&#x5178;&#x5B57;&#x9762;&#x91CF;&#x9879;</em></a> <strong>,</strong> <em>&#x53EF;&#x9009;</em> | <a href="04_Expressions.html#dictionary_literal_item"><em>&#x5B57;&#x5178;&#x5B57;&#x9762;&#x91CF;&#x9879;</em></a> <strong>,</strong> <a href="04_Expressions.html#dictionary_literal_items"><em>&#x5B57;&#x5178;&#x5B57;&#x9762;&#x91CF;&#x9879;&#x5217;&#x8868;</em></a><br><em>&#x5B57;&#x5178;&#x5B57;&#x9762;&#x91CF;&#x9879;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>:</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a>  </p>
+</blockquote>
+<h3 id="self&#x8868;&#x8FBE;&#x5F0F;&#xFF08;self-expression&#xFF09;">self&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Self Expression&#xFF09;</h3>
+<p>self&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x5BF9; &#x5F53;&#x524D;type &#x6216;&#x8005;&#x5F53;&#x524D;instance&#x7684;&#x5F15;&#x7528;&#x3002;&#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>self<br>self.<code>member name</code><br>self[<code>subscript index</code>]<br>self(<code>initializer arguments</code>)
+self.init(<code>initializer arguments</code>)</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x5728; initializer, subscript, instance method&#x4E2D;&#xFF0C;self&#x7B49;&#x540C;&#x4E8E;&#x5F53;&#x524D;type&#x7684;instance. &#x5728;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF08;static method&#xFF09;, &#x7C7B;&#x65B9;&#x6CD5;&#xFF08;class method&#xFF09;&#x4E2D;&#xFF0C; self&#x7B49;&#x540C;&#x4E8E;&#x5F53;&#x524D;&#x7684;type.</p>
+<p>&#x5F53;&#x8BBF;&#x95EE; member&#xFF08;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x65F6;&#xFF09;&#xFF0C; self &#x7528;&#x6765;&#x533A;&#x5206;&#x91CD;&#x540D;&#x53D8;&#x91CF;&#xFF08;&#x4F8B;&#x5982;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF09;.  &#x4F8B;&#x5982;&#xFF0C;
+&#xFF08;&#x4E0B;&#x9762;&#x7684; self.greeting &#x6307;&#x7684;&#x662F; var greeting: String, &#x800C;&#x4E0D;&#x662F; init&#xFF08;greeting: String&#xFF09; &#xFF09;</p>
+<pre><code class="lang-swift"><span class="token keyword">class</span> <span class="token class-name">SomeClass</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> greeting<span class="token punctuation">:</span> <span class="token builtin">String</span>
+    <span class="token keyword">init</span><span class="token punctuation">(</span>greeting<span class="token punctuation">:</span> <span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>greeting <span class="token operator">=</span> greeting
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;mutating &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C; &#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;self &#x5BF9; &#x8BE5;instance&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x3002;</p>
+<pre><code class="lang-swift"><span class="token keyword">struct</span> <span class="token builtin">Point</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">0.0</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">0.0</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">moveByX<span class="token punctuation">(</span></span>deltaX<span class="token punctuation">:</span> <span class="token builtin">Double</span><span class="token punctuation">,</span> y deltaY<span class="token punctuation">:</span> <span class="token builtin">Double</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span> <span class="token operator">=</span> <span class="token function">Point<span class="token punctuation">(</span></span>x<span class="token punctuation">:</span> x <span class="token operator">+</span> deltaX<span class="token punctuation">,</span> y<span class="token punctuation">:</span> y <span class="token operator">+</span> deltaY<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>Self &#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>self&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>self</strong><br><em>self&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>self</strong> <strong>.</strong> <a href="LexicalStructure.html#identifier"><em>&#x6807;&#x8BC6;&#x7B26;</em></a><br><em>self&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>self</strong> <strong>[</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>]</strong><br><em>self&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>self</strong> <strong>.</strong> <strong>init</strong>  </p>
+</blockquote>
+<h3 id="&#x8D85;&#x7C7B;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;superclass-expression&#xFF09;">&#x8D85;&#x7C7B;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Superclass Expression&#xFF09;</h3>
+<p>&#x8D85;&#x7C7B;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x4F7F;&#x6211;&#x4EEC;&#x5728;&#x67D0;&#x4E2A;class&#x4E2D;&#x8BBF;&#x95EE;&#x5B83;&#x7684;&#x8D85;&#x7C7B;. &#x5B83;&#x6709;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<blockquote>
+<p>super.<code>member name</code><br>super[<code>subscript index</code>]<br>super.init(<code>initializer arguments</code>)</p>
+</blockquote>
+<p>&#x5F62;&#x5F0F;1 &#x7528;&#x6765;&#x8BBF;&#x95EE;&#x8D85;&#x7C7B;&#x7684;&#x67D0;&#x4E2A;&#x6210;&#x5458;&#xFF08;member&#xFF09;. &#x5F62;&#x5F0F;2 &#x7528;&#x6765;&#x8BBF;&#x95EE;&#x8BE5;&#x8D85;&#x7C7B;&#x7684; subscript &#x5B9E;&#x73B0;&#x3002; &#x5F62;&#x5F0F;3 &#x7528;&#x6765;&#x8BBF;&#x95EE;&#x8BE5;&#x8D85;&#x7C7B;&#x7684; initializer.</p>
+<p>&#x5B50;&#x7C7B;&#xFF08;subclass&#xFF09;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8D85;&#x7C7B;&#xFF08;superclass&#xFF09;&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x5B83;&#x4EEC;&#x7684; member, subscripting &#x548C; initializers &#x4E2D;&#x6765;&#x5229;&#x7528;&#x5B83;&#x4EEC;&#x8D85;&#x7C7B;&#x4E2D;&#x7684;&#x67D0;&#x4E9B;&#x5B9E;&#x73B0;&#xFF08;&#x65E2;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x903B;&#x8F91;&#xFF09;&#x3002;</p>
+<blockquote>
+<p>&#x8D85;&#x7C7B;(superclass)&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x8D85;&#x7C7B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#superclass_method_expression"><em>&#x8D85;&#x7C7B;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;</em></a> | <a href="04_Expressions.html#&#x8D85;&#x7C7B;&#x4E0B;&#x6807;&#x8868;&#x8FBE;&#x5F0F;"><em>&#x8D85;&#x7C7B;&#x4E0B;&#x6807;&#x8868;&#x8FBE;&#x5F0F;</em></a> | <a href="04_Expressions.html#superclass_initializer_expression"><em>&#x8D85;&#x7C7B;&#x6784;&#x9020;&#x5668;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x8D85;&#x7C7B;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>super</strong> <strong>.</strong> <a href="LexicalStructure.html#identifier"><em>&#x6807;&#x8BC6;&#x7B26;</em></a><br><em>&#x8D85;&#x7C7B;&#x4E0B;&#x6807;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>super</strong> <strong>[</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>]</strong><br><em>&#x8D85;&#x7C7B;&#x6784;&#x9020;&#x5668;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>super</strong> <strong>.</strong> <strong>init</strong>  </p>
+</blockquote>
+<h3 id="&#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;closure-expression&#xFF09;">&#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Closure Expression&#xFF09;</h3>
+<p>&#x95ED;&#x5305;&#xFF08;closure&#xFF09; &#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x95ED;&#x5305;&#xFF08;&#x5728;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x4E5F;&#x53EB; lambda, &#x6216;&#x8005; &#x533F;&#x540D;&#x51FD;&#x6570;&#xFF08;anonymous function&#xFF09;&#xFF09;. &#x8DDF;&#x51FD;&#x6570;&#xFF08;function&#xFF09;&#x7684;&#x58F0;&#x660E;&#x4E00;&#x6837;&#xFF0C; &#x95ED;&#x5305;&#xFF08;closure&#xFF09;&#x5305;&#x542B;&#x4E86;&#x53EF;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF08;&#x8DDF;&#x65B9;&#x6CD5;&#x4E3B;&#x4F53;&#xFF08;statement&#xFF09;&#x7C7B;&#x4F3C;&#xFF09; &#x4EE5;&#x53CA;&#x63A5;&#x6536;&#xFF08;capture&#xFF09;&#x7684;&#x53C2;&#x6570;&#x3002; &#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token punctuation">{</span> <span class="token punctuation">(</span>parameters<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token keyword">return</span> type <span class="token keyword">in</span>
+    statements
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x95ED;&#x5305;&#x7684;&#x53C2;&#x6570;&#x58F0;&#x660E;&#x5F62;&#x5F0F;&#x8DDF;&#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x58F0;&#x660E;&#x4E00;&#x6837;, &#x8BF7;&#x53C2;&#x89C1;&#xFF1A;<a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Function Declaration</a>.</p>
+<p>&#x95ED;&#x5305;&#x8FD8;&#x6709;&#x51E0;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x5F62;&#x5F0F;, &#x8BA9;&#x4F7F;&#x7528;&#x66F4;&#x52A0;&#x7B80;&#x6D01;&#xFF1A;</p>
+<ul>
+<li>&#x95ED;&#x5305;&#x53EF;&#x4EE5;&#x7701;&#x7565; &#x5B83;&#x7684;&#x53C2;&#x6570;&#x7684;type &#x548C;&#x8FD4;&#x56DE;&#x503C;&#x7684;type. &#x5982;&#x679C;&#x7701;&#x7565;&#x4E86;&#x53C2;&#x6570;&#x548C;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x5C31;&#x4E5F;&#x8981;&#x7701;&#x7565; &apos;in&apos;&#x5173;&#x952E;&#x5B57;&#x3002; &#x5982;&#x679C;&#x88AB;&#x7701;&#x7565;&#x7684;type &#x65E0;&#x6CD5;&#x88AB;&#x7F16;&#x8BD1;&#x5668;&#x83B7;&#x77E5;&#xFF08;inferred&#xFF09; &#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#x3002;</li>
+<li>&#x95ED;&#x5305;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x53C2;&#x6570;&#xFF0C;&#x8F6C;&#x800C;&#x5728;&#x65B9;&#x6CD5;&#x4F53;&#xFF08;statement&#xFF09;&#x4E2D;&#x4F7F;&#x7528; $0, $1, $2 &#x6765;&#x5F15;&#x7528;&#x51FA;&#x73B0;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x95ED;&#x5305;&#x4E2D;&#x53EA;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x6210;&#x4E3A;&#x8BE5;&#x95ED;&#x5305;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002; &#x5728;&#x6267;&#x884C; &apos;type inference &apos;&#x65F6;&#xFF0C;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x4E5F;&#x4F1A;&#x8FD4;&#x56DE;&#x3002;</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x51E0;&#x4E2A; &#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;&#x662F; &#x7B49;&#x4EF7;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-swift">myFunction <span class="token punctuation">{</span>
+    <span class="token punctuation">(</span>x<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token keyword">in</span>
+    <span class="token keyword">return</span> x <span class="token operator">+</span> y
+<span class="token punctuation">}</span>
+
+myFunction <span class="token punctuation">{</span>
+    <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">in</span>
+    <span class="token keyword">return</span> x <span class="token operator">+</span> y
+<span class="token punctuation">}</span>
+
+myFunction <span class="token punctuation">{</span> <span class="token keyword">return</span> $<span class="token number">0</span> <span class="token operator">+</span> $<span class="token number">1</span> <span class="token punctuation">}</span>
+
+myFunction <span class="token punctuation">{</span> $<span class="token number">0</span> <span class="token operator">+</span> $<span class="token number">1</span> <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5173;&#x4E8E; &#x5411;&#x95ED;&#x5305;&#x4E2D;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x53C2;&#x89C1;&#xFF1A; <a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Function Call Expression</a>.</p>
+<h3 id="&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF08;capture-lists&#xFF09;">&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF08;Capture Lists&#xFF09;</h3>
+<p>&#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF08;capture list&#xFF09; &#x6765;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x5B83;&#x9700;&#x8981;&#x7684;&#x53C2;&#x6570;&#x3002; &#x53C2;&#x6570;&#x5217;&#x8868;&#x7531;&#x4E2D;&#x62EC;&#x53F7; [] &#x62EC;&#x8D77;&#x6765;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x53C2;&#x6570;&#x7531;&#x9017;&#x53F7;&apos;,&apos;&#x5206;&#x9694;&#x3002;&#x4E00;&#x65E6;&#x4F7F;&#x7528;&#x4E86;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&apos;in&apos;&#x5173;&#x952E;&#x5B57;&#xFF08;&#x5728;&#x4EFB;&#x4F55;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x5F97;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x5305;&#x62EC;&#x5FFD;&#x7565;&#x53C2;&#x6570;&#x7684;&#x540D;&#x5B57;&#xFF0C;type, &#x8FD4;&#x56DE;&#x503C;&#x65F6;&#x7B49;&#x7B49;&#xFF09;&#x3002;</p>
+<p>&#x5728;&#x95ED;&#x5305;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF08; capture list&#xFF09;&#x4E2D;&#xFF0C; &#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x4E3A; &apos;weak&apos; &#x6216;&#x8005; &apos;unowned&apos; .</p>
+<pre><code class="lang-swift">myFunction <span class="token punctuation">{</span> <span class="token function">print<span class="token punctuation">(</span></span><span class="token keyword">self</span><span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token punctuation">}</span>                    <span class="token comment" spellcheck="true">// strong capture</span>
+myFunction <span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token keyword">weak</span> <span class="token keyword">self</span><span class="token punctuation">]</span> <span class="token keyword">in</span> <span class="token function">print<span class="token punctuation">(</span></span><span class="token keyword">self</span><span class="token operator">!</span><span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token punctuation">}</span>    <span class="token comment" spellcheck="true">// weak capture</span>
+myFunction <span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token keyword">unowned</span> <span class="token keyword">self</span><span class="token punctuation">]</span> <span class="token keyword">in</span> <span class="token function">print<span class="token punctuation">(</span></span><span class="token keyword">self</span><span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token punctuation">}</span>  <span class="token comment" spellcheck="true">// unowned capture</span>
+</code></pre>
+<p>&#x5728;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x8D4B;&#x503C;. &#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x4F1A;&#x5728; &#x95ED;&#x5305;&#x88AB;&#x6267;&#x884C;&#x65F6;&#x8D4B;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x4E0D;&#x540C;&#x7684;&#x529B;&#x5EA6;&#x6765;&#x83B7;&#x53D6;&#xFF08;&#x8FD9;&#x53E5;&#x8BDD;&#x8BF7;&#x614E;&#x91CD;&#x7406;&#x89E3;&#xFF09;&#x3002;&#xFF08;captured with the specified strength. &#xFF09; &#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token comment" spellcheck="true">// Weak capture of &quot;self.parent&quot; as &quot;parent&quot;</span>
+myFunction <span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token keyword">weak</span> parent <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">.</span>parent<span class="token punctuation">]</span> <span class="token keyword">in</span> <span class="token function">print<span class="token punctuation">(</span></span>parent<span class="token operator">!</span><span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5173;&#x4E8E;&#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x548C;&#x4F8B;&#x5B50;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A; <a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Closure Expressions</a>&#xFF0C;&#x5173;&#x4E8E;&#x66F4;&#x591A;&#x53C2;&#x6570;&#x5217;&#x8868;&#x7684;&#x4FE1;&#x606F;&#x548C;&#x4F8B;&#x5B50;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A; <a href="TODO&#xFF1A;&#x6DFB;&#x52A0;&#x94FE;&#x63A5;">Resolving Strong Reference Cycles for Closures</a>&#x3002;</p>
+<blockquote>
+<p>&#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>{</strong> <a href="04_Expressions.html#closure_signature"><em>&#x95ED;&#x5305;&#x7B7E;&#x540D;(Signational)</em></a> <em>&#x53EF;&#x9009;</em> <a href="10_Statements.html#statements"><em>&#x591A;&#x6761;&#x8BED;&#x53E5;(Statements)</em></a> <strong>}</strong><br><em>&#x95ED;&#x5305;&#x7B7E;&#x540D;(Signational)</em> &#x2192; <a href="05_Declarations.html#parameter_clause"><em>&#x53C2;&#x6570;&#x5B50;&#x53E5;</em></a> <a href="05_Declarations.html#function_result"><em>&#x51FD;&#x6570;&#x7ED3;&#x679C;</em></a> <em>&#x53EF;&#x9009;</em> <strong>in</strong><br><em>&#x95ED;&#x5305;&#x7B7E;&#x540D;(Signational)</em> &#x2192; <a href="LexicalStructure.html#identifier_list"><em>&#x6807;&#x8BC6;&#x7B26;&#x5217;&#x8868;</em></a> <a href="05_Declarations.html#function_result"><em>&#x51FD;&#x6570;&#x7ED3;&#x679C;</em></a> <em>&#x53EF;&#x9009;</em> <strong>in</strong><br><em>&#x95ED;&#x5305;&#x7B7E;&#x540D;(Signational)</em> &#x2192; <a href="04_Expressions.html#capture_list"><em>&#x6355;&#x83B7;(Capature)&#x5217;&#x8868;</em></a> <a href="05_Declarations.html#parameter_clause"><em>&#x53C2;&#x6570;&#x5B50;&#x53E5;</em></a> <a href="05_Declarations.html#function_result"><em>&#x51FD;&#x6570;&#x7ED3;&#x679C;</em></a> <em>&#x53EF;&#x9009;</em> <strong>in</strong><br><em>&#x95ED;&#x5305;&#x7B7E;&#x540D;(Signational)</em> &#x2192; <a href="04_Expressions.html#capture_list"><em>&#x6355;&#x83B7;(Capature)&#x5217;&#x8868;</em></a> <a href="LexicalStructure.html#identifier_list"><em>&#x6807;&#x8BC6;&#x7B26;&#x5217;&#x8868;</em></a> <a href="05_Declarations.html#function_result"><em>&#x51FD;&#x6570;&#x7ED3;&#x679C;</em></a> <em>&#x53EF;&#x9009;</em> <strong>in</strong><br><em>&#x95ED;&#x5305;&#x7B7E;&#x540D;(Signational)</em> &#x2192; <a href="04_Expressions.html#capture_list"><em>&#x6355;&#x83B7;(Capature)&#x5217;&#x8868;</em></a> <strong>in</strong><br><em>&#x6355;&#x83B7;(Capature)&#x5217;&#x8868;</em> &#x2192; <strong>[</strong> <a href="04_Expressions.html#capture_specifier"><em>&#x6355;&#x83B7;(Capature)&#x8BF4;&#x660E;&#x7B26;</em></a> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>]</strong><br><em>&#x6355;&#x83B7;(Capature)&#x8BF4;&#x660E;&#x7B26;</em> &#x2192; <strong>weak</strong> | <strong>unowned</strong> | <strong>unowned(safe)</strong> | <strong>unowned(unsafe)</strong>  </p>
+</blockquote>
+<h3 id="&#x9690;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;implicit-member-expression&#xFF09;">&#x9690;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Implicit Member Expression&#xFF09;</h3>
+<p>&#x5728;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x51FA;&#x7C7B;&#x578B;&#xFF08;type&#xFF09;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;context&#xFF09;&#x4E2D;&#xFF0C;&#x9690;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x8BBF;&#x95EE;&#x67D0;&#x4E2A;type&#x7684;member&#xFF08; &#x4F8B;&#x5982; class method, enumeration case&#xFF09; &#x7684;&#x7B80;&#x6D01;&#x65B9;&#x6CD5;&#x3002; &#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>.<code>member name</code></p>
+</blockquote>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token builtin">MyEnumeration</span><span class="token punctuation">.</span><span class="token builtin">SomeValue</span>
+x <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token builtin">AnotherValue</span>
+</code></pre>
+<blockquote>
+<p>&#x9690;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x9690;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>.</strong> <a href="02_Lexical_Structure.html#identifier"><em>&#x6807;&#x8BC6;&#x7B26;</em></a>  </p>
+</blockquote>
+<h3 id="&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;parenthesized-expression&#xFF09;">&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Parenthesized Expression&#xFF09;</h3>
+<p>&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;&#x7531;&#x591A;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x9017;&#x53F7;&apos;,&apos;&#x7EC4;&#x6210;&#x3002; &#x6BCF;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x524D;&#x9762;&#x53EF;&#x4EE5;&#x6709; identifier x: &#x8FD9;&#x6837;&#x7684;&#x53EF;&#x9009;&#x524D;&#x7F00;&#x3002;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>&#xFF08;<code>identifier 1</code>: <code>expression 1</code>, <code>identifier 2</code>: <code>expression 2</code>, <code>...</code>&#xFF09;</p>
+</blockquote>
+<p>&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x6765;&#x5EFA;&#x7ACB;tuples &#xFF0C; &#x7136;&#x540E;&#x628A;&#x5B83;&#x505A;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; function. &#x5982;&#x679C;&#x67D0;&#x4E2A;&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A; &#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x7684;type&#x5C31;&#x662F; &#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x7684;type&#x3002;&#x4F8B;&#x5982;&#xFF1A; &#xFF08;1&#xFF09;&#x7684; type&#x662F;Int, &#x800C;&#x4E0D;&#x662F;&#xFF08;Int&#xFF09;</p>
+<blockquote>
+<p>&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;(Parenthesized Expression)&#x8BED;&#x6CD5;<br><em>&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>(</strong> <a href="04_Expressions.html#expression_element_list"><em>&#x8868;&#x8FBE;&#x5F0F;&#x5143;&#x7D20;&#x5217;&#x8868;</em></a> <em>&#x53EF;&#x9009;</em> <strong>)</strong><br><em>&#x8868;&#x8FBE;&#x5F0F;&#x5143;&#x7D20;&#x5217;&#x8868;</em> &#x2192; <a href="04_Expressions.html#expression_element"><em>&#x8868;&#x8FBE;&#x5F0F;&#x5143;&#x7D20;</em></a> | <a href="04_Expressions.html#expression_element"><em>&#x8868;&#x8FBE;&#x5F0F;&#x5143;&#x7D20;</em></a> <strong>,</strong> <a href="04_Expressions.html#expression_element_list"><em>&#x8868;&#x8FBE;&#x5F0F;&#x5143;&#x7D20;&#x5217;&#x8868;</em></a><br><em>&#x8868;&#x8FBE;&#x5F0F;&#x5143;&#x7D20;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> | <a href="02_Lexical_Structure.html#identifier"><em>&#x6807;&#x8BC6;&#x7B26;</em></a> <strong>:</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a>  </p>
+</blockquote>
+<h3 id="&#x901A;&#x914D;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;wildcard-expression&#xFF09;">&#x901A;&#x914D;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Wildcard Expression&#xFF09;</h3>
+<p>&#x901A;&#x914D;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x6765;&#x5FFD;&#x7565;&#x4F20;&#x9012;&#x8FDB;&#x6765;&#x7684;&#x67D0;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;10&#x88AB;&#x4F20;&#x9012;&#x7ED9;x, 20&#x88AB;&#x5FFD;&#x7565;&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x597D;&#x5947;&#x8469;&#x7684;&#x8BED;&#x6CD5;&#x3002;&#x3002;&#x3002;&#xFF09;</p>
+<pre><code class="lang-swift"><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">_</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// x is 10, 20 is ignored</span>
+</code></pre>
+<blockquote>
+<p>&#x901A;&#x914D;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x901A;&#x914D;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <strong>_</strong>  </p>
+</blockquote>
+<p><a name="postfix_expressions"></a></p>
+<h2 id="&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;postfix-expressions&#xFF09;">&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Postfix Expressions&#xFF09;</h2>
+<p>&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x662F;&#x5728;&#x67D0;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x540E;&#x9762;&#x52A0;&#x4E0A; &#x64CD;&#x4F5C;&#x7B26;&#x3002; &#x4E25;&#x683C;&#x7684;&#x8BB2;&#xFF0C;&#x6BCF;&#x4E2A;&#x4E3B;&#x8981;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;primary expression&#xFF09;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;</p>
+<p>Swift &#x6807;&#x51C6;&#x5E93;&#x63D0;&#x4F9B;&#x4E86;&#x4E0B;&#x5217;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>++ Increment</li>
+<li>-- Decrement</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A; Basic Operators and Advanced Operators</p>
+<blockquote>
+<p>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#primary_expression"><em>&#x4E3B;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <a href="02_Lexical_Structure.html#postfix_operator"><em>&#x540E;&#x7F6E;&#x8FD0;&#x7B97;&#x7B26;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#function_call_expression"><em>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#initializer_expression"><em>&#x6784;&#x9020;&#x5668;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#explicit_member_expression"><em>&#x663E;&#x793A;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_self_expression"><em>&#x540E;&#x7F6E;self&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#dynamic_type_expression"><em>&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#subscript_expression"><em>&#x4E0B;&#x6807;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#forced_value_expression"><em>&#x5F3A;&#x5236;&#x53D6;&#x503C;(Forced Value)&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#optional_chaining_expression"><em>&#x53EF;&#x9009;&#x94FE;(Optional Chaining)&#x8868;&#x8FBE;&#x5F0F;</em></a>  </p>
+</blockquote>
+<h3 id="&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;function-call-expression&#xFF09;">&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Function Call Expression&#xFF09;</h3>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x7531;&#x51FD;&#x6570;&#x540D;&#x548C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x7EC4;&#x6210;&#x3002;&#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>function name</code>(<code>argument value 1</code>, <code>argument value 2</code>)</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x8BE5;function &#x7684;&#x58F0;&#x660E;&#x4E2D;&#x6307;&#x5B9A;&#x4E86;&#x53C2;&#x6570;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x5FC5;&#x987B;&#x5F97;&#x5199;&#x51FA;&#x6765;. &#x4F8B;&#x5982;&#xFF1A;</p>
+<blockquote>
+<p><code>function name</code>(<code>argument name 1</code>: <code>argument value 1</code>, <code>argument name 2</code>: <code>argument value 2</code>)</p>
+</blockquote>
+<p>&#x53EF;&#x4EE5;&#x5728; &#x51FD;&#x6570;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5C3E;&#x90E8;&#xFF08;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E4B;&#x540E;&#xFF09;&#x52A0;&#x4E0A; &#x4E00;&#x4E2A;&#x95ED;&#x5305;&#xFF08;closure&#xFF09; &#xFF0C; &#x8BE5;&#x95ED;&#x5305;&#x4F1A;&#x88AB;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x7406;&#x89E3;&#x5E76;&#x6267;&#x884C;&#x3002;&#x5B83;&#x5177;&#x6709;&#x5982;&#x4E0B;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token comment" spellcheck="true">// someFunction takes an integer and a closure as its arguments</span>
+<span class="token function">someFunction<span class="token punctuation">(</span></span>x<span class="token punctuation">,</span> <span class="token punctuation">{</span>$<span class="token number">0</span> <span class="token operator">==</span> <span class="token number">13</span><span class="token punctuation">}</span><span class="token operator">+</span>
+<span class="token function">someFunction<span class="token punctuation">(</span></span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>$<span class="token number">0</span> <span class="token operator">==</span> <span class="token number">13</span><span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x95ED;&#x5305;&#x662F;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x552F;&#x4E00;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5706;&#x62EC;&#x53F7;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x3002;</p>
+<pre><code class="lang-swift"><span class="token comment" spellcheck="true">// someFunction takes a closure as its only argument</span>
+myData<span class="token punctuation">.</span><span class="token function">someMethod<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>$<span class="token number">0</span> <span class="token operator">==</span> <span class="token number">13</span><span class="token punctuation">}</span>
+myData<span class="token punctuation">.</span>someMethod <span class="token punctuation">{</span>$<span class="token number">0</span> <span class="token operator">==</span> <span class="token number">13</span><span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <a href="04_Expressions.html#parenthesized_expression"><em>&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <a href="04_Expressions.html#parenthesized_expression"><em>&#x5706;&#x62EC;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;</em></a> <em>&#x53EF;&#x9009;</em> <a href="04_Expressions.html#trailing_closure"><em>&#x540E;&#x7F6E;&#x95ED;&#x5305;(Trailing Closure)</em></a><br><em>&#x540E;&#x7F6E;&#x95ED;&#x5305;(Trailing Closure)</em> &#x2192; <a href="04_Expressions.html#closure_expression"><em>&#x95ED;&#x5305;&#x8868;&#x8FBE;&#x5F0F;</em></a>  </p>
+</blockquote>
+<h3 id="&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;initializer-expression&#xFF09;">&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Initializer Expression&#xFF09;</h3>
+<p>Initializer&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x6765;&#x7ED9;&#x67D0;&#x4E2A;Type&#x521D;&#x59CB;&#x5316;&#x3002; &#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>expression</code>.init(<code>initializer arguments</code>)</p>
+</blockquote>
+<p>&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#x7528;&#x6765;&#x521D;&#x59CB;&#x67D0;&#x4E2A;Type&#x3002; &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x59D4;&#x6258;&#x8C03;&#x7528;&#xFF08;delegate to &#xFF09;&#x5230;superclass&#x7684;initializers.</p>
+<pre><code class="lang-swift"><span class="token keyword">class</span> <span class="token class-name">SomeSubClass</span><span class="token punctuation">:</span> <span class="token builtin">SomeSuperClass</span> <span class="token punctuation">{</span>
+    <span class="token keyword">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// subclass initialization goes here</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token keyword">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x548C;&#x51FD;&#x6570;&#x7C7B;&#x4F3C;&#xFF0C; &#x521D;&#x59CB;&#x5316;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x7528;&#x4F5C;&#x6570;&#x503C;&#x3002; &#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token comment" spellcheck="true">// Type annotation is required because String has multiple initializers.</span>
+<span class="token keyword">let</span> initializer<span class="token punctuation">:</span> <span class="token builtin">Int</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token operator">=</span> <span class="token builtin">String</span><span class="token punctuation">.</span><span class="token keyword">init</span>
+<span class="token keyword">let</span> oneTwoThree <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">map<span class="token punctuation">(</span></span>initializer<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reduce<span class="token punctuation">(</span></span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> combine<span class="token punctuation">:</span> <span class="token operator">+</span><span class="token punctuation">)</span>
+<span class="token function">print<span class="token punctuation">(</span></span>oneTwoThree<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// prints &quot;123&quot;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x8981;&#x7528;&#x540D;&#x5B57;&#x6765;&#x6307;&#x5B9A;&#x67D0;&#x4E2A;type&#xFF0C; &#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x76F4;&#x63A5;&#x4F7F;&#x7528;type&#x7684;initializer&#x3002;&#x5728;&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C; &#x4F60;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-swift"><span class="token keyword">let</span> s1 <span class="token operator">=</span> <span class="token builtin">SomeType</span><span class="token punctuation">.</span><span class="token keyword">init</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// Valid</span>
+<span class="token keyword">let</span> s2 <span class="token operator">=</span> <span class="token function">SomeType<span class="token punctuation">(</span></span>data<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">)</span>       <span class="token comment" spellcheck="true">// Also valid</span>
+
+<span class="token keyword">let</span> s4 <span class="token operator">=</span> someValue<span class="token punctuation">.</span><span class="token keyword">dynamicType</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">)</span>       <span class="token comment" spellcheck="true">// Error</span>
+<span class="token keyword">let</span> s3 <span class="token operator">=</span> someValue<span class="token punctuation">.</span><span class="token keyword">dynamicType</span><span class="token punctuation">.</span><span class="token keyword">init</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span> <span class="token number">7</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// Valid</span>
+</code></pre>
+<blockquote>
+<p>&#x6784;&#x9020;&#x5668;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x6784;&#x9020;&#x5668;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>.</strong> <strong>init</strong>  </p>
+</blockquote>
+<h3 id="&#x663E;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;explicit-member-expression&#xFF09;">&#x663E;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Explicit Member Expression&#xFF09;</h3>
+<p>&#x663E;&#x793A;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x8BBF;&#x95EE;type, tuple, module&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3002;&#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>expression</code>.<code>member name</code></p>
+</blockquote>
+<p>&#x8BE5;member &#x5C31;&#x662F;&#x67D0;&#x4E2A;type&#x5728;&#x58F0;&#x660E;&#x65F6;&#x5019;&#x6240;&#x5B9A;&#x4E49;&#xFF08;declaration or extension&#xFF09; &#x7684;&#x53D8;&#x91CF;, &#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">class</span> <span class="token class-name">SomeClass</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> someProperty <span class="token operator">=</span> <span class="token number">42</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> c <span class="token operator">=</span> <span class="token function">SomeClass<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> y <span class="token operator">=</span> c<span class="token punctuation">.</span>someProperty  <span class="token comment" spellcheck="true">// Member access</span>
+</code></pre>
+<p>&#x5BF9;&#x4E8E;tuple, &#x8981;&#x6839;&#x636E;&#x5B83;&#x4EEC;&#x51FA;&#x73B0;&#x7684;&#x987A;&#x5E8F;&#xFF08;0, 1, 2...&#xFF09;&#x6765;&#x4F7F;&#x7528;:</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> t <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span>
+t<span class="token punctuation">.</span><span class="token number">0</span> <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token number">1</span>
+<span class="token comment" spellcheck="true">// Now t is (20, 20, 30)</span>
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x67D0;&#x4E2A;module&#x7684;member&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x53EA;&#x80FD;&#x8C03;&#x7528;&#x5728;top-level&#x58F0;&#x660E;&#x4E2D;&#x7684;member.</p>
+<blockquote>
+<p>&#x663E;&#x5F0F;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x663E;&#x793A;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>.</strong> <a href="02_Lexical_Structure.html#decimal_digit"><em>&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;</em></a><br><em>&#x663E;&#x793A;&#x6210;&#x5458;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>.</strong> <a href="02_Lexical_Structure.html#identifier"><em>&#x6807;&#x8BC6;&#x7B26;</em></a> <a href="GenericParametersAndArguments.html#generic_argument_clause"><em>&#x6CDB;&#x578B;&#x53C2;&#x6570;&#x5B50;&#x53E5;</em></a> <em>&#x53EF;&#x9009;</em>  </p>
+</blockquote>
+<h3 id="&#x540E;&#x7F00;self&#x8868;&#x8FBE;&#x5F0F;&#xFF08;postfix-self-expression&#xFF09;">&#x540E;&#x7F00;self&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Postfix Self Expression&#xFF09;</h3>
+<p>&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7531; &#x67D0;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F; + &apos;.self&apos; &#x7EC4;&#x6210;. &#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>expression</code>.self<br><code>type</code>.self  </p>
+</blockquote>
+<p>&#x5F62;&#x5F0F;1 &#x8868;&#x793A;&#x4F1A;&#x8FD4;&#x56DE; expression &#x7684;&#x503C;&#x3002;&#x4F8B;&#x5982;&#xFF1A; x.self &#x8FD4;&#x56DE; x</p>
+<p>&#x5F62;&#x5F0F;2&#xFF1A;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;type&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x6765;&#x52A8;&#x6001;&#x7684;&#x83B7;&#x53D6;&#x67D0;&#x4E2A;instance&#x7684;type&#x3002;</p>
+<blockquote>
+<p>&#x540E;&#x7F6E;Self &#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x540E;&#x7F6E;self&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>.</strong> <strong>self</strong>  </p>
+</blockquote>
+<h3 id="dynamic&#x8868;&#x8FBE;&#x5F0F;&#xFF08;dynamic-type-expression&#xFF09;">dynamic&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Dynamic Type Expression&#xFF09;</h3>
+<p>&#xFF08;&#x56E0;&#x4E3A;dynamicType&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x4FDD;&#x7559;&#x4E86;&#x82F1;&#x6587;&#x5355;&#x8BCD;&#xFF0C;&#x672A;&#x4F5C;&#x7FFB;&#x8BD1;, --- &#x7C7B;&#x4F3C;&#x4E0E;self expression&#xFF09;</p>
+<p>dynamicType &#x8868;&#x8FBE;&#x5F0F;&#x7531; &#x67D0;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F; + &apos;.dynamicType&apos; &#x7EC4;&#x6210;&#x3002;</p>
+<blockquote>
+<p><code>expression</code>.dynamicType</p>
+</blockquote>
+<p>&#x4E0A;&#x9762;&#x7684;&#x5F62;&#x5F0F;&#x4E2D;&#xFF0C; expression &#x4E0D;&#x80FD;&#x662F;&#x67D0;type&#x7684;&#x540D;&#x5B57;&#xFF08;&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x90FD;&#x77E5;&#x9053;&#x5B83;&#x7684;&#x540D;&#x5B57;&#x4E86;&#x8FD8;&#x9700;&#x8981;&#x52A8;&#x6001;&#x6765;&#x83B7;&#x53D6;&#x5B83;&#x5417;&#xFF09;&#x3002;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x8868;&#x8FBE;&#x5F0F;&#x4F1A;&#x8FD4;&#x56DE;&quot;&#x8FD0;&#x884C;&#x65F6;&quot;&#x67D0;&#x4E2A;instance&#x7684;type, &#x5177;&#x4F53;&#x8BF7;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x5217;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">class</span> <span class="token class-name">SomeBaseClass</span> <span class="token punctuation">{</span>
+    <span class="token keyword">class</span> <span class="token class-name">func</span> <span class="token function">printClassName<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">println<span class="token punctuation">(</span></span><span class="token string">&quot;SomeBaseClass&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">SomeSubClass</span><span class="token punctuation">:</span> <span class="token builtin">SomeBaseClass</span> <span class="token punctuation">{</span>
+    <span class="token keyword">override</span> <span class="token keyword">class</span> <span class="token class-name">func</span> <span class="token function">printClassName<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">println<span class="token punctuation">(</span></span><span class="token string">&quot;SomeSubClass&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> someInstance<span class="token punctuation">:</span> <span class="token builtin">SomeBaseClass</span> <span class="token operator">=</span> <span class="token function">SomeSubClass<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// someInstance is of type SomeBaseClass at compile time, but</span>
+<span class="token comment" spellcheck="true">// someInstance is of type SomeSubClass at runtime</span>
+someInstance<span class="token punctuation">.</span><span class="token keyword">dynamicType</span><span class="token punctuation">.</span><span class="token function">printClassName<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// prints &quot;SomeSubClass&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>.</strong> <strong>dynamicType</strong>  </p>
+</blockquote>
+<h3 id="&#x4E0B;&#x6807;&#x811A;&#x672C;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;subscript-expression&#xFF09;">&#x4E0B;&#x6807;&#x811A;&#x672C;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Subscript Expression&#xFF09;</h3>
+<p>&#x4E0B;&#x6807;&#x811A;&#x672C;&#x8868;&#x8FBE;&#x5F0F;&#x63D0;&#x4F9B;&#x4E86;&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x811A;&#x672C;&#x8BBF;&#x95EE;getter/setter &#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p><code>expression</code>[<code>index expressions</code>]</p>
+</blockquote>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x811A;&#x672C;&#x8868;&#x8FBE;&#x5F0F;&#x901A;&#x8FC7;getter&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x901A;&#x8FC7;setter&#x8D4B;&#x4E88;&#x67D0;&#x4E2A;&#x503C;.</p>
+<p>&#x5173;&#x4E8E;subscript&#x7684;&#x58F0;&#x660E;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#xFF1A; Protocol Subscript Declaration.</p>
+<blockquote>
+<p>&#x9644;&#x5C5E;&#x811A;&#x672C;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x9644;&#x5C5E;&#x811A;&#x672C;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>[</strong> <a href="04_Expressions.html#expression_list"><em>&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;</em></a> <strong>]</strong>  </p>
+</blockquote>
+<h3 id="&#x5F3A;&#x5236;&#x53D6;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;forcedvalue-expression&#xFF09;">&#x5F3A;&#x5236;&#x53D6;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Forced-Value Expression&#xFF09;</h3>
+<p>&#x5F3A;&#x5236;&#x53D6;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#xFF08;&#x8BE5;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x5FC5;&#x987B;&#x4E0D;&#x662F;nil &#xFF09;&#x3002;&#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>expression</code>!</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4E0D;&#x662F;nil, &#x5219;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x3002; &#x5426;&#x5219;&#xFF0C;&#x629B;&#x51FA;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#xFF08;runtime error&#xFF09;&#x3002;
+&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x9700;&#x6539;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x88AB;&#x8D4B;&#x503C;&#x4E86;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x9020;&#x6210;&#x7684;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> x<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token operator">?</span> <span class="token operator">=</span> <span class="token number">0</span>
+x<span class="token operator">!</span><span class="token operator">++</span>
+<span class="token comment" spellcheck="true">// x is now 1</span>
+
+<span class="token keyword">var</span> someDictionary <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+someDictionary<span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">]</span><span class="token operator">!</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span>
+<span class="token comment" spellcheck="true">// someDictionary is now [b: [10, 20], a: [100, 2, 3]]</span>
+</code></pre>
+<blockquote>
+<p>&#x5F3A;&#x5236;&#x53D6;&#x503C;(Forced Value)&#x8BED;&#x6CD5;<br><em>&#x5F3A;&#x5236;&#x53D6;&#x503C;(Forced Value)&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>!</strong>  </p>
+</blockquote>
+<h3 id="&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;optionalchaining-expression&#xFF09;">&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Optional-Chaining Expression&#xFF09;</h3>
+<p>&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&#x7531;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F; + &apos;?&apos; &#x7EC4;&#x6210;&#xFF0C;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>expression</code>?</p>
+</blockquote>
+<p>&#x540E;&#x7F00;&apos;?&apos; &#x8FD4;&#x56DE;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#xFF0C;&#x628A;&#x5B83;&#x505A;&#x4E3A;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x540E;&#x7EED;&#x7684;&#x8868;&#x8FBE;&#x5F0F;</p>
+<p>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5305;&#x542B;&#x4E86;&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x5C31;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#xFF1A; &#x9996;&#x5148;&#x5148;&#x5224;&#x65AD;&#x8BE5;&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x662F; nil, &#x6574;&#x4E2A;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x8FD4;&#x56DE; nil, &#x5982;&#x679C;&#x8BE5;&#x53EF;&#x9009;&#x94FE;&#x7684;&#x503C;&#x4E0D;&#x662F;nil, &#x5219;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x8BE5;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#xFF08;&#x4F9D;&#x6B21;&#x6267;&#x884C;&#x5B83;&#x7684;&#x5404;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;&#x3002;&#x5728;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x4ECD;&#x7136;&#x662F;&#x4E00;&#x4E2A;optional type&#xFF08;In either case, the value of the postfix expression is still of an optional type&#xFF09;</p>
+<p>&#x5982;&#x679C;&#x67D0;&#x4E2A;&quot;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&quot;&#x7684;&quot;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&quot;&#x4E2D;&#x5305;&#x542B;&#x4E86;&quot;&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&quot;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x6709;&#x6700;&#x5916;&#x5C42;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x8FD4;&#x56DE;&#x7684;&#x624D;&#x662F;&#x4E00;&#x4E2A;optional type. &#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C; &#x5982;&#x679C;c &#x4E0D;&#x662F;nil, &#x90A3;&#x4E48; c?.property.performAction&#xFF08;&#xFF09; &#x8FD9;&#x53E5;&#x4EE3;&#x7801;&#x5728;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x5148;&#x83B7;&#x5F97;c &#x7684;property&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528; performAction&#xFF08;&#xFF09;&#x65B9;&#x6CD5;&#x3002; &#x7136;&#x540E;&#x5BF9;&#x4E8E; &quot;c?.property.performAction&#xFF08;&#xFF09;&quot; &#x8FD9;&#x4E2A;&#x6574;&#x4F53;&#xFF0C;&#x5B83;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;optional type.</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> c<span class="token punctuation">:</span> <span class="token builtin">SomeClass</span><span class="token operator">?</span>
+<span class="token keyword">var</span> result<span class="token punctuation">:</span> <span class="token builtin">Bool</span><span class="token operator">?</span> <span class="token operator">=</span> c<span class="token operator">?</span><span class="token punctuation">.</span>property<span class="token punctuation">.</span><span class="token function">performAction<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48; &#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x7684;&#x4EE3;&#x7801;&#x8DDF;&#x4E0B;&#x9762;&#x4F8B;&#x5B50;&#x7B49;&#x4EF7;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">if</span> <span class="token keyword">let</span> unwrappedC <span class="token operator">=</span> c <span class="token punctuation">{</span>
+    result <span class="token operator">=</span> unwrappedC<span class="token punctuation">.</span>property<span class="token punctuation">.</span><span class="token function">performAction<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x540E;&#x7F00;&apos;?&apos; &#x8FD4;&#x56DE;&#x76EE;&#x6807;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x7531;&#x4E8E;&#x51FA;&#x73B0;&#x4E86;&#x8D4B;&#x503C;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x800C;&#x4EA7;&#x751F;&#x7684;&#x4FEE;&#x6539;&#x3002;&#x5982;&#x679C;&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;<code>nil</code>&#xFF0C;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x53F3;&#x8FB9;&#x7684;&#x590D;&#x5236;&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">someFunctionWithSideEffects<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">42</span>  <span class="token comment" spellcheck="true">// No actual side effects.</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> someDictionary <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+
+someDictionary<span class="token punctuation">[</span><span class="token string">&quot;not here&quot;</span><span class="token punctuation">]</span><span class="token operator">?</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">someFunctionWithSideEffects<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// someFunctionWithSideEffects is not evaluated</span>
+<span class="token comment" spellcheck="true">// someDictionary is still [b: [10, 20], a: [1, 2, 3]]</span>
+
+someDictionary<span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">]</span><span class="token operator">?</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">someFunctionWithSideEffects<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// someFunctionWithSideEffects is evaluated and returns 42</span>
+<span class="token comment" spellcheck="true">// someDictionary is now [b: [10, 20], a: [42, 2, 3]]</span>
+</code></pre>
+<blockquote>
+<p>&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;<br><em>&#x53EF;&#x9009;&#x94FE;&#x8868;&#x8FBE;&#x5F0F;</em> &#x2192; <a href="04_Expressions.html#postfix_expression"><em>&#x540E;&#x7F6E;&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>?</strong>  </p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter3/03_Types.html" class="navigation navigation-prev " aria-label="Previous page: 类型"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter3/10_Statements.html" class="navigation navigation-next " aria-label="Next page: 语句"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"prism":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

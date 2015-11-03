@@ -1,0 +1,1314 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>泛型 | 2.0 新的开始</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-prism/prism-okaidia.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter2/24_Access_Control.html" />
+    
+    
+    <link rel="prev" href="../chapter2/22_Protocols.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.23" data-chapter-title="泛型" data-filepath="chapter2/23_Generics.md" data-basepath=".." data-revision="Tue Nov 03 2015 15:22:37 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/chapter1.html">
+            
+                
+                    <a href="../chapter1/chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        欢迎使用 Swift
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/01_swift.html">
+            
+                
+                    <a href="../chapter1/01_swift.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        关于 Swift
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/02_a_swift_tour.html">
+            
+                
+                    <a href="../chapter1/02_a_swift_tour.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Swift 初见
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/03_revision_history.html">
+            
+                
+                    <a href="../chapter1/03_revision_history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Swift 版本历史记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="v1.0.html">
+            
+                
+                    <a href="../v1.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Swift 1.0 发布内容
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/chapter2.html">
+            
+                
+                    <a href="../chapter2/chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Swift 教程
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_The_Basics.html">
+            
+                
+                    <a href="../chapter2/01_The_Basics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基础部分
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/02_Basic_Operators.html">
+            
+                
+                    <a href="../chapter2/02_Basic_Operators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        基本运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/03_Strings_and_Characters.html">
+            
+                
+                    <a href="../chapter2/03_Strings_and_Characters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        字符串和字符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter2/04_Collection_Types.html">
+            
+                
+                    <a href="../chapter2/04_Collection_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        集合类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="chapter2/05_Control_Flow.html">
+            
+                
+                    <a href="../chapter2/05_Control_Flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        控制流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="chapter2/06_Functions.html">
+            
+                
+                    <a href="../chapter2/06_Functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="chapter2/07_Closures.html">
+            
+                
+                    <a href="../chapter2/07_Closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="chapter2/08_Enumerations.html">
+            
+                
+                    <a href="../chapter2/08_Enumerations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        枚举
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="chapter2/09_Classes_and_Structures.html">
+            
+                
+                    <a href="../chapter2/09_Classes_and_Structures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        类和结构体
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="chapter2/10_Properties.html">
+            
+                
+                    <a href="../chapter2/10_Properties.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="chapter2/11_Methods.html">
+            
+                
+                    <a href="../chapter2/11_Methods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="chapter2/12_Subscripts.html">
+            
+                
+                    <a href="../chapter2/12_Subscripts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        下标脚本
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="chapter2/13_Inheritance.html">
+            
+                
+                    <a href="../chapter2/13_Inheritance.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="chapter2/14_Initialization.html">
+            
+                
+                    <a href="../chapter2/14_Initialization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        构造过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="chapter2/15_Deinitialization.html">
+            
+                
+                    <a href="../chapter2/15_Deinitialization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        析构过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="chapter2/16_Automatic_Reference_Counting.html">
+            
+                
+                    <a href="../chapter2/16_Automatic_Reference_Counting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        自动引用计数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="chapter2/17_Optional_Chaining.html">
+            
+                
+                    <a href="../chapter2/17_Optional_Chaining.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.17.</b>
+                        
+                        可选链
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="chapter2/18_Error_Handling.html">
+            
+                
+                    <a href="../chapter2/18_Error_Handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.18.</b>
+                        
+                        错误处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="chapter2/19_Type_Casting.html">
+            
+                
+                    <a href="../chapter2/19_Type_Casting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.19.</b>
+                        
+                        类型转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.20" data-path="chapter2/20_Nested_Types.html">
+            
+                
+                    <a href="../chapter2/20_Nested_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.20.</b>
+                        
+                        嵌套类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.21" data-path="chapter2/21_Extensions.html">
+            
+                
+                    <a href="../chapter2/21_Extensions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.21.</b>
+                        
+                        扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.22" data-path="chapter2/22_Protocols.html">
+            
+                
+                    <a href="../chapter2/22_Protocols.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.22.</b>
+                        
+                        协议
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.23" data-path="chapter2/23_Generics.html">
+            
+                
+                    <a href="../chapter2/23_Generics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.23.</b>
+                        
+                        泛型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.24" data-path="chapter2/24_Access_Control.html">
+            
+                
+                    <a href="../chapter2/24_Access_Control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.24.</b>
+                        
+                        权限控制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.25" data-path="chapter2/25_Advanced_Operators.html">
+            
+                
+                    <a href="../chapter2/25_Advanced_Operators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.25.</b>
+                        
+                        高级操作符
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 语言参考</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/01_About_the_Language_Reference.html">
+            
+                
+                    <a href="../chapter3/01_About_the_Language_Reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        关于语言参考
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_Lexical_Structure.html">
+            
+                
+                    <a href="../chapter3/02_Lexical_Structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        词法结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/03_Types.html">
+            
+                
+                    <a href="../chapter3/03_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter3/04_Expressions.html">
+            
+                
+                    <a href="../chapter3/04_Expressions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        表达式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter3/10_Statements.html">
+            
+                
+                    <a href="../chapter3/10_Statements.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter3/05_Declarations.html">
+            
+                
+                    <a href="../chapter3/05_Declarations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        声明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="chapter3/06_Attributes.html">
+            
+                
+                    <a href="../chapter3/06_Attributes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        特性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="chapter3/07_Patterns.html">
+            
+                
+                    <a href="../chapter3/07_Patterns.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="chapter3/08_Generic_Parameters_and_Arguments.html">
+            
+                
+                    <a href="../chapter3/08_Generic_Parameters_and_Arguments.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        泛型参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="chapter3/09_Summary_of_the_Grammar.html">
+            
+                
+                    <a href="../chapter3/09_Summary_of_the_Grammar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        语法总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 苹果官方Blog官方翻译</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/01_Access_Control.html">
+            
+                
+                    <a href="../chapter4/01_Access_Control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Access Control 权限控制的黑与白
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/02_Type_Custom.html">
+            
+                
+                    <a href="../chapter4/02_Type_Custom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        造个类型不是梦-白话Swift类型创建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_Ballons.html">
+            
+                
+                    <a href="../chapter4/03_Ballons.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        WWDC里面的那个“大炮打气球”
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/04_Interacting_with_C_Pointers.html">
+            
+                
+                    <a href="../chapter4/04_Interacting_with_C_Pointers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Swift与C语言指针友好合作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/05_Value_and_Reference_Types.html">
+            
+                
+                    <a href="../chapter4/05_Value_and_Reference_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        引用类型和值类型的恩怨
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/06_Access_Control_and_Protected.html">
+            
+                
+                    <a href="../chapter4/06_Access_Control_and_Protected.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        访问控制和Protected
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/07_Optional_Case_Study.html">
+            
+                
+                    <a href="../chapter4/07_Optional_Case_Study.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        可选类型完美解决占位问题
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >2.0 新的开始</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x6CDB;&#x578B;&#xFF08;generics&#xFF09;">&#x6CDB;&#x578B;&#xFF08;Generics&#xFF09;</h1>
+<hr>
+<blockquote>
+<p>1.0
+&#x7FFB;&#x8BD1;&#xFF1A;<a href="https://github.com/takalard" target="_blank">takalard</a>
+&#x6821;&#x5BF9;&#xFF1A;<a href="https://github.com/lifedim" target="_blank">lifedim</a></p>
+<p>2.0
+&#x7FFB;&#x8BD1;+&#x6821;&#x5BF9;&#xFF1A; <a href="https://github.com/SergioChan" target="_blank">SergioChan</a></p>
+<p>2.1
+&#x6821;&#x5BF9;&#xFF1A;<a href="http://codebuild.me" target="_blank">shanks</a>&#xFF0C;2015-11-01</p>
+</blockquote>
+<p>&#x672C;&#x9875;&#x5305;&#x542B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><a href="#the_problem_that_generics_solve">&#x6CDB;&#x578B;&#x6240;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;</a></li>
+<li><a href="#generic_functions">&#x6CDB;&#x578B;&#x51FD;&#x6570;</a></li>
+<li><a href="#type_parameters">&#x7C7B;&#x578B;&#x53C2;&#x6570;</a></li>
+<li><a href="#naming_type_parameters">&#x547D;&#x540D;&#x7C7B;&#x578B;&#x53C2;&#x6570;</a></li>
+<li><a href="#generic_types">&#x6CDB;&#x578B;&#x7C7B;&#x578B;</a></li>
+<li><a href="#extending_a_generic_type">&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;</a></li>
+<li><a href="#type_constraints">&#x7C7B;&#x578B;&#x7EA6;&#x675F;</a></li>
+<li><a href="#associated_types">&#x5173;&#x8054;&#x7C7B;&#x578B;</a></li>
+<li><a href="#where_clauses"><code>Where</code>&#x8BED;&#x53E5;</a></li>
+</ul>
+<p><em>&#x6CDB;&#x578B;&#x4EE3;&#x7801;</em>&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x5199;&#x51FA;&#x6839;&#x636E;&#x81EA;&#x6211;&#x9700;&#x6C42;&#x5B9A;&#x4E49;&#x3001;&#x9002;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x7075;&#x6D3B;&#x4E14;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x51FD;&#x6570;&#x548C;&#x7C7B;&#x578B;&#x3002;&#x5B83;&#x7684;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x907F;&#x514D;&#x91CD;&#x590D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x7528;&#x4E00;&#x79CD;&#x6E05;&#x6670;&#x548C;&#x62BD;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8868;&#x8FBE;&#x4EE3;&#x7801;&#x7684;&#x610F;&#x56FE;&#x3002;</p>
+<p>&#x6CDB;&#x578B;&#x662F; Swift &#x5F3A;&#x5927;&#x7279;&#x5F81;&#x4E2D;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#xFF0C;&#x8BB8;&#x591A; Swift &#x6807;&#x51C6;&#x5E93;&#x662F;&#x901A;&#x8FC7;&#x6CDB;&#x578B;&#x4EE3;&#x7801;&#x6784;&#x5EFA;&#x51FA;&#x6765;&#x7684;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x6CDB;&#x578B;&#x7684;&#x4F7F;&#x7528;&#x8D2F;&#x7A7F;&#x4E86;&#x6574;&#x672C;&#x8BED;&#x8A00;&#x624B;&#x518C;&#xFF0C;&#x53EA;&#x662F;&#x4F60;&#x6CA1;&#x6709;&#x53D1;&#x73B0;&#x800C;&#x5DF2;&#x3002;&#x4F8B;&#x5982;&#xFF0C;Swift &#x7684;&#x6570;&#x7EC4;&#x548C;&#x5B57;&#x5178;&#x7C7B;&#x578B;&#x90FD;&#x662F;&#x6CDB;&#x578B;&#x96C6;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>Int</code>&#x6570;&#x7EC4;&#xFF0C;&#x4E5F;&#x53EF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>String</code>&#x6570;&#x7EC4;&#xFF0C;&#x6216;&#x8005;&#x751A;&#x81F3;&#x4E8E;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x5176;&#x4ED6; Swift &#x7684;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x6570;&#x7EC4;&#x3002;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x4EFB;&#x4F55;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x5178;&#xFF08;dictionary&#xFF09;&#xFF0C;&#x800C;&#x4E14;&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x662F;&#x6CA1;&#x6709;&#x9650;&#x5236;&#x7684;&#x3002;</p>
+<p><a name="the_problem_that_generics_solve"></a></p>
+<h2 id="&#x6CDB;&#x578B;&#x6240;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;">&#x6CDB;&#x578B;&#x6240;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;</h2>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x7684;&#xFF0C;&#x975E;&#x6CDB;&#x578B;&#x51FD;&#x6570;<code>swapTwoInts</code>,&#x7528;&#x6765;&#x4EA4;&#x6362;&#x4E24;&#x4E2A;Int&#x503C;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">swapTwoInts<span class="token punctuation">(</span></span><span class="token keyword">inout</span> a<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">,</span> <span class="token keyword">inout</span> <span class="token number">_</span> b<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> temporaryA <span class="token operator">=</span> a
+  a <span class="token operator">=</span> b
+  b <span class="token operator">=</span> temporaryA
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x5199;&#x5165;&#x8BFB;&#x51FA;&#xFF08;in-out&#xFF09;&#x53C2;&#x6570;&#x6765;&#x4EA4;&#x6362;<code>a</code>&#x548C;<code>b</code>&#x7684;&#x503C;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;<a href="06_Functions.html#in_out_parameters">&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x53C2;&#x6570;</a>&#x3002;</p>
+<p><code>swapTwoInts(_:_:)</code>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4EA4;&#x6362;<code>b</code>&#x7684;&#x539F;&#x59CB;&#x503C;&#x5230;<code>a</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4EA4;&#x6362;a&#x7684;&#x539F;&#x59CB;&#x503C;&#x5230;<code>b</code>&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4EA4;&#x6362;&#x4E24;&#x4E2A;<code>Int</code>&#x53D8;&#x91CF;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> someInt <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">var</span> anotherInt <span class="token operator">=</span> <span class="token number">107</span>
+<span class="token function">swapTwoInts<span class="token punctuation">(</span></span><span class="token operator">&amp;</span>someInt<span class="token punctuation">,</span> <span class="token operator">&amp;</span>anotherInt<span class="token punctuation">)</span>
+<span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;someInt is now \(someInt), and anotherInt is now \(anotherInt)&quot;</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;someInt is now 107, and anotherInt is now 3&quot;</span>
+</code></pre>
+<p><code>swapTwoInts(_:_:)</code>&#x51FD;&#x6570;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x53EA;&#x80FD;&#x4EA4;&#x6362;<code>Int</code>&#x503C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x4EA4;&#x6362;&#x4E24;&#x4E2A;<code>String</code>&#x6216;&#x8005;<code>Double</code>&#xFF0C;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D;&#x5199;&#x66F4;&#x591A;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5982; <code>swapTwoStrings</code>&#x548C;<code>swapTwoDoubles(_:_:)</code>&#xFF0C;&#x5982;&#x540C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">swapTwoStrings<span class="token punctuation">(</span></span><span class="token keyword">inout</span> a<span class="token punctuation">:</span> <span class="token builtin">String</span><span class="token punctuation">,</span> <span class="token keyword">inout</span> <span class="token number">_</span> b<span class="token punctuation">:</span> <span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> temporaryA <span class="token operator">=</span> a
+    a <span class="token operator">=</span> b
+    b <span class="token operator">=</span> temporaryA
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">swapTwoDoubles<span class="token punctuation">(</span></span><span class="token keyword">inout</span> a<span class="token punctuation">:</span> <span class="token builtin">Double</span><span class="token punctuation">,</span> <span class="token keyword">inout</span> <span class="token number">_</span> b<span class="token punctuation">:</span> <span class="token builtin">Double</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> temporaryA <span class="token operator">=</span> a
+    a <span class="token operator">=</span> b
+    b <span class="token operator">=</span> temporaryA
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x6CE8;&#x610F;&#x5230; <code>swapTwoInts</code>&#x3001; <code>swapTwoStrings</code>&#x548C;<code>swapTwoDoubles(_:_:)</code>&#x51FD;&#x6570;&#x529F;&#x80FD;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x552F;&#x4E00;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5C31;&#x5728;&#x4E8E;&#x4F20;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x4E0D;&#x540C;&#xFF0C;&#x5206;&#x522B;&#x662F;<code>Int</code>&#x3001;<code>String</code>&#x548C;<code>Double</code>&#x3002;</p>
+<p>&#x4F46;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#x901A;&#x5E38;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7528;&#x5904;&#x66F4;&#x5F3A;&#x5927;&#x5E76;&#x4E14;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x8003;&#x8651;&#x5230;&#x66F4;&#x591A;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x5355;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4EA4;&#x6362;&#x4E24;&#x4E2A;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x503C;&#xFF0C;&#x5F88;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x6CDB;&#x578B;&#x4EE3;&#x7801;&#x5E2E;&#x4F60;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x79CD;&#x95EE;&#x9898;&#x3002;&#xFF08;&#x4E00;&#x4E2A;&#x8FD9;&#x79CD;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x540E;&#x9762;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#x3002;&#xFF09;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x5728;&#x6240;&#x6709;&#x4E09;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;<code>a</code>&#x548C;<code>b</code>&#x7684;&#x7C7B;&#x578B;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x5982;&#x679C;<code>a</code>&#x548C;<code>b</code>&#x4E0D;&#x662F;&#x76F8;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x90A3;&#x5B83;&#x4EEC;&#x4FE9;&#x5C31;&#x4E0D;&#x80FD;&#x4E92;&#x6362;&#x503C;&#x3002;Swift &#x662F;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4E0D;&#x5141;&#x8BB8;&#x4E00;&#x4E2A;<code>String</code>&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x4E00;&#x4E2A;<code>Double</code>&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x4E92;&#x76F8;&#x4EA4;&#x6362;&#x503C;&#x3002;&#x5982;&#x679C;&#x4E00;&#x5B9A;&#x8981;&#x505A;&#xFF0C;Swift &#x5C06;&#x62A5;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#x3002;</p>
+</blockquote>
+<p><a name="generic_functions"></a></p>
+<h2 id="&#x6CDB;&#x578B;&#x51FD;&#x6570;">&#x6CDB;&#x578B;&#x51FD;&#x6570;</h2>
+<p><code>&#x6CDB;&#x578B;&#x51FD;&#x6570;</code>&#x53EF;&#x4EE5;&#x5DE5;&#x4F5C;&#x4E8E;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x4E0A;&#x9762;<code>swapTwoInts(_:_:)</code>&#x51FD;&#x6570;&#x7684;&#x6CDB;&#x578B;&#x7248;&#x672C;&#xFF0C;&#x7528;&#x4E8E;&#x4EA4;&#x6362;&#x4E24;&#x4E2A;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> swapTwoValues<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token keyword">inout</span> a<span class="token punctuation">:</span> T<span class="token punctuation">,</span> <span class="token keyword">inout</span> <span class="token number">_</span> b<span class="token punctuation">:</span> T<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> temporaryA <span class="token operator">=</span> a
+    a <span class="token operator">=</span> b
+    b <span class="token operator">=</span> temporaryA
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>swapTwoValues(_:_:)</code>&#x51FD;&#x6570;&#x4E3B;&#x4F53;&#x548C;<code>swapTwoInts(_:_:)</code>&#x51FD;&#x6570;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5B83;&#x53EA;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x7A0D;&#x5FAE;&#x6709;&#x90A3;&#x4E48;&#x4E00;&#x70B9;&#x70B9;&#x4E0D;&#x540C;&#x4E8E;<code>swapTwoInts</code>&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">swapTwoInts<span class="token punctuation">(</span></span><span class="token keyword">inout</span> a<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">,</span> <span class="token keyword">inout</span> <span class="token number">_</span> b<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span>
+<span class="token keyword">func</span> swapTwoValues<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token keyword">inout</span> a<span class="token punctuation">:</span> T<span class="token punctuation">,</span> <span class="token keyword">inout</span> <span class="token number">_</span> b<span class="token punctuation">:</span> T<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x6CDB;&#x578B;&#x7248;&#x672C;&#x4F7F;&#x7528;&#x4E86;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#x540D;&#x5B57;&#xFF08;&#x901A;&#x5E38;&#x6B64;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x5B57;&#x6BCD;<code>T</code>&#x6765;&#x8868;&#x793A;&#xFF09;&#x6765;&#x4EE3;&#x66FF;&#x5B9E;&#x9645;&#x7C7B;&#x578B;&#x540D;&#xFF08;&#x5982;<code>Int</code>&#x3001;<code>String</code>&#x6216;<code>Double</code>&#xFF09;&#x3002;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#x540D;&#x6CA1;&#x6709;&#x63D0;&#x793A;<code>T</code>&#x5FC5;&#x987B;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x63D0;&#x793A;&#x4E86;<code>a</code>&#x548C;<code>b</code>&#x5FC5;&#x987B;&#x662F;&#x540C;&#x4E00;&#x7C7B;&#x578B;<code>T</code>&#xFF0C;&#x800C;&#x4E0D;&#x7BA1;<code>T</code>&#x8868;&#x793A;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x3002;&#x53EA;&#x6709;<code>swapTwoValues(_:_:)</code>&#x51FD;&#x6570;&#x5728;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x65F6;&#x6240;&#x4F20;&#x5165;&#x7684;&#x5B9E;&#x9645;&#x7C7B;&#x578B;&#x624D;&#x80FD;&#x51B3;&#x5B9A;<code>T</code>&#x6240;&#x4EE3;&#x8868;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#x8FD9;&#x4E2A;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x540D;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7684;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#x540D;&#x5B57;&#xFF08;T&#xFF09;&#x662F;&#x7528;&#x5C16;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#xFF08;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span></code>&#xFF09;&#x3002;&#x8FD9;&#x4E2A;&#x5C16;&#x62EC;&#x53F7;&#x544A;&#x8BC9; Swift &#x90A3;&#x4E2A;<code>T</code>&#x662F;<code>swapTwoValues(_:_:)</code>&#x51FD;&#x6570;&#x6240;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x3002;&#x56E0;&#x4E3A;<code>T</code>&#x662F;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x547D;&#x540D;&#x7C7B;&#x578B;&#xFF0C;Swift &#x4E0D;&#x4F1A;&#x53BB;&#x67E5;&#x627E;&#x547D;&#x540D;&#x4E3A;T&#x7684;&#x5B9E;&#x9645;&#x7C7B;&#x578B;&#x3002;</p>
+<p><code>swapTwoValues(_:_:)</code>&#x51FD;&#x6570;&#x9664;&#x4E86;&#x8981;&#x6C42;&#x4F20;&#x5165;&#x7684;&#x4E24;&#x4E2A;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x503C;&#x662F;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;<code>swapTwoInts</code>&#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x6BCF;&#x6B21;<code>swapTwoValues</code>&#x88AB;&#x8C03;&#x7528;&#xFF0C;T&#x6240;&#x4EE3;&#x8868;&#x7684;&#x7C7B;&#x578B;&#x503C;&#x90FD;&#x4F1A;&#x4F20;&#x7ED9;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;,<code>T</code>&#x5206;&#x522B;&#x4EE3;&#x8868;<code>Int</code>&#x548C;<code>String</code>&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> someInt <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">var</span> anotherInt <span class="token operator">=</span> <span class="token number">107</span>
+<span class="token function">swapTwoValues<span class="token punctuation">(</span></span><span class="token operator">&amp;</span>someInt<span class="token punctuation">,</span> <span class="token operator">&amp;</span>anotherInt<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// someInt &#x73B0;&#x5728;&#x7B49;&#x4E8E; 107, anotherInt &#x73B0;&#x5728;&#x7B49;&#x4E8E; 3</span>
+
+<span class="token keyword">var</span> someString <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span>
+<span class="token keyword">var</span> anotherString <span class="token operator">=</span> <span class="token string">&quot;world&quot;</span>
+<span class="token function">swapTwoValues<span class="token punctuation">(</span></span><span class="token operator">&amp;</span>someString<span class="token punctuation">,</span> <span class="token operator">&amp;</span>anotherString<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// someString &#x73B0;&#x5728;&#x7B49;&#x4E8E; &quot;world&quot;, anotherString &#x73B0;&#x5728;&#x7B49;&#x4E8E; &quot;hello&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;
+&#x4E0A;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;<code>swapTwoValues(_:_:)</code>&#x662F;&#x53D7;<code>swap</code>&#x51FD;&#x6570;&#x542F;&#x53D1;&#x800C;&#x5B9E;&#x73B0;&#x7684;&#x3002;<code>swap</code>&#x51FD;&#x6570;&#x5B58;&#x5728;&#x4E8E; Swift &#x6807;&#x51C6;&#x5E93;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x5B83;&#x7C7B;&#x4E2D;&#x4EFB;&#x610F;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x81EA;&#x5DF1;&#x4EE3;&#x7801;&#x4E2D;&#x9700;&#x8981;&#x7C7B;&#x4F3C;<code>swapTwoValues(_:_:)</code>&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x4EA4;&#x6362;&#x51FD;&#x6570;<code>swap(_:_:)</code>&#x51FD;&#x6570;&#x3002;</p>
+</blockquote>
+<p><a name="type_parameters"></a></p>
+<h2 id="&#x7C7B;&#x578B;&#x53C2;&#x6570;">&#x7C7B;&#x578B;&#x53C2;&#x6570;</h2>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;<code>swapTwoValues</code>&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5360;&#x4F4D;&#x7C7B;&#x578B;<code>T</code>&#x662F;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x793A;&#x4F8B;&#x3002;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x5E76;&#x547D;&#x540D;&#x4E3A;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x7D27;&#x968F;&#x5728;&#x51FD;&#x6570;&#x540D;&#x540E;&#x9762;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x5BF9;&#x5C16;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#xFF08;&#x5982;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span></code>&#xFF09;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x88AB;&#x6307;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x53EF;&#x4EE5;&#x88AB;&#x4F7F;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#xFF08;&#x5982;<code>swapTwoValues(_:_:)</code>&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x53C2;&#x6570;<code>a</code>&#x548C;<code>b</code>&#xFF09;&#xFF0C;&#x6216;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#xFF0C;&#x6216;&#x7528;&#x4F5C;&#x51FD;&#x6570;&#x4E3B;&#x4F53;&#x4E2D;&#x7684;&#x6CE8;&#x91CA;&#x7C7B;&#x578B;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x88AB;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x6240;&#x4EE3;&#x8868;&#x7684;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#x4E0D;&#x7BA1;&#x51FD;&#x6570;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x90FD;&#x4F1A;&#x88AB;&#x5B9E;&#x9645;&#x7C7B;&#x578B;&#x6240;&#x66FF;&#x6362;&#xFF08;&#x5728;&#x4E0A;&#x9762;<code>swapTwoValues</code>&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5F53;&#x51FD;&#x6570;&#x7B2C;&#x4E00;&#x6B21;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;<code>T</code>&#x88AB;<code>Int</code>&#x66FF;&#x6362;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x88AB;<code>String</code>&#x66FF;&#x6362;&#x3002;&#xFF09;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x547D;&#x540D;&#x5728;&#x5C16;&#x62EC;&#x53F7;&#x4E2D;&#xFF0C;&#x7528;&#x9017;&#x53F7;&#x5206;&#x5F00;&#x3002;</p>
+<p><a name="naming_type_parameters"></a></p>
+<h2 id="&#x547D;&#x540D;&#x7C7B;&#x578B;&#x53C2;&#x6570;">&#x547D;&#x540D;&#x7C7B;&#x578B;&#x53C2;&#x6570;</h2>
+<p>&#x5728;&#x7B80;&#x5355;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x6216;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#xFF08;&#x5982;&#x4E0A;&#x9762;&#x7684;<code>swapTwoValues</code>&#x6CDB;&#x578B;&#x51FD;&#x6570;&#xFF0C;&#x6216;&#x4E00;&#x4E2A;&#x5B58;&#x50A8;&#x5355;&#x4E00;&#x7C7B;&#x578B;&#x7684;&#x6CDB;&#x578B;&#x96C6;&#xFF0C;&#x5982;&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x4E00;&#x5355;&#x4E2A;&#x5B57;&#x6BCD;<code>T</code>&#x6765;&#x547D;&#x540D;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x6709;&#x6548;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x6765;&#x4F5C;&#x4E3A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x540D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x66F4;&#x590D;&#x6742;&#x7684;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x6216;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684;&#x63CF;&#x8FF0;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x3002;&#x4F8B;&#x5982;&#xFF0C;Swift &#x5B57;&#x5178;&#xFF08;Dictionary&#xFF09;&#x7C7B;&#x578B;&#x6709;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x952E;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x662F;&#x503C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x81EA;&#x5DF1;&#x5199;&#x5B57;&#x5178;&#xFF0C;&#x4F60;&#x6216;&#x8BB8;&#x4F1A;&#x5B9A;&#x4E49;&#x8FD9;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x4E3A;<code>Key</code>&#x548C;<code>Value</code>&#xFF0C;&#x7528;&#x6765;&#x8BB0;&#x4F4F;&#x5B83;&#x4EEC;&#x5728;&#x4F60;&#x7684;&#x6CDB;&#x578B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x4F5C;&#x7528;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;
+&#x8BF7;&#x59CB;&#x7EC8;&#x4F7F;&#x7528;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x5F00;&#x5934;&#x7684;&#x9A7C;&#x5CF0;&#x5F0F;&#x547D;&#x540D;&#x6CD5;&#xFF08;&#x4F8B;&#x5982;<code>T</code>&#x548C;<code>Key</code>&#xFF09;&#x6765;&#x7ED9;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x547D;&#x540D;&#xFF0C;&#x4EE5;&#x8868;&#x660E;&#x5B83;&#x4EEC;&#x662F;&#x7C7B;&#x578B;&#x7684;&#x5360;&#x4F4D;&#x7B26;&#xFF0C;&#x800C;&#x975E;&#x7C7B;&#x578B;&#x503C;&#x3002;</p>
+</blockquote>
+<p><a name="generic_types"></a></p>
+<h2 id="&#x6CDB;&#x578B;&#x7C7B;&#x578B;">&#x6CDB;&#x578B;&#x7C7B;&#x578B;</h2>
+<p>&#x901A;&#x5E38;&#x5728;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;Swift &#x5141;&#x8BB8;&#x4F60;&#x5B9A;&#x4E49;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x4E9B;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x3001;&#x7ED3;&#x6784;&#x4F53;&#x548C;&#x679A;&#x4E3E;&#x4F5C;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x540C;<code>Array</code>&#x548C;<code>Dictionary</code>&#x7684;&#x7528;&#x6CD5;&#x3002;</p>
+<p>&#x8FD9;&#x90E8;&#x5206;&#x5411;&#x4F60;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x5199;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x96C6;&#x7C7B;&#x578B;--<code>Stack</code>&#xFF08;&#x6808;&#xFF09;&#x3002;&#x4E00;&#x4E2A;&#x6808;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x503C;&#x57DF;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x548C;<code>Array</code>&#xFF08;&#x6570;&#x7EC4;&#xFF09;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x5176;&#x662F;&#x4E00;&#x4E2A;&#x6BD4; Swift &#x7684;<code>Array</code>&#x7C7B;&#x578B;&#x66F4;&#x591A;&#x9650;&#x5236;&#x7684;&#x96C6;&#x5408;&#x3002;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x53EF;&#x4EE5;&#x5141;&#x8BB8;&#x5176;&#x91CC;&#x9762;&#x4EFB;&#x4F55;&#x4F4D;&#x7F6E;&#x7684;&#x63D2;&#x5165;/&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x6808;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x5728;&#x96C6;&#x5408;&#x7684;&#x672B;&#x7AEF;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x9879;&#xFF08;&#x5982;&#x540C;<em>push</em>&#x4E00;&#x4E2A;&#x65B0;&#x503C;&#x8FDB;&#x6808;&#xFF09;&#x3002;&#x540C;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x6808;&#x4E5F;&#x53EA;&#x80FD;&#x4ECE;&#x672B;&#x7AEF;&#x79FB;&#x9664;&#x9879;&#xFF08;&#x5982;&#x540C;<em>pop</em>&#x4E00;&#x4E2A;&#x503C;&#x51FA;&#x6808;&#xFF09;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;
+&#x6808;&#x7684;&#x6982;&#x5FF5;&#x5DF2;&#x88AB;<code>UINavigationController</code>&#x7C7B;&#x4F7F;&#x7528;&#x6765;&#x6A21;&#x62DF;&#x8BD5;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5BFC;&#x822A;&#x7ED3;&#x6784;&#x3002;&#x4F60;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>UINavigationController</code>&#x7684;<code>pushViewController(_:animated:)</code>&#x65B9;&#x6CD5;&#x6765;&#x4E3A;&#x5BFC;&#x822A;&#x6808;&#x6DFB;&#x52A0;&#xFF08;add&#xFF09;&#x65B0;&#x7684;&#x8BD5;&#x56FE;&#x63A7;&#x5236;&#x5668;&#xFF1B;&#x800C;&#x901A;&#x8FC7;<code>popViewControllerAnimated(_:)</code>&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x4ECE;&#x5BFC;&#x822A;&#x6808;&#x4E2D;&#x79FB;&#x9664;&#xFF08;pop&#xFF09;&#x67D0;&#x4E2A;&#x8BD5;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x3002;&#x6BCF;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4E25;&#x683C;&#x7684;<code>&#x540E;&#x8FDB;&#x5148;&#x51FA;</code>&#x65B9;&#x5F0F;&#x6765;&#x7BA1;&#x7406;&#x96C6;&#x5408;&#xFF0C;&#x5806;&#x6808;&#x90FD;&#x662F;&#x6700;&#x5B9E;&#x7528;&#x7684;&#x6A21;&#x578B;&#x3002;</p>
+</blockquote>
+<p>&#x4E0B;&#x56FE;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;&#x6808;&#x7684;&#x538B;&#x6808;(push)/&#x51FA;&#x6808;(pop)&#x7684;&#x884C;&#x4E3A;&#xFF1A;</p>
+<p><img src="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Art/stackPushPop_2x.png" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;"></p>
+<ol>
+<li>&#x73B0;&#x5728;&#x6709;&#x4E09;&#x4E2A;&#x503C;&#x5728;&#x6808;&#x4E2D;&#xFF1B;</li>
+<li>&#x7B2C;&#x56DB;&#x4E2A;&#x503C;&#x201C;pushed&#x201D;&#x5230;&#x6808;&#x7684;&#x9876;&#x90E8;&#xFF1B;</li>
+<li>&#x73B0;&#x5728;&#x6709;&#x56DB;&#x4E2A;&#x503C;&#x5728;&#x6808;&#x4E2D;&#xFF0C;&#x6700;&#x8FD1;&#x7684;&#x90A3;&#x4E2A;&#x5728;&#x9876;&#x90E8;&#xFF1B;</li>
+<li>&#x6808;&#x4E2D;&#x6700;&#x9876;&#x90E8;&#x7684;&#x90A3;&#x4E2A;&#x9879;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x6216;&#x79F0;&#x4E4B;&#x4E3A;&#x201C;popped&#x201D;&#xFF1B;</li>
+<li>&#x79FB;&#x9664;&#x6389;&#x4E00;&#x4E2A;&#x503C;&#x540E;&#xFF0C;&#x73B0;&#x5728;&#x6808;&#x53C8;&#x91CD;&#x65B0;&#x53EA;&#x6709;&#x4E09;&#x4E2A;&#x503C;&#x3002;</li>
+</ol>
+<p>&#x8FD9;&#x91CC;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x5199;&#x4E00;&#x4E2A;&#x975E;&#x6CDB;&#x578B;&#x7248;&#x672C;&#x7684;&#x6808;&#xFF0C;<code>Int</code>&#x503C;&#x578B;&#x7684;&#x6808;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">struct</span> <span class="token builtin">IntStack</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> items <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">Int</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">push<span class="token punctuation">(</span></span>item<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        items<span class="token punctuation">.</span><span class="token function">append<span class="token punctuation">(</span></span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">pop<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">.</span><span class="token function">removeLast<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x5728;&#x6808;&#x4E2D;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;<code>Array</code>&#x6027;&#x8D28;&#x7684;<code>items</code>&#x5B58;&#x50A8;&#x503C;&#x3002;<code>Stack</code>&#x63D0;&#x4F9B;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;<code>push</code>&#x548C;<code>pop</code>&#xFF0C;&#x4ECE;&#x6808;&#x4E2D;&#x538B;&#x8FDB;&#x4E00;&#x4E2A;&#x503C;&#x548C;&#x79FB;&#x9664;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x6807;&#x8BB0;&#x4E3A;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x9700;&#x8981;&#x4FEE;&#x6539;&#xFF08;&#x6216;<em>&#x8F6C;&#x6362;</em>&#xFF09;&#x7ED3;&#x6784;&#x4F53;&#x7684;<code>items</code>&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x6240;&#x5C55;&#x73B0;&#x7684;<code>IntStack</code>&#x7C7B;&#x578B;&#x53EA;&#x80FD;&#x7528;&#x4E8E;<code>Int</code>&#x503C;&#xFF0C;&#x4E0D;&#x8FC7;&#xFF0C;&#x5176;&#x5BF9;&#x4E8E;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;<code>Stack</code>&#x7C7B;&#xFF08;&#x53EF;&#x4EE5;&#x5904;&#x7406;<em>&#x4EFB;&#x4F55;</em>&#x7C7B;&#x578B;&#x503C;&#x7684;&#x6808;&#xFF09;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x76F8;&#x540C;&#x4EE3;&#x7801;&#x7684;&#x6CDB;&#x578B;&#x7248;&#x672C;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">struct</span> <span class="token builtin">Stack</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> items <span class="token operator">=</span> <span class="token punctuation">[</span>T<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">push<span class="token punctuation">(</span></span>item<span class="token punctuation">:</span> T<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        items<span class="token punctuation">.</span><span class="token function">append<span class="token punctuation">(</span></span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">pop<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> T <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">.</span><span class="token function">removeLast<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x5230;<code>Stack</code>&#x7684;&#x6CDB;&#x578B;&#x7248;&#x672C;&#x57FA;&#x672C;&#x4E0A;&#x548C;&#x975E;&#x6CDB;&#x578B;&#x7248;&#x672C;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x662F;&#x6CDB;&#x578B;&#x7248;&#x672C;&#x7684;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x4E3A;T&#x4EE3;&#x66FF;&#x4E86;&#x5B9E;&#x9645;<code>Int</code>&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5305;&#x542B;&#x5728;&#x4E00;&#x5BF9;&#x5C16;&#x62EC;&#x53F7;&#x91CC;&#xFF08;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span></code>&#xFF09;&#xFF0C;&#x7D27;&#x968F;&#x5728;&#x7ED3;&#x6784;&#x4F53;&#x540D;&#x5B57;&#x540E;&#x9762;&#x3002;</p>
+<p><code>T</code>&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;&#x201C;&#x67D0;&#x79CD;&#x7C7B;&#x578B;T&#x201D;&#x7684;&#x8282;&#x70B9;&#x63D0;&#x4F9B;&#x7ED9;&#x540E;&#x6765;&#x7528;&#x3002;&#x8FD9;&#x79CD;&#x5C06;&#x6765;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x5728;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5B9A;&#x4E49;&#x91CC;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x8868;&#x793A;&#x4E3A;&#x201C;T&#x201D;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>T</code>&#x5728;&#x5982;&#x4E0B;&#x4E09;&#x4E2A;&#x5730;&#x65B9;&#x88AB;&#x7528;&#x4F5C;&#x8282;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>items</code>&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x4F7F;&#x7528;&#x7A7A;&#x7684;T&#x7C7B;&#x578B;&#x503C;&#x6570;&#x7EC4;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF1B;</li>
+<li>&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x540D;&#x4E3A;<code>item</code>&#x7684;<code>push(_:)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x662F;T&#x7C7B;&#x578B;&#xFF1B;</li>
+<li>&#x6307;&#x5B9A;&#x4E00;&#x4E2A;<code>pop</code>&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x8BE5;&#x8FD4;&#x56DE;&#x503C;&#x5C06;&#x662F;&#x4E00;&#x4E2A;T&#x7C7B;&#x578B;&#x503C;&#x3002;</li>
+</ul>
+<p>&#x7531;&#x4E8E;<code>Stack</code>&#x662F;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x5728; Swift &#x4E2D;&#x5176;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x4EFB;&#x4F55;&#x6709;&#x6548;&#x7C7B;&#x578B;&#x7684;&#x6808;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5982;&#x540C;<code>Array</code>&#x548C;<code>Dictionary</code>&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x5C16;&#x62EC;&#x53F7;&#x91CC;&#x5199;&#x51FA;&#x6808;&#x4E2D;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6765;&#x521B;&#x5EFA;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;<code>Stack</code>&#x5B9E;&#x4F8B;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>strings</code>&#x7684;&#x6808;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5199;&#x6210;<code>Stack<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>String</span><span class="token punctuation">&gt;</span></span>()</code>&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> stackOfStrings <span class="token operator">=</span> <span class="token builtin">Stack</span><span class="token operator">&lt;</span><span class="token builtin">String</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+stackOfStrings<span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span><span class="token string">&quot;uno&quot;</span><span class="token punctuation">)</span>
+stackOfStrings<span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span><span class="token string">&quot;dos&quot;</span><span class="token punctuation">)</span>
+stackOfStrings<span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span><span class="token string">&quot;tres&quot;</span><span class="token punctuation">)</span>
+stackOfStrings<span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span><span class="token string">&quot;cuatro&quot;</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// &#x73B0;&#x5728;&#x6808;&#x5DF2;&#x7ECF;&#x6709;4&#x4E2A;string&#x4E86;</span>
+</code></pre>
+<p>&#x4E0B;&#x56FE;&#x5C06;&#x5C55;&#x793A;<code>stackOfStrings</code>&#x5982;&#x4F55;<code>push</code>&#x8FD9;&#x56DB;&#x4E2A;&#x503C;&#x8FDB;&#x6808;&#x7684;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<p><img src="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Art/stackPushedFourStrings_2x.png" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;"></p>
+<p>&#x4ECE;&#x6808;&#x4E2D;<code>pop</code>&#x5E76;&#x79FB;&#x9664;&#x503C;&quot;cuatro&quot;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">let</span> fromTheTop <span class="token operator">=</span> stackOfStrings<span class="token punctuation">.</span><span class="token function">pop<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// fromTheTop &#x7B49;&#x4E8E; &quot;cuatro&quot;, &#x73B0;&#x5728;&#x6808;&#x4E2D;&#x8FD8;&#x6709;3&#x4E2A;string</span>
+</code></pre>
+<p>&#x4E0B;&#x56FE;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4ECE;&#x6808;&#x4E2D;pop&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<p><img src="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Art/stackPoppedOneString_2x.png" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;"></p>
+<p><a name="extending_a_generic_type"></a></p>
+<h2 id="&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;">&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;</h2>
+<p>&#x5F53;&#x4F60;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x6269;&#x5C55;&#x7684;&#x5B9A;&#x4E49;&#x4E2D;&#x63D0;&#x4F9B;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;&#x66F4;&#x52A0;&#x65B9;&#x4FBF;&#x7684;&#x662F;&#xFF0C;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x4E2D;&#x58F0;&#x660E;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5217;&#x8868;&#x5728;&#x6269;&#x5C55;&#x91CC;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x6765;&#x81EA;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x540D;&#x79F0;&#x4F1A;&#x88AB;&#x7528;&#x4F5C;&#x539F;&#x59CB;&#x5B9A;&#x4E49;&#x4E2D;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7684;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x6269;&#x5C55;&#x4E86;&#x6CDB;&#x578B;<code>Stack</code>&#x7C7B;&#x578B;&#xFF0C;&#x4E3A;&#x5176;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>topItem</code>&#x7684;&#x53EA;&#x8BFB;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6808;&#x9876;&#x7AEF;&#x7684;&#x5143;&#x7D20;&#x800C;&#x4E0D;&#x4F1A;&#x5C06;&#x5176;&#x4ECE;&#x6808;&#x4E2D;&#x79FB;&#x9664;&#x3002;</p>
+<pre><code class="lang-swift"><span class="token keyword">extension</span> <span class="token builtin">Stack</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> topItem<span class="token punctuation">:</span> T<span class="token operator">?</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">.</span><span class="token builtin">isEmpty</span> <span class="token operator">?</span> <span class="token constant">nil</span> <span class="token punctuation">:</span> items<span class="token punctuation">[</span>items<span class="token punctuation">.</span><span class="token builtin">count</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>topItem</code>&#x5C5E;&#x6027;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>T</code>&#x7C7B;&#x578B;&#x7684;&#x53EF;&#x9009;&#x503C;&#x3002;&#x5F53;&#x6808;&#x4E3A;&#x7A7A;&#x7684;&#x65F6;&#x5019;&#xFF0C;<code>topItem</code>&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;<code>nil</code>&#xFF1B;&#x5F53;&#x6808;&#x4E0D;&#x4E3A;&#x7A7A;&#x7684;&#x65F6;&#x5019;&#xFF0C;<code>topItem</code>&#x4F1A;&#x8FD4;&#x56DE;<code>items</code>&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684;&#x6269;&#x5C55;&#x5E76;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;&#x76F8;&#x53CD;&#x7684;&#xFF0C;<code>Stack</code>&#x7C7B;&#x578B;&#x5DF2;&#x6709;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x540D;&#x79F0;&#xFF0C;<code>T</code>&#xFF0C;&#x88AB;&#x7528;&#x5728;&#x6269;&#x5C55;&#x4E2D;&#x5F53;&#x505A;<code>topItem</code>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x7684;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x3002;</p>
+<p><code>topItem</code>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x8FD4;&#x56DE;&#x4EFB;&#x610F;<code>Stack</code>&#x5B9E;&#x4F8B;&#x7684;&#x9876;&#x7AEF;&#x5143;&#x7D20;&#x800C;&#x65E0;&#x9700;&#x79FB;&#x9664;&#x5B83;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">if</span> <span class="token keyword">let</span> topItem <span class="token operator">=</span> stackOfStrings<span class="token punctuation">.</span>topItem <span class="token punctuation">{</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;The top item on the stack is \(topItem).&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;The top item on the stack is tres.&quot;</span>
+</code></pre>
+<p><a name="type_constraints"></a></p>
+<h2 id="&#x7C7B;&#x578B;&#x7EA6;&#x675F;">&#x7C7B;&#x578B;&#x7EA6;&#x675F;</h2>
+<p><code>swapTwoValues(_:_:)</code>&#x51FD;&#x6570;&#x548C;<code>Stack</code>&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x8FC7;&#xFF0C;&#x6709;&#x7684;&#x65F6;&#x5019;&#x5BF9;&#x4F7F;&#x7528;&#x5728;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x548C;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x4E0A;&#x7684;&#x7C7B;&#x578B;&#x5F3A;&#x5236;&#x7EA6;&#x675F;&#x4E3A;&#x67D0;&#x79CD;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x3002;&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x5FC5;&#x987B;&#x7EE7;&#x627F;&#x81EA;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x9075;&#x5FAA;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x534F;&#x8BAE;&#x6216;&#x534F;&#x8BAE;&#x6784;&#x6210;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;Swift &#x7684;<code>Dictionary</code>&#x7C7B;&#x578B;&#x5BF9;&#x4F5C;&#x7528;&#x4E8E;&#x5176;&#x952E;&#x7684;&#x7C7B;&#x578B;&#x505A;&#x4E86;&#x4E9B;&#x9650;&#x5236;&#x3002;&#x5728;<a href="04_Collection_Types.html#dictionaries">&#x5B57;&#x5178;</a>&#x7684;&#x63CF;&#x8FF0;&#x4E2D;&#xFF0C;&#x5B57;&#x5178;&#x7684;&#x952E;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x662F;<em>&#x53EF;&#x54C8;&#x5E0C;</em>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x4F7F;&#x5176;&#x88AB;&#x552F;&#x4E00;&#x7684;&#x8868;&#x793A;&#x3002;<code>Dictionary</code>&#x4E4B;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5176;&#x952E;&#x662F;&#x53EF;&#x54C8;&#x5E0C;&#x662F;&#x4E3A;&#x4E86;&#x4EE5;&#x4FBF;&#x4E8E;&#x5176;&#x68C0;&#x67E5;&#x5176;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x952E;&#x7684;&#x503C;&#x3002;&#x5982;&#x65E0;&#x6B64;&#x9700;&#x6C42;&#xFF0C;<code>Dictionary</code>&#x65E2;&#x4E0D;&#x4F1A;&#x544A;&#x8BC9;&#x662F;&#x5426;&#x63D2;&#x5165;&#x6216;&#x8005;&#x66FF;&#x6362;&#x4E86;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x952E;&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x67E5;&#x627E;&#x5230;&#x5DF2;&#x7ECF;&#x5B58;&#x50A8;&#x5728;&#x5B57;&#x5178;&#x91CC;&#x9762;&#x7684;&#x7ED9;&#x5B9A;&#x952E;&#x503C;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x5F3A;&#x5236;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x4F5C;&#x7528;&#x4E8E;<code>Dictionary</code>&#x7684;&#x952E;&#x4E0A;&#xFF0C;&#x5F53;&#x7136;&#x5176;&#x952E;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>Hashable</code>&#x534F;&#x8BAE;&#xFF08;Swift &#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x534F;&#x8BAE;&#xFF09;&#x3002;&#x6240;&#x6709;&#x7684; Swift &#x57FA;&#x672C;&#x7C7B;&#x578B;&#xFF08;&#x5982;<code>String</code>&#xFF0C;<code>Int</code>&#xFF0C; <code>Double</code>&#x548C; <code>Bool</code>&#xFF09;&#x9ED8;&#x8BA4;&#x90FD;&#x662F;&#x53EF;&#x54C8;&#x5E0C;&#x3002;</p>
+<p>&#x5F53;&#x4F60;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x4E9B;&#x7EA6;&#x675F;&#x8981;&#x652F;&#x6301;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;&#x7684;&#x5F3A;&#x529B;&#x7279;&#x5F81;&#x4E2D;&#x7684;&#x591A;&#x6570;&#x3002;&#x62BD;&#x8C61;&#x6982;&#x5FF5;&#x5982;<code>&#x53EF;&#x54C8;&#x5E0C;</code>&#x5177;&#x6709;&#x7684;&#x7C7B;&#x578B;&#x7279;&#x5F81;&#x662F;&#x6839;&#x636E;&#x5B83;&#x4EEC;&#x6982;&#x5FF5;&#x7279;&#x5F81;&#x6765;&#x754C;&#x5B9A;&#x7684;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5B83;&#x4EEC;&#x7684;&#x76F4;&#x63A5;&#x7C7B;&#x578B;&#x7279;&#x5F81;&#x3002;</p>
+<p><a name="type_constraint_syntax"></a></p>
+<h3 id="&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x8BED;&#x6CD5;">&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x8BED;&#x6CD5;</h3>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5199;&#x4E00;&#x4E2A;&#x5728;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x540D;&#x540E;&#x9762;&#x7684;&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#xFF0C;&#x901A;&#x8FC7;&#x5192;&#x53F7;&#x5206;&#x5272;&#xFF0C;&#x6765;&#x4F5C;&#x4E3A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x94FE;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x8FD9;&#x79CD;&#x4F5C;&#x7528;&#x4E8E;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x7684;&#x57FA;&#x7840;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF08;&#x548C;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x7684;&#x8BED;&#x6CD5;&#x76F8;&#x540C;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> someFunction<span class="token operator">&lt;</span>T<span class="token punctuation">:</span> <span class="token builtin">SomeClass</span><span class="token punctuation">,</span> U<span class="token punctuation">:</span> <span class="token builtin">SomeProtocol</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>someT<span class="token punctuation">:</span> T<span class="token punctuation">,</span> someU<span class="token punctuation">:</span> U<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// &#x8FD9;&#x91CC;&#x662F;&#x51FD;&#x6570;&#x4E3B;&#x4F53;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x5047;&#x5B9A;&#x51FD;&#x6570;&#x6709;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;<code>T</code>&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x9700;&#x8981;<code>T</code>&#x5FC5;&#x987B;&#x662F;<code>SomeClass</code>&#x5B50;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#xFF1B;&#x7B2C;&#x4E8C;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;<code>U</code>&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x9700;&#x8981;<code>U</code>&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>SomeProtocol</code>&#x534F;&#x8BAE;&#x7684;&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x3002;</p>
+<p><a name="type_constraints_in_action"></a></p>
+<h3 id="&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x5B9E;&#x4F8B;">&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x5B9E;&#x4F8B;</h3>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E2A;&#x540D;&#x4E3A;<code>findStringIndex</code>&#x7684;&#x975E;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x529F;&#x80FD;&#x662F;&#x53BB;&#x67E5;&#x627E;&#x5305;&#x542B;&#x4E00;&#x7ED9;&#x5B9A;<code>String</code>&#x503C;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x82E5;&#x67E5;&#x627E;&#x5230;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>findStringIndex(_:_:)</code>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x503C;&#xFF08;<code>Int</code>&#xFF09;&#xFF0C;&#x53CD;&#x4E4B;&#x5219;&#x8FD4;&#x56DE;<code>nil</code>&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">findStringIndex<span class="token punctuation">(</span></span>array<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token builtin">String</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">_</span> valueToFind<span class="token punctuation">:</span> <span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span><span class="token operator">?</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>index<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token keyword">in</span> array<span class="token punctuation">.</span><span class="token function">enumerate<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> value <span class="token operator">==</span> valueToFind <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> index
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token constant">nil</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>findStringIndex(_:_:)</code>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x67E5;&#x627E;&#x4E00;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;:</p>
+<pre><code class="lang-swift"><span class="token keyword">let</span> strings <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;cat&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;dog&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;llama&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;parakeet&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;terrapin&quot;</span><span class="token punctuation">]</span>
+<span class="token keyword">if</span> <span class="token keyword">let</span> foundIndex <span class="token operator">=</span> <span class="token function">findStringIndex<span class="token punctuation">(</span></span>strings<span class="token punctuation">,</span> <span class="token string">&quot;llama&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;The index of llama is \(foundIndex)&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;The index of llama is 2&quot;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x9488;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x8A00;&#x67E5;&#x627E;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x503C;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x7528;&#x5904;&#x4E0D;&#x662F;&#x5F88;&#x5927;&#xFF0C;&#x4E0D;&#x8FC7;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5199;&#x51FA;&#x76F8;&#x540C;&#x529F;&#x80FD;&#x7684;&#x6CDB;&#x578B;&#x51FD;&#x6570;<code>findIndex</code>&#xFF0C;&#x7528;&#x67D0;&#x4E2A;&#x7C7B;&#x578B;<code>T</code>&#x503C;&#x66FF;&#x6362;&#x6389;&#x63D0;&#x5230;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x5199;&#x4E00;&#x4E2A;&#x4F60;&#x6216;&#x8BB8;&#x671F;&#x671B;&#x7684;<code>findStringIndex</code>&#x7684;&#x6CDB;&#x578B;&#x7248;&#x672C;<code>findIndex</code>&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4ECD;&#x7136;&#x8FD4;&#x56DE;<code>Int</code>&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x6709;&#x70B9;&#x8FF7;&#x60D1;&#x5462;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6CDB;&#x578B;&#x7C7B;&#x578B;?&#x90A3;&#x662F;&#x56E0;&#x4E3A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x7D22;&#x5F15;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x5F97;&#x5230;&#x7684;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x503C;&#x3002;&#x9700;&#x8981;&#x63D0;&#x9192;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x7F16;&#x8BD1;&#xFF0C;&#x539F;&#x56E0;&#x5728;&#x4F8B;&#x5B50;&#x540E;&#x9762;&#x4F1A;&#x8BF4;&#x660E;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> findIndex<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">(</span>array<span class="token punctuation">:</span> <span class="token punctuation">[</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">_</span> valueToFind<span class="token punctuation">:</span> T<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span><span class="token operator">?</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>index<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token keyword">in</span> array<span class="token punctuation">.</span><span class="token function">enumerate<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> value <span class="token operator">==</span> valueToFind <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> index
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token constant">nil</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x6240;&#x5199;&#x7684;&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x7F16;&#x8BD1;&#x3002;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x4F4D;&#x7F6E;&#x5728;&#x7B49;&#x5F0F;&#x7684;&#x68C0;&#x67E5;&#x4E0A;&#xFF0C;<code>&#x201C;if value == valueToFind&#x201D;</code>&#x3002;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684; Swift &#x4E2D;&#x7684;&#x7C7B;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x7B49;&#x5F0F;&#x7B26;&#xFF08;==&#xFF09;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x7C7B;&#x6216;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#xFF0C;&#x90A3;&#x4E48; Swift &#x6CA1;&#x6CD5;&#x731C;&#x5230;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;&#x7C7B;&#x6216;&#x7ED3;&#x6784;&#x4F53;&#x800C;&#x8A00;&#x201C;&#x7B49;&#x4E8E;&#x201D;&#x7684;&#x610F;&#x601D;&#x3002;&#x6B63;&#x56E0;&#x5982;&#x6B64;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x4E0D;&#x80FD;&#x53EF;&#x80FD;&#x4FDD;&#x8BC1;&#x5DE5;&#x4F5C;&#x4E8E;&#x6BCF;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x7C7B;&#x578B;<code>T</code>&#xFF0C;&#x5F53;&#x4F60;&#x8BD5;&#x56FE;&#x7F16;&#x8BD1;&#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x65F6;&#x4F30;&#x8BA1;&#x4F1A;&#x51FA;&#x73B0;&#x76F8;&#x5E94;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8FD9;&#x4E9B;&#x5E76;&#x4E0D;&#x4F1A;&#x8BA9;&#x6211;&#x4EEC;&#x65E0;&#x4ECE;&#x4E0B;&#x624B;&#x3002;Swift &#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;<code>Equatable</code>&#x534F;&#x8BAE;&#xFF0C;&#x8BE5;&#x534F;&#x8BAE;&#x8981;&#x6C42;&#x4EFB;&#x4F55;&#x9075;&#x5FAA;&#x7684;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x7B49;&#x5F0F;&#x7B26;&#xFF08;==&#xFF09;&#x548C;&#x4E0D;&#x7B49;&#x7B26;&#xFF08;!=&#xFF09;&#x5BF9;&#x4EFB;&#x4F55;&#x4E24;&#x4E2A;&#x8BE5;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;&#x6240;&#x6709;&#x7684; Swift &#x6807;&#x51C6;&#x7C7B;&#x578B;&#x81EA;&#x52A8;&#x652F;&#x6301;<code>Equatable</code>&#x534F;&#x8BAE;&#x3002;</p>
+<p>&#x4EFB;&#x4F55;<code>Equatable</code>&#x7C7B;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x7684;&#x4F7F;&#x7528;&#x5728;<code>findIndex(_:_:)</code>&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;&#x5176;&#x4FDD;&#x8BC1;&#x652F;&#x6301;&#x7B49;&#x5F0F;&#x64CD;&#x4F5C;&#x3002;&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x4E8B;&#x5B9E;&#xFF0C;&#x5F53;&#x4F60;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5199;&#x4E00;&#x4E2A;<code>Equatable</code>&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x4F5C;&#x4E3A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> findIndex<span class="token operator">&lt;</span>T<span class="token punctuation">:</span> <span class="token builtin">Equatable</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>array<span class="token punctuation">:</span> <span class="token punctuation">[</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">_</span> valueToFind<span class="token punctuation">:</span> T<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span><span class="token operator">?</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>index<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token keyword">in</span> array<span class="token punctuation">.</span><span class="token function">enumerate<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> value <span class="token operator">==</span> valueToFind <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> index
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token constant">nil</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>findIndex</code>&#x4E2D;&#x8FD9;&#x4E2A;&#x5355;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5199;&#x505A;&#xFF1A;<code>T: Equatable</code>&#xFF0C;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x201C;&#x4EFB;&#x4F55;T&#x7C7B;&#x578B;&#x90FD;&#x9075;&#x5FAA;<code>Equatable</code>&#x534F;&#x8BAE;&#x201D;&#x3002;</p>
+<p><code>findIndex(_:_:)</code>&#x51FD;&#x6570;&#x73B0;&#x5728;&#x5219;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x7684;&#x7F16;&#x8BD1;&#x8FC7;&#xFF0C;&#x5E76;&#x4E14;&#x4F5C;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x9075;&#x5FAA;<code>Equatable</code>&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5982;<code>Double</code>&#x6216;<code>String</code>:</p>
+<pre><code class="lang-swift"><span class="token keyword">let</span> doubleIndex <span class="token operator">=</span> <span class="token function">findIndex<span class="token punctuation">(</span></span><span class="token punctuation">[</span><span class="token number">3.14159</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">0.25</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">9.3</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// doubleIndex is an optional Int with no value, because 9.3 is not in the array</span>
+<span class="token keyword">let</span> stringIndex <span class="token operator">=</span> <span class="token function">findIndex<span class="token punctuation">(</span></span><span class="token punctuation">[</span><span class="token string">&quot;Mike&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Malcolm&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Andrea&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">&quot;Andrea&quot;</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// stringIndex is an optional Int containing a value of 2</span>
+</code></pre>
+<p><a name="associated_types"></a></p>
+<h2 id="&#x5173;&#x8054;&#x7C7B;&#x578B;associated-types">&#x5173;&#x8054;&#x7C7B;&#x578B;(Associated Types)</h2>
+<p>&#x5F53;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x534F;&#x8BAE;&#x65F6;&#xFF0C;&#x6709;&#x7684;&#x65F6;&#x5019;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x4F5C;&#x4E3A;&#x534F;&#x8BAE;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x3002;&#x4E00;&#x4E2A;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x4F5C;&#x4E3A;&#x534F;&#x8BAE;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x7ED9;&#x5B9A;&#x4E86;&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x540D;&#xFF08;&#x6216;&#x522B;&#x540D;&#xFF09;&#x3002;&#x4F5C;&#x7528;&#x4E8E;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x4E0A;&#x5B9E;&#x9645;&#x7C7B;&#x578B;&#x5728;&#x534F;&#x8BAE;&#x88AB;&#x5B9E;&#x73B0;&#x524D;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x7684;&#x3002;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x88AB;&#x6307;&#x5B9A;&#x4E3A;<code>typealias</code>&#x5173;&#x952E;&#x5B57;&#x3002;</p>
+<p><a name="associated_types_in_action"></a></p>
+<h3 id="&#x5173;&#x8054;&#x7C7B;&#x578B;&#x5B9E;&#x4F8B;">&#x5173;&#x8054;&#x7C7B;&#x578B;&#x5B9E;&#x4F8B;</h3>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;<code>Container</code>&#x534F;&#x8BAE;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;<code>ItemType</code>&#x5173;&#x8054;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">protocol</span> <span class="token builtin">Container</span> <span class="token punctuation">{</span>
+    <span class="token keyword">typealias</span> <span class="token builtin">ItemType</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">append<span class="token punctuation">(</span></span>item<span class="token punctuation">:</span> <span class="token builtin">ItemType</span><span class="token punctuation">)</span>
+    <span class="token keyword">var</span> <span class="token builtin">count</span><span class="token punctuation">:</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span> <span class="token keyword">get</span> <span class="token punctuation">}</span>
+    <span class="token keyword">subscript</span><span class="token punctuation">(</span>i<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">ItemType</span> <span class="token punctuation">{</span> <span class="token keyword">get</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>Container</code>&#x534F;&#x8BAE;&#x5B9A;&#x4E49;&#x4E86;&#x4E09;&#x4E2A;&#x4EFB;&#x4F55;&#x5BB9;&#x5668;&#x5FC5;&#x987B;&#x652F;&#x6301;&#x7684;&#x517C;&#x5BB9;&#x8981;&#x6C42;&#xFF1A;</p>
+<ul>
+<li>&#x5FC5;&#x987B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>append(_:)</code>&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x5143;&#x7D20;&#x5230;&#x5BB9;&#x5668;&#x91CC;&#xFF1B;</li>
+<li>&#x5FC5;&#x987B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;<code>count</code>&#x5C5E;&#x6027;&#x83B7;&#x53D6;&#x5BB9;&#x5668;&#x91CC;&#x5143;&#x7D20;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>Int</code>&#x503C;&#xFF1B;</li>
+<li>&#x5FC5;&#x987B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5BB9;&#x5668;&#x7684;<code>Int</code>&#x7D22;&#x5F15;&#x503C;&#x4E0B;&#x6807;&#x53EF;&#x4EE5;&#x68C0;&#x7D22;&#x5230;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x5BB9;&#x5668;&#x91CC;&#x7684;&#x5143;&#x7D20;&#x662F;&#x5982;&#x4F55;&#x5B58;&#x50A8;&#x7684;&#x6216;&#x4F55;&#x79CD;&#x7C7B;&#x578B;&#x662F;&#x5141;&#x8BB8;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x53EA;&#x6307;&#x5B9A;&#x4E09;&#x4E2A;&#x4EFB;&#x4F55;&#x9075;&#x5FAA;<code>Container</code>&#x7C7B;&#x578B;&#x6240;&#x5FC5;&#x987B;&#x652F;&#x6301;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x3002;&#x4E00;&#x4E2A;&#x9075;&#x5FAA;&#x7684;&#x7C7B;&#x578B;&#x5728;&#x6EE1;&#x8DB3;&#x8FD9;&#x4E09;&#x4E2A;&#x6761;&#x4EF6;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4E5F;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x5176;&#x4ED6;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x4EFB;&#x4F55;&#x9075;&#x5FAA;<code>Container</code>&#x534F;&#x8BAE;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x5B58;&#x50A8;&#x5728;&#x5176;&#x91CC;&#x9762;&#x7684;&#x503C;&#x7C7B;&#x578B;&#xFF0C;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x53EA;&#x6709;&#x6B63;&#x786E;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x52A0;&#x8FDB;&#x5BB9;&#x5668;&#x91CC;&#xFF0C;&#x5FC5;&#x987B;&#x660E;&#x786E;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5176;&#x4E0B;&#x6807;&#x8FD4;&#x56DE;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5B9A;&#x4E49;&#x8FD9;&#x4E09;&#x4E2A;&#x6761;&#x4EF6;&#xFF0C;<code>Container</code>&#x534F;&#x8BAE;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x5BB9;&#x5668;&#x91CC;&#x7684;&#x5143;&#x7D20;&#x5C06;&#x4F1A;&#x4FDD;&#x7559;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x77E5;&#x9053;&#x7279;&#x5B9A;&#x5BB9;&#x5668;&#x7684;&#x7C7B;&#x578B;&#x3002;<code>Container</code>&#x534F;&#x8BAE;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4EFB;&#x4F55;&#x901A;&#x8FC7;<code>append(_:)</code>&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x5230;&#x5BB9;&#x5668;&#x91CC;&#x7684;&#x503C;&#x548C;&#x5BB9;&#x5668;&#x91CC;&#x5143;&#x7D20;&#x662F;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;&#x5BB9;&#x5668;&#x4E0B;&#x6807;&#x8FD4;&#x56DE;&#x7684;&#x5BB9;&#x5668;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x662F;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x8FBE;&#x5230;&#x6B64;&#x76EE;&#x7684;&#xFF0C;<code>Container</code>&#x534F;&#x8BAE;&#x58F0;&#x660E;&#x4E86;&#x4E00;&#x4E2A;<code>ItemType</code>&#x7684;&#x5173;&#x8054;&#x7C7B;&#x578B;&#xFF0C;&#x5199;&#x4F5C;<code>typealias ItemType</code>&#x3002;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x4E0D;&#x4F1A;&#x5B9A;&#x4E49;<code>ItemType</code>&#x662F;&#x4EC0;&#x4E48;&#x7684;&#x522B;&#x540D;&#xFF0C;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x5C06;&#x7531;&#x4EFB;&#x4F55;&#x9075;&#x5FAA;&#x534F;&#x8BAE;&#x7684;&#x7C7B;&#x578B;&#x6765;&#x63D0;&#x4F9B;&#x3002;&#x5C3D;&#x7BA1;&#x5982;&#x6B64;&#xFF0C;<code>ItemType</code>&#x522B;&#x540D;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x8BC6;&#x522B;<code>Container</code>&#x4E2D;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x7528;&#x4E8E;<code>append(_:)</code>&#x65B9;&#x6CD5;&#x548C;<code>subscript</code>&#x65B9;&#x6CD5;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#xFF0C;&#x4EE5;&#x4FBF;&#x4FDD;&#x8BC1;&#x4EFB;&#x4F55;<code>Container</code>&#x671F;&#x671B;&#x7684;&#x884C;&#x4E3A;&#x80FD;&#x591F;&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x65E9;&#x524D;<code>IntStack</code>&#x7C7B;&#x578B;&#x7684;&#x975E;&#x6CDB;&#x578B;&#x7248;&#x672C;&#xFF0C;&#x9075;&#x5FAA;<code>Container</code>&#x534F;&#x8BAE;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">struct</span> <span class="token builtin">IntStack</span><span class="token punctuation">:</span> <span class="token builtin">Container</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// IntStack&#x7684;&#x539F;&#x59CB;&#x5B9E;&#x73B0;</span>
+    <span class="token keyword">var</span> items <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">Int</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">push<span class="token punctuation">(</span></span>item<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        items<span class="token punctuation">.</span><span class="token function">append<span class="token punctuation">(</span></span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">pop<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">.</span><span class="token function">removeLast<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">// &#x9075;&#x5FAA;Container&#x534F;&#x8BAE;&#x7684;&#x5B9E;&#x73B0;</span>
+    <span class="token keyword">typealias</span> <span class="token builtin">ItemType</span> <span class="token operator">=</span> <span class="token builtin">Int</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">append<span class="token punctuation">(</span></span>item<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">var</span> <span class="token builtin">count</span><span class="token punctuation">:</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">.</span><span class="token builtin">count</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">subscript</span><span class="token punctuation">(</span>i<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>IntStack</code>&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x4E86;<code>Container</code>&#x534F;&#x8BAE;&#x7684;&#x6240;&#x6709;&#x4E09;&#x4E2A;&#x8981;&#x6C42;&#xFF0C;&#x5728;<code>IntStack</code>&#x7C7B;&#x578B;&#x7684;&#x6BCF;&#x4E2A;&#x5305;&#x542B;&#x90E8;&#x5206;&#x7684;&#x529F;&#x80FD;&#x90FD;&#x6EE1;&#x8DB3;&#x8FD9;&#x4E9B;&#x8981;&#x6C42;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;<code>IntStack</code>&#x6307;&#x5B9A;&#x4E86;<code>Container</code>&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x9002;&#x7528;&#x7684;<code>ItemType</code>&#x88AB;&#x7528;&#x4F5C;<code>Int</code>&#x7C7B;&#x578B;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;<code>Container</code>&#x534F;&#x8BAE;&#x5B9E;&#x73B0;&#x800C;&#x8A00;&#xFF0C;&#x5B9A;&#x4E49; <code>typealias ItemType = Int</code>&#xFF0C;&#x5C06;&#x62BD;&#x8C61;&#x7684;<code>ItemType</code>&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;&#x5177;&#x4F53;&#x7684;<code>Int</code>&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x611F;&#x8C22;Swift&#x7C7B;&#x578B;&#x53C2;&#x8003;&#xFF0C;&#x4F60;&#x4E0D;&#x7528;&#x5728;<code>IntStack</code>&#x5B9A;&#x4E49;&#x90E8;&#x5206;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;<code>Int</code>&#x7684;<code>ItemType</code>&#x3002;&#x7531;&#x4E8E;<code>IntStack</code>&#x9075;&#x5FAA;<code>Container</code>&#x534F;&#x8BAE;&#x7684;&#x6240;&#x6709;&#x8981;&#x6C42;&#xFF0C;&#x53EA;&#x8981;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x67E5;&#x627E;<code>append(_:)</code>&#x65B9;&#x6CD5;&#x7684;<code>item</code>&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x4E0B;&#x6807;&#x8FD4;&#x56DE;&#x7684;&#x7C7B;&#x578B;&#xFF0C;Swift&#x5C31;&#x53EF;&#x4EE5;&#x63A8;&#x65AD;&#x51FA;&#x5408;&#x9002;&#x7684;<code>ItemType</code>&#x6765;&#x4F7F;&#x7528;&#x3002;&#x786E;&#x5B9E;&#xFF0C;&#x5982;&#x679C;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4F60;&#x5220;&#x9664;&#x4E86; <code>typealias ItemType = Int</code>&#x8FD9;&#x4E00;&#x884C;&#xFF0C;&#x4E00;&#x5207;&#x4ECD;&#x65E7;&#x53EF;&#x4EE5;&#x5DE5;&#x4F5C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6E05;&#x695A;&#x7684;&#x77E5;&#x9053;<code>ItemType</code>&#x4F7F;&#x7528;&#x7684;&#x662F;&#x4F55;&#x79CD;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x9075;&#x5FAA;<code>Container</code>&#x534F;&#x8BAE;&#x7684;&#x6CDB;&#x578B;<code>Stack</code>&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">struct</span> <span class="token builtin">Stack</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">:</span> <span class="token builtin">Container</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// original Stack&lt;T&gt; implementation</span>
+    <span class="token keyword">var</span> items <span class="token operator">=</span> <span class="token punctuation">[</span>T<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">push<span class="token punctuation">(</span></span>item<span class="token punctuation">:</span> T<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        items<span class="token punctuation">.</span><span class="token function">append<span class="token punctuation">(</span></span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">pop<span class="token punctuation">(</span></span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> T <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">.</span><span class="token function">removeLast<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">// conformance to the Container protocol</span>
+    <span class="token keyword">mutating</span> <span class="token keyword">func</span> <span class="token function">append<span class="token punctuation">(</span></span>item<span class="token punctuation">:</span> T<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">var</span> <span class="token builtin">count</span><span class="token punctuation">:</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">.</span><span class="token builtin">count</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">subscript</span><span class="token punctuation">(</span>i<span class="token punctuation">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> T <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> items<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#x53C2;&#x6570;<code>T</code>&#x88AB;&#x7528;&#x4F5C;<code>append(_:)</code>&#x65B9;&#x6CD5;&#x7684;<code>item</code>&#x53C2;&#x6570;&#x548C;&#x4E0B;&#x6807;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x3002;Swift &#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x63A8;&#x65AD;&#x51FA;&#x88AB;&#x7528;&#x4F5C;&#x8FD9;&#x4E2A;&#x7279;&#x5B9A;&#x5BB9;&#x5668;&#x7684;<code>ItemType</code>&#x7684;<code>T</code>&#x7684;&#x5408;&#x9002;&#x7C7B;&#x578B;&#x3002;</p>
+<p><a name="extending_an_existing_type_to_specify_an_associated_type"></a></p>
+<h3 id="&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x7684;&#x7C7B;&#x578B;&#x4E3A;&#x4E00;&#x6307;&#x5B9A;&#x5173;&#x8054;&#x7C7B;&#x578B;">&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x7684;&#x7C7B;&#x578B;&#x4E3A;&#x4E00;&#x6307;&#x5B9A;&#x5173;&#x8054;&#x7C7B;&#x578B;</h3>
+<p>&#x5728;<a href="22_Protocols.html#adding_protocol_conformance_with_an_extension">&#x5728;&#x6269;&#x5C55;&#x4E2D;&#x6DFB;&#x52A0;&#x534F;&#x8BAE;&#x6210;&#x5458;</a>&#x4E2D;&#x6709;&#x63CF;&#x8FF0;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x7684;&#x7C7B;&#x578B;&#x6DFB;&#x52A0;&#x9075;&#x5FAA;&#x4E00;&#x4E2A;&#x534F;&#x8BAE;&#x3002;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+<p>Swift&#x7684;<code>Array</code>&#x5DF2;&#x7ECF;&#x63D0;&#x4F9B;<code>append(_:)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x4E2A;<code>count</code>&#x5C5E;&#x6027;&#x548C;&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x6765;&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x7684;&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x4E09;&#x4E2A;&#x529F;&#x80FD;&#x90FD;&#x8FBE;&#x5230;<code>Container</code>&#x534F;&#x8BAE;&#x7684;&#x8981;&#x6C42;&#x3002;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x4F60;&#x53EF;&#x4EE5;&#x6269;&#x5C55;<code>Array</code>&#x53BB;&#x9075;&#x5FAA;<code>Container</code>&#x534F;&#x8BAE;&#xFF0C;&#x53EA;&#x8981;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x58F0;&#x660E;<code>Array</code>&#x9002;&#x7528;&#x4E8E;&#x8BE5;&#x534F;&#x8BAE;&#x800C;&#x5DF2;&#x3002;&#x5982;&#x4F55;&#x5B9E;&#x8DF5;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x7A7A;&#x6269;&#x5C55;&#xFF0C;&#x5728;<a href="22_Protocols.html#declaring_protocol_adoption_with_an_extension">&#x901A;&#x8FC7;&#x6269;&#x5C55;&#x8865;&#x5145;&#x534F;&#x8BAE;&#x58F0;&#x660E;</a>&#x4E2D;&#x6709;&#x63CF;&#x8FF0;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x7A7A;&#x6269;&#x5C55;&#x7684;&#x884C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">extension</span> <span class="token builtin">Array</span><span class="token punctuation">:</span> <span class="token builtin">Container</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5982;&#x540C;&#x4E0A;&#x9762;&#x7684;&#x6CDB;&#x578B;<code>Stack</code>&#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF0C;<code>Array</code>&#x7684;<code>append(_:)</code>&#x65B9;&#x6CD5;&#x548C;&#x4E0B;&#x6807;&#x4FDD;&#x8BC1;<code>Swift</code>&#x53EF;&#x4EE5;&#x63A8;&#x65AD;&#x51FA;<code>ItemType</code>&#x6240;&#x4F7F;&#x7528;&#x7684;&#x9002;&#x7528;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5B9A;&#x4E49;&#x4E86;&#x8FD9;&#x4E2A;&#x6269;&#x5C55;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x4EFB;&#x4F55;<code>Array</code>&#x5F53;&#x4F5C;<code>Container</code>&#x6765;&#x4F7F;&#x7528;&#x3002;</p>
+<p><a name="where_clauses"></a></p>
+<h2 id="where-&#x8BED;&#x53E5;">Where &#x8BED;&#x53E5;</h2>
+<p><a href="#type_constraints">&#x7C7B;&#x578B;&#x7EA6;&#x675F;</a>&#x80FD;&#x591F;&#x786E;&#x4FDD;&#x7C7B;&#x578B;&#x7B26;&#x5408;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x6216;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x7EA6;&#x675F;&#x3002;</p>
+<p>&#x5BF9;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x7EA6;&#x675F;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x901A;&#x8FC7;<em>where</em>&#x8BED;&#x53E5;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x7684;&#x7EA6;&#x675F;&#x3002;&#x4E00;&#x4E2A;<code>where</code>&#x8BED;&#x53E5;&#x80FD;&#x591F;&#x4F7F;&#x4E00;&#x4E2A;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x9075;&#x5FAA;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x4EE5;&#x53CA;&#xFF08;&#x6216;&#xFF09;&#x90A3;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x548C;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5199;&#x4E00;&#x4E2A;<code>where</code>&#x8BED;&#x53E5;&#xFF0C;&#x7D27;&#x8DDF;&#x5728;&#x5728;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5217;&#x8868;&#x540E;&#x9762;&#xFF0C;where&#x8BED;&#x53E5;&#x540E;&#x8DDF;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x9488;&#x5BF9;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x4EE5;&#x53CA;&#xFF08;&#x6216;&#xFF09;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7C7B;&#x578B;&#x548C;&#x5173;&#x8054;&#x7C7B;&#x578B;&#x95F4;&#x7684;&#x7B49;&#x4EF7;(equality)&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>allItemsMatch</code>&#x7684;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x68C0;&#x67E5;&#x4E24;&#x4E2A;<code>Container</code>&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x5305;&#x542B;&#x76F8;&#x540C;&#x987A;&#x5E8F;&#x7684;&#x76F8;&#x540C;&#x5143;&#x7D20;&#x3002;&#x5982;&#x679C;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x80FD;&#x591F;&#x5339;&#x914D;&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E3A;<code>true</code>&#x7684;<code>Boolean</code>&#x503C;&#xFF0C;&#x53CD;&#x4E4B;&#x5219;&#x4E3A;<code>false</code>&#x3002;</p>
+<p>&#x88AB;&#x68C0;&#x67E5;&#x7684;&#x4E24;&#x4E2A;<code>Container</code>&#x53EF;&#x4EE5;&#x4E0D;&#x662F;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5BB9;&#x5668;&#xFF08;&#x867D;&#x7136;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x662F;&#xFF09;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x786E;&#x5B9E;&#x62E5;&#x6709;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x7EA6;&#x675F;&#x548C;<code>where</code>&#x8BED;&#x53E5;&#x7ED3;&#x5408;&#x6765;&#x8868;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> allItemsMatch<span class="token operator">&lt;</span>
+    <span class="token builtin">C1</span><span class="token punctuation">:</span> <span class="token builtin">Container</span><span class="token punctuation">,</span> <span class="token builtin">C2</span><span class="token punctuation">:</span> <span class="token builtin">Container</span>
+    <span class="token keyword">where</span> <span class="token builtin">C1</span><span class="token punctuation">.</span><span class="token builtin">ItemType</span> <span class="token operator">==</span> <span class="token builtin">C2</span><span class="token punctuation">.</span><span class="token builtin">ItemType</span><span class="token punctuation">,</span> <span class="token builtin">C1</span><span class="token punctuation">.</span><span class="token builtin">ItemType</span><span class="token punctuation">:</span> <span class="token builtin">Equatable</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">(</span>someContainer<span class="token punctuation">:</span> <span class="token builtin">C1</span><span class="token punctuation">,</span> anotherContainer<span class="token punctuation">:</span> <span class="token builtin">C2</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Bool</span> <span class="token punctuation">{</span>
+
+        <span class="token comment" spellcheck="true">// &#x68C0;&#x67E5;&#x4E24;&#x4E2A;Container&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x662F;&#x5426;&#x76F8;&#x540C;</span>
+        <span class="token keyword">if</span> someContainer<span class="token punctuation">.</span><span class="token builtin">count</span> <span class="token operator">!</span><span class="token operator">=</span> anotherContainer<span class="token punctuation">.</span><span class="token builtin">count</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment" spellcheck="true">// &#x68C0;&#x67E5;&#x4E24;&#x4E2A;Container&#x76F8;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#x5F7C;&#x6B64;&#x662F;&#x5426;&#x76F8;&#x7B49;</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token number">0</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&lt;</span>someContainer<span class="token punctuation">.</span><span class="token builtin">count</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> someContainer<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!</span><span class="token operator">=</span> anotherContainer<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment" spellcheck="true">// &#x5982;&#x679C;&#x6240;&#x6709;&#x5143;&#x7D20;&#x68C0;&#x67E5;&#x90FD;&#x76F8;&#x540C;&#x5219;&#x8FD4;&#x56DE;true</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;<code>someContainer</code>&#x548C;<code>anotherContainer</code>&#x3002;<code>someContainer</code>&#x53C2;&#x6570;&#x662F;&#x7C7B;&#x578B;<code>C1</code>&#xFF0C;<code>anotherContainer</code>&#x53C2;&#x6570;&#x662F;&#x7C7B;&#x578B;<code>C2</code>&#x3002;<code>C1</code>&#x548C;<code>C2</code>&#x662F;&#x5BB9;&#x5668;&#x7684;&#x4E24;&#x4E2A;&#x5360;&#x4F4D;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x51B3;&#x5B9A;&#x4E86;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F55;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x5217;&#x7D27;&#x968F;&#x5728;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x9700;&#x6C42;&#x7684;&#x540E;&#x9762;&#xFF1A;</p>
+<ul>
+<li><code>C1</code>&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>Container</code>&#x534F;&#x8BAE; (&#x5199;&#x4F5C; <code>C1: Container</code>)&#x3002;</li>
+<li><code>C2</code>&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>Container</code>&#x534F;&#x8BAE; (&#x5199;&#x4F5C; <code>C2: Container</code>)&#x3002;</li>
+<li><code>C1</code>&#x7684;<code>ItemType</code>&#x540C;&#x6837;&#x662F;C2&#x7684;<code>ItemType</code>&#xFF08;&#x5199;&#x4F5C; <code>C1.ItemType == C2.ItemType</code>&#xFF09;&#x3002;</li>
+<li><code>C1</code>&#x7684;<code>ItemType</code>&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>Equatable</code>&#x534F;&#x8BAE; (&#x5199;&#x4F5C; <code>C1.ItemType: Equatable</code>)&#x3002;</li>
+</ul>
+<p>&#x7B2C;&#x4E09;&#x4E2A;&#x548C;&#x7B2C;&#x56DB;&#x4E2A;&#x8981;&#x6C42;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;<code>where</code>&#x8BED;&#x53E5;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5199;&#x5728;&#x5173;&#x952E;&#x5B57;<code>where</code>&#x540E;&#x9762;&#xFF0C;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x94FE;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x8981;&#x6C42;&#x610F;&#x601D;&#x662F;&#xFF1A;</p>
+<p><code>someContainer</code>&#x662F;&#x4E00;&#x4E2A;<code>C1</code>&#x7C7B;&#x578B;&#x7684;&#x5BB9;&#x5668;&#x3002;
+<code>anotherContainer</code>&#x662F;&#x4E00;&#x4E2A;<code>C2</code>&#x7C7B;&#x578B;&#x7684;&#x5BB9;&#x5668;&#x3002;
+<code>someContainer</code>&#x548C;<code>anotherContainer</code>&#x5305;&#x542B;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x3002;
+<code>someContainer</code>&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0D;&#x7B49;&#x4E8E;&#x64CD;&#x4F5C;(<code>!=</code>)&#x6765;&#x68C0;&#x67E5;&#x5B83;&#x4EEC;&#x662F;&#x5426;&#x5F7C;&#x6B64;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x7B2C;&#x4E09;&#x4E2A;&#x548C;&#x7B2C;&#x56DB;&#x4E2A;&#x8981;&#x6C42;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x7684;&#x610F;&#x601D;&#x662F;<code>anotherContainer</code>&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>!=</code> &#x64CD;&#x4F5C;&#x6765;&#x68C0;&#x67E5;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x5728;<code>someContainer</code>&#x4E2D;&#x5143;&#x7D20;&#x786E;&#x5B9E;&#x662F;&#x76F8;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x8981;&#x6C42;&#x80FD;&#x591F;&#x4F7F;<code>allItemsMatch(_:_:)</code>&#x51FD;&#x6570;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x5373;&#x4FBF;&#x5B83;&#x4EEC;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x5BB9;&#x5668;&#x7C7B;&#x578B;&#x3002;</p>
+<p><code>allItemsMatch(_:_:)</code>&#x9996;&#x5148;&#x68C0;&#x67E5;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x662F;&#x5426;&#x62E5;&#x6709;&#x540C;&#x6837;&#x6570;&#x76EE;&#x7684;items&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x4EEC;&#x7684;&#x5143;&#x7D20;&#x6570;&#x76EE;&#x4E0D;&#x540C;&#xFF0C;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8FDB;&#x884C;&#x5339;&#x914D;&#xFF0C;&#x51FD;&#x6570;&#x5C31;&#x4F1A;<code>false</code>&#x3002;</p>
+<p>&#x68C0;&#x67E5;&#x5B8C;&#x4E4B;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;<code>for-in</code>&#x5FAA;&#x73AF;&#x548C;&#x534A;&#x95ED;&#x533A;&#x95F4;&#x64CD;&#x4F5C;&#xFF08;<code>..&lt;</code>&#xFF09;&#x6765;&#x8FED;&#x4EE3;<code>someContainer</code>&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x51FD;&#x6570;&#x68C0;&#x67E5;&#x662F;&#x5426;<code>someContainer</code>&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E0D;&#x7B49;&#x4E8E;&#x5BF9;&#x5E94;&#x7684;<code>anotherContainer</code>&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x4E0D;&#x7B49;&#xFF0C;&#x5219;&#x8FD9;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x4E0D;&#x5339;&#x914D;&#xFF0C;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5FAA;&#x73AF;&#x4F53;&#x7ED3;&#x675F;&#x540E;&#x672A;&#x53D1;&#x73B0;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x7684;&#x4E0D;&#x5339;&#x914D;&#xFF0C;&#x90A3;&#x8868;&#x660E;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x5339;&#x914D;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;<code>true</code>&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x6F14;&#x793A;&#x4E86;<code>allItemsMatch(_:_:)</code>&#x51FD;&#x6570;&#x8FD0;&#x7B97;&#x7684;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> stackOfStrings <span class="token operator">=</span> <span class="token builtin">Stack</span><span class="token operator">&lt;</span><span class="token builtin">String</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+stackOfStrings<span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span><span class="token string">&quot;uno&quot;</span><span class="token punctuation">)</span>
+stackOfStrings<span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span><span class="token string">&quot;dos&quot;</span><span class="token punctuation">)</span>
+stackOfStrings<span class="token punctuation">.</span><span class="token function">push<span class="token punctuation">(</span></span><span class="token string">&quot;tres&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> arrayOfStrings <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;uno&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;dos&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tres&quot;</span><span class="token punctuation">]</span>
+
+<span class="token keyword">if</span> <span class="token function">allItemsMatch<span class="token punctuation">(</span></span>stackOfStrings<span class="token punctuation">,</span> arrayOfStrings<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;All items match.&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Not all items match.&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;All items match.&quot;</span>
+</code></pre>
+<p> &#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>Stack</code>&#x5355;&#x4F8B;&#x6765;&#x5B58;&#x50A8;<code>String</code>&#xFF0C;&#x7136;&#x540E;&#x538B;&#x4E86;&#x4E09;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x6808;&#x3002;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E5F;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;<code>Array</code>&#x5355;&#x4F8B;&#xFF0C;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x540C;&#x6808;&#x91CC;&#x4E00;&#x6837;&#x7684;&#x539F;&#x59CB;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5373;&#x4FBF;&#x6808;&#x548C;&#x6570;&#x7EC4;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x90FD;&#x9075;&#x5FAA;<code>Container</code>&#x534F;&#x8BAE;&#xFF0C;&#x800C;&#x4E14;&#x5B83;&#x4EEC;&#x90FD;&#x5305;&#x542B;&#x540C;&#x6837;&#x7684;&#x7C7B;&#x578B;&#x503C;&#x3002;&#x56E0;&#x6B64;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>allItemsMatch(_:_:)</code>&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x8FD9;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x4F5C;&#x4E3A;&#x5B83;&#x7684;&#x53C2;&#x6570;&#x3002;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>allItemsMatch(_:_:)</code>&#x51FD;&#x6570;&#x6B63;&#x786E;&#x7684;&#x663E;&#x793A;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x76F8;&#x4E92;&#x5339;&#x914D;&#x7684;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter2/22_Protocols.html" class="navigation navigation-prev " aria-label="Previous page: 协议"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter2/24_Access_Control.html" class="navigation navigation-next " aria-label="Next page: 权限控制"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"prism":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

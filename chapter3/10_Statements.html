@@ -1,0 +1,1286 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>语句 | 2.0 新的开始</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-prism/prism-okaidia.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter3/05_Declarations.html" />
+    
+    
+    <link rel="prev" href="../chapter3/04_Expressions.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.5" data-chapter-title="语句" data-filepath="chapter3/10_Statements.md" data-basepath=".." data-revision="Tue Nov 03 2015 15:22:37 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/chapter1.html">
+            
+                
+                    <a href="../chapter1/chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        欢迎使用 Swift
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/01_swift.html">
+            
+                
+                    <a href="../chapter1/01_swift.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        关于 Swift
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/02_a_swift_tour.html">
+            
+                
+                    <a href="../chapter1/02_a_swift_tour.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Swift 初见
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/03_revision_history.html">
+            
+                
+                    <a href="../chapter1/03_revision_history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Swift 版本历史记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="v1.0.html">
+            
+                
+                    <a href="../v1.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Swift 1.0 发布内容
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/chapter2.html">
+            
+                
+                    <a href="../chapter2/chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Swift 教程
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_The_Basics.html">
+            
+                
+                    <a href="../chapter2/01_The_Basics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基础部分
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/02_Basic_Operators.html">
+            
+                
+                    <a href="../chapter2/02_Basic_Operators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        基本运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/03_Strings_and_Characters.html">
+            
+                
+                    <a href="../chapter2/03_Strings_and_Characters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        字符串和字符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter2/04_Collection_Types.html">
+            
+                
+                    <a href="../chapter2/04_Collection_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        集合类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="chapter2/05_Control_Flow.html">
+            
+                
+                    <a href="../chapter2/05_Control_Flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        控制流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="chapter2/06_Functions.html">
+            
+                
+                    <a href="../chapter2/06_Functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="chapter2/07_Closures.html">
+            
+                
+                    <a href="../chapter2/07_Closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="chapter2/08_Enumerations.html">
+            
+                
+                    <a href="../chapter2/08_Enumerations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        枚举
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="chapter2/09_Classes_and_Structures.html">
+            
+                
+                    <a href="../chapter2/09_Classes_and_Structures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        类和结构体
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="chapter2/10_Properties.html">
+            
+                
+                    <a href="../chapter2/10_Properties.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="chapter2/11_Methods.html">
+            
+                
+                    <a href="../chapter2/11_Methods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="chapter2/12_Subscripts.html">
+            
+                
+                    <a href="../chapter2/12_Subscripts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        下标脚本
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="chapter2/13_Inheritance.html">
+            
+                
+                    <a href="../chapter2/13_Inheritance.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="chapter2/14_Initialization.html">
+            
+                
+                    <a href="../chapter2/14_Initialization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        构造过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="chapter2/15_Deinitialization.html">
+            
+                
+                    <a href="../chapter2/15_Deinitialization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        析构过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="chapter2/16_Automatic_Reference_Counting.html">
+            
+                
+                    <a href="../chapter2/16_Automatic_Reference_Counting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        自动引用计数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="chapter2/17_Optional_Chaining.html">
+            
+                
+                    <a href="../chapter2/17_Optional_Chaining.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.17.</b>
+                        
+                        可选链
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="chapter2/18_Error_Handling.html">
+            
+                
+                    <a href="../chapter2/18_Error_Handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.18.</b>
+                        
+                        错误处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="chapter2/19_Type_Casting.html">
+            
+                
+                    <a href="../chapter2/19_Type_Casting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.19.</b>
+                        
+                        类型转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.20" data-path="chapter2/20_Nested_Types.html">
+            
+                
+                    <a href="../chapter2/20_Nested_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.20.</b>
+                        
+                        嵌套类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.21" data-path="chapter2/21_Extensions.html">
+            
+                
+                    <a href="../chapter2/21_Extensions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.21.</b>
+                        
+                        扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.22" data-path="chapter2/22_Protocols.html">
+            
+                
+                    <a href="../chapter2/22_Protocols.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.22.</b>
+                        
+                        协议
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.23" data-path="chapter2/23_Generics.html">
+            
+                
+                    <a href="../chapter2/23_Generics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.23.</b>
+                        
+                        泛型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.24" data-path="chapter2/24_Access_Control.html">
+            
+                
+                    <a href="../chapter2/24_Access_Control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.24.</b>
+                        
+                        权限控制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.25" data-path="chapter2/25_Advanced_Operators.html">
+            
+                
+                    <a href="../chapter2/25_Advanced_Operators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.25.</b>
+                        
+                        高级操作符
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 语言参考</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/01_About_the_Language_Reference.html">
+            
+                
+                    <a href="../chapter3/01_About_the_Language_Reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        关于语言参考
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_Lexical_Structure.html">
+            
+                
+                    <a href="../chapter3/02_Lexical_Structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        词法结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/03_Types.html">
+            
+                
+                    <a href="../chapter3/03_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter3/04_Expressions.html">
+            
+                
+                    <a href="../chapter3/04_Expressions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        表达式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5" data-path="chapter3/10_Statements.html">
+            
+                
+                    <a href="../chapter3/10_Statements.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter3/05_Declarations.html">
+            
+                
+                    <a href="../chapter3/05_Declarations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        声明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="chapter3/06_Attributes.html">
+            
+                
+                    <a href="../chapter3/06_Attributes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        特性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="chapter3/07_Patterns.html">
+            
+                
+                    <a href="../chapter3/07_Patterns.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="chapter3/08_Generic_Parameters_and_Arguments.html">
+            
+                
+                    <a href="../chapter3/08_Generic_Parameters_and_Arguments.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        泛型参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="chapter3/09_Summary_of_the_Grammar.html">
+            
+                
+                    <a href="../chapter3/09_Summary_of_the_Grammar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        语法总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 苹果官方Blog官方翻译</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/01_Access_Control.html">
+            
+                
+                    <a href="../chapter4/01_Access_Control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Access Control 权限控制的黑与白
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/02_Type_Custom.html">
+            
+                
+                    <a href="../chapter4/02_Type_Custom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        造个类型不是梦-白话Swift类型创建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_Ballons.html">
+            
+                
+                    <a href="../chapter4/03_Ballons.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        WWDC里面的那个“大炮打气球”
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/04_Interacting_with_C_Pointers.html">
+            
+                
+                    <a href="../chapter4/04_Interacting_with_C_Pointers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Swift与C语言指针友好合作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/05_Value_and_Reference_Types.html">
+            
+                
+                    <a href="../chapter4/05_Value_and_Reference_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        引用类型和值类型的恩怨
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/06_Access_Control_and_Protected.html">
+            
+                
+                    <a href="../chapter4/06_Access_Control_and_Protected.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        访问控制和Protected
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/07_Optional_Case_Study.html">
+            
+                
+                    <a href="../chapter4/07_Optional_Case_Study.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        可选类型完美解决占位问题
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >2.0 新的开始</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p><a name="statement_statements"></a></p>
+<h1 id="&#x8BED;&#x53E5;&#xFF08;statements&#xFF09;">&#x8BED;&#x53E5;&#xFF08;Statements&#xFF09;</h1>
+<hr>
+<blockquote>
+<p>1.0
+&#x7FFB;&#x8BD1;&#xFF1A;<a href="https://github.com/coverxit" target="_blank">coverxit</a>
+&#x6821;&#x5BF9;&#xFF1A;<a href="https://github.com/numbbbbb" target="_blank">numbbbbb</a>, <a href="https://github.com/coverxit" target="_blank">coverxit</a>, <a href="https://github.com/stanzhai" target="_blank">stanzhai</a>,</p>
+<p>2.0
+&#x7FFB;&#x8BD1;+&#x6821;&#x5BF9;&#xFF1A;<a href="https://github.com/littledogboy" target="_blank">littledogboy</a></p>
+</blockquote>
+<p>&#x672C;&#x9875;&#x5305;&#x542B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><a href="#loop_statements">&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</a></li>
+<li><a href="#branch_statements">&#x5206;&#x652F;&#x8BED;&#x53E5;</a></li>
+<li><a href="#labeled_statement">&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x8BED;&#x53E5;</a></li>
+<li><a href="#control_transfer_statements">&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</a></li>
+</ul>
+<p>&#x5728; Swift &#x4E2D;&#xFF0C;&#x6709;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8BED;&#x53E5;&#xFF1A;&#x7B80;&#x5355;&#x8BED;&#x53E5;&#x3001;&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x548C;&#x63A7;&#x5236;&#x6D41;&#x8BED;&#x53E5;&#x3002;&#x7B80;&#x5355;&#x8BED;&#x53E5;&#x662F;&#x6700;&#x5E38;&#x89C1;&#x7684;&#xFF0C;&#x7528;&#x4E8E;&#x6784;&#x9020;&#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x8005;&#x58F0;&#x660E;&#x3002;&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x5141;&#x8BB8;&#x7A0B;&#x5E8F;&#x6539;&#x53D8;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x884C;&#x4E3A;&#x4EE5;&#x53CA;&#x5305;&#x542B;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x548C;&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x63A7;&#x5236;&#x6D41;&#x8BED;&#x53E5;&#x5219;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7684;&#x6D41;&#x7A0B;&#xFF0C;Swift &#x4E2D;&#x6709;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x63A7;&#x5236;&#x6D41;&#x8BED;&#x53E5;&#xFF1A;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x3001;&#x5206;&#x652F;&#x8BED;&#x53E5;&#x548C;&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;&#x3002;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x91CD;&#x590D;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x5757;&#xFF1B;&#x5206;&#x652F;&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#x5757;&#xFF1B;&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;&#x5219;&#x7528;&#x4E8E;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x3002;&#x53E6;&#x5916;&#xFF0C;Swift &#x63D0;&#x4F9B;&#x4E86; <code>do</code> &#x8BED;&#x53E5;&#x6765;&#x5F15;&#x5165;&#x8303;&#x56F4;&#x4EE5;&#x53CA;&#x6355;&#x83B7;&#x548C;&#x5904;&#x7406;&#x9519;&#x8BEF;&#xFF0C;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86; <code>defer</code> &#x8BED;&#x53E5;&#x5728;&#x9000;&#x51FA;&#x5F53;&#x524D;&#x8303;&#x56F4;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x6E05;&#x7406;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x662F;&#x5426;&#x5C06;&#x5206;&#x53F7;&#xFF08;<code>;</code>&#xFF09;&#x6DFB;&#x52A0;&#x5230;&#x8BED;&#x53E5;&#x7684;&#x7ED3;&#x5C3E;&#x5904;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;&#x4F46;&#x82E5;&#x8981;&#x5728;&#x540C;&#x4E00;&#x884C;&#x5185;&#x5199;&#x591A;&#x6761;&#x72EC;&#x7ACB;&#x8BED;&#x53E5;&#xFF0C;&#x8BF7;&#x52A1;&#x5FC5;&#x4F7F;&#x7528;&#x5206;&#x53F7;&#x3002;</p>
+<blockquote>
+<p>&#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>&#x8BED;&#x53E5;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>;</strong> <em>&#x53EF;&#x9009;</em><br><em>&#x8BED;&#x53E5;</em> &#x2192; <a href="05_Declarations.html#declaration"><em>&#x58F0;&#x660E;</em></a> <strong>;</strong> <em>&#x53EF;&#x9009;</em><br><em>&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#loop_statement"><em>&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</em></a> <strong>;</strong> <em>&#x53EF;&#x9009;</em><br><em>&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#branch_statement"><em>&#x5206;&#x652F;&#x8BED;&#x53E5;</em></a> <strong>;</strong> <em>&#x53EF;&#x9009;</em><br><em>&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#labeled_statement"><em>&#x6807;&#x8BB0;&#x8BED;&#x53E5;(Labeled Statement)</em></a><br><em>&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#control_transfer_statement"><em>&#x63A7;&#x5236;&#x8F6C;&#x79FB;&#x8BED;&#x53E5;</em></a> <strong>;</strong> <em>&#x53EF;&#x9009;</em><br><em>&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#control_transfer_statement"><em>XXX&#x8BED;&#x53E5;</em></a> <strong>;</strong> <em>&#x53EF;&#x9009;</em><br><em>&#x591A;&#x6761;&#x8BED;&#x53E5;(Statements)</em> &#x2192; <a href="10_Statements.html#statement"><em>&#x8BED;&#x53E5;</em></a> <a href="10_Statements.html#statements"><em>&#x591A;&#x6761;&#x8BED;&#x53E5;(Statements)</em></a> <em>&#x53EF;&#x9009;</em>  </p>
+</blockquote>
+<p><a name="loop_statements"></a></p>
+<h2 id="&#x5FAA;&#x73AF;&#x8BED;&#x53E5;">&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</h2>
+<p>&#x53D6;&#x51B3;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x5FAA;&#x73AF;&#x6761;&#x4EF6;&#xFF0C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x5757;&#x3002;Swift &#x63D0;&#x4F9B;&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#xFF1A;<code>for</code>&#x8BED;&#x53E5;&#x3001;<code>for-in</code>&#x8BED;&#x53E5;&#x3001;<code>while</code>&#x8BED;&#x53E5;&#x548C;<code>do-while</code>&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>break</code>&#x8BED;&#x53E5;&#x548C;<code>continue</code>&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x7684;&#x63A7;&#x5236;&#x6D41;&#x3002;&#x6709;&#x5173;&#x8FD9;&#x4E24;&#x6761;&#x8BED;&#x53E5;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1; <a href="#break_statement">Break &#x8BED;&#x53E5;</a>&#x548C; <a href="#continue_statement">Continue &#x8BED;&#x53E5;</a>&#x3002;</p>
+<blockquote>
+<p>&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#for_statement"><em>for&#x8BED;&#x53E5;</em></a><br><em>&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#for_in_statement"><em>for-in&#x8BED;&#x53E5;</em></a><br><em>&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#wheetatype&#x7C7B;&#x578B;ile_statement"><em>while&#x8BED;&#x53E5;</em></a><br><em>&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#do_while_statement"><em>do-while&#x8BED;&#x53E5;</em></a>  </p>
+</blockquote>
+<p><a name="for_statements"></a></p>
+<h3 id="for-&#x8BED;&#x53E5;">For &#x8BED;&#x53E5;</h3>
+<p><code>for</code>&#x8BED;&#x53E5;&#x53EA;&#x6709;&#x5728;&#x5FAA;&#x73AF;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x65F6;&#x91CD;&#x590D;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x6B64;&#x65F6;&#x8BA1;&#x6570;&#x5668;&#x9012;&#x589E;&#x3002;</p>
+<p><code>for</code>&#x8BED;&#x53E5;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>for <code>initialzation</code>; <code>condition</code>; <code>increment</code> {<br>    <code>statements</code><br>}  </p>
+</blockquote>
+<p><em>initialzation</em>&#x3001;<em>condition</em> &#x548C; <em>increment</em> &#x4E4B;&#x95F4;&#x7684;&#x5206;&#x53F7;&#xFF0C;&#x4EE5;&#x53CA;&#x5305;&#x56F4;&#x5FAA;&#x73AF;&#x4F53; <em>statements</em> &#x7684;&#x5927;&#x62EC;&#x53F7;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x7701;&#x7565;&#x7684;&#x3002;</p>
+<p><code>for</code>&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><em>initialzation</em> <em>&#x5FAA;&#x73AF;&#x53D8;&#x91CF;</em> &#x53EA;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x58F0;&#x660E;&#x548C;&#x521D;&#x59CB;&#x5316;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x5FAA;&#x73AF;&#x4E2D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;&#x3002;</li>
+<li>&#x5224;&#x65AD; <em>condition</em> &#x5FAA;&#x73AF;&#x6761;&#x4EF6;&#xFF1A;
+ &#x5982;&#x679C;&#x4E3A;<code>true</code>&#xFF0C;<em>statements</em> <em>&#x5FAA;&#x73AF;&#x4F53;</em> &#x5C06;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x7136;&#x540E;&#x8F6C;&#x5230;&#x7B2C;3&#x6B65;&#x3002;&#x5982;&#x679C;&#x4E3A;<code>false</code>&#xFF0C;<em>statements</em> &#x548C; <em>increment</em> <em>&#x5FAA;&#x73AF;&#x589E;&#x91CF;</em> &#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF0C;<code>for</code>&#x81F3;&#x6B64;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x3002;</li>
+<li>&#x8BA1;&#x7B97; <em>increment</em> &#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x7136;&#x540E;&#x8F6C;&#x5230;&#x7B2C;2&#x6B65;&#x3002;</li>
+</ol>
+<p>&#x5728; <em>initialzation</em> &#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x4EC5;&#x5728;<code>for</code>&#x5FAA;&#x73AF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x6709;&#x6548;&#x3002;<em>condition</em> &#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>BooleanType</code>&#x534F;&#x8BAE;&#x3002;</p>
+<blockquote>
+<p>For &#x5FAA;&#x73AF;&#x8BED;&#x6CD5;<br><em>for&#x8BED;&#x53E5;</em> &#x2192; <strong>for</strong> <a href="10_Statements.html#for_init"><em>for&#x521D;&#x59CB;&#x6761;&#x4EF6;</em></a> <em>&#x53EF;&#x9009;</em> <strong>;</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <em>&#x53EF;&#x9009;</em> <strong>;</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <em>&#x53EF;&#x9009;</em> <a href="05_Declarations.html#code_block"><em>&#x4EE3;&#x7801;&#x5757;</em></a><br><em>for&#x8BED;&#x53E5;</em> &#x2192; <strong>for</strong> <strong>(</strong> <a href="10_Statements.html#for_init"><em>for&#x521D;&#x59CB;&#x6761;&#x4EF6;</em></a> <em>&#x53EF;&#x9009;</em> <strong>;</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <em>&#x53EF;&#x9009;</em> <strong>;</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <em>&#x53EF;&#x9009;</em> <strong>)</strong> <a href="05_Declarations.html#code_block"><em>&#x4EE3;&#x7801;&#x5757;</em></a><br><em>for&#x521D;&#x59CB;&#x6761;&#x4EF6;</em> &#x2192; <a href="05_Declarations.html#variable_declaration"><em>&#x53D8;&#x91CF;&#x58F0;&#x660E;</em></a> | <a href="04_Expressions.html#expression_list"><em>&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;</em></a>  </p>
+</blockquote>
+<p><a name="for-in_statements"></a></p>
+<h3 id="forin-&#x8BED;&#x53E5;">For-In &#x8BED;&#x53E5;</h3>
+<p><code>for-in</code>&#x8BED;&#x53E5;&#x5141;&#x8BB8;&#x5728;&#x91CD;&#x590D;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x5757;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x8FED;&#x4EE3;&#x96C6;&#x5408;&#xFF08;&#x6216;&#x9075;&#x5FAA;<code>Sequence</code>&#x534F;&#x8BAE;&#x7684;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#xFF09;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x9879;&#x3002;</p>
+<p><code>for-in</code>&#x8BED;&#x53E5;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>for <code>item</code> in <code>collection</code> {<br>    <code>statements</code><br>}  </p>
+</blockquote>
+<p><code>for-in</code>&#x8BED;&#x53E5;&#x5728;&#x5FAA;&#x73AF;&#x5F00;&#x59CB;&#x524D;&#x4F1A;&#x8C03;&#x7528; <em>collection</em> &#x8868;&#x8FBE;&#x5F0F;&#x7684;<code>generate</code>&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;&#x7C7B;&#x578B;&#xFF08;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9075;&#x5FAA;<code>Generator</code>&#x534F;&#x8BAE;&#x7684;&#x7C7B;&#x578B;&#xFF09;&#x7684;&#x503C;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x5FAA;&#x73AF;&#x5F00;&#x59CB;&#xFF0C;&#x8C03;&#x7528; <em>collection</em> &#x8868;&#x8FBE;&#x5F0F;&#x7684;<code>next</code>&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x5176;&#x8FD4;&#x56DE;&#x503C;&#x4E0D;&#x662F;<code>None</code>&#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x88AB;&#x8D4B;&#x7ED9; <em>item</em>&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C; <em>statements</em>&#xFF0C;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#x56DE;&#x5230;&#x5FAA;&#x73AF;&#x5F00;&#x59CB;&#x5904;&#xFF1B;&#x5426;&#x5219;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x8D4B;&#x503C;&#x7ED9; <em>item</em> &#x4E5F;&#x4E0D;&#x4F1A;&#x6267;&#x884C; <em>statements</em>&#xFF0C;<code>for-in</code>&#x81F3;&#x6B64;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x3002;</p>
+<blockquote>
+<p>For-In &#x5FAA;&#x73AF;&#x8BED;&#x6CD5;<br><em>for-in&#x8BED;&#x53E5;</em> &#x2192; <strong>for</strong> <a href="07_Patterns.html#pattern"><em>&#x6A21;&#x5F0F;</em></a> <strong>in</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <a href="05_Declarations.html#code_block"><em>&#x4EE3;&#x7801;&#x5757;</em></a>  </p>
+</blockquote>
+<p><a name="while_statements"></a></p>
+<h3 id="while-&#x8BED;&#x53E5;">While &#x8BED;&#x53E5;</h3>
+<p><code>while</code>&#x8BED;&#x53E5;&#x5F53;&#x5FAA;&#x73AF;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x65F6;&#xFF0C;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x5757;&#x3002;</p>
+<p><code>while</code>&#x8BED;&#x53E5;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>while <code>condition</code> {<br>    <code>statements</code><br>}  </p>
+</blockquote>
+<p><code>while</code>&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x8BA1;&#x7B97; <em>condition</em> &#x8868;&#x8FBE;&#x5F0F;&#xFF1A;
+ &#x5982;&#x679C;&#x4E3A;&#x771F;<code>true</code>&#xFF0C;&#x8F6C;&#x5230;&#x7B2C;2&#x6B65;&#x3002;&#x5982;&#x679C;&#x4E3A;<code>false</code>&#xFF0C;<code>while</code>&#x81F3;&#x6B64;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x3002;</li>
+<li>&#x6267;&#x884C; <em>statements</em> &#xFF0C;&#x7136;&#x540E;&#x8F6C;&#x5230;&#x7B2C;1&#x6B65;&#x3002;</li>
+</ol>
+<p>&#x7531;&#x4E8E; <em>condition</em> &#x7684;&#x503C;&#x5728; <em>statements</em> &#x6267;&#x884C;&#x524D;&#x5C31;&#x5DF2;&#x8BA1;&#x7B97;&#x51FA;&#xFF0C;&#x56E0;&#x6B64;<code>while</code>&#x8BED;&#x53E5;&#x4E2D;&#x7684; <em>statements</em> &#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x82E5;&#x5E72;&#x6B21;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<p><em>condition</em> &#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>BooleanType</code>&#x534F;&#x8BAE;&#x3002;&#x540C;&#x65F6;&#xFF0C;<em>condition</em> &#x8868;&#x8FBE;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/01_The_Basics.html#optional_binding">&#x53EF;&#x9009;&#x7ED1;&#x5B9A;</a>&#x3002;</p>
+<blockquote>
+<p>While &#x5FAA;&#x73AF;&#x8BED;&#x6CD5;<br><em>while&#x8BED;&#x53E5;</em> &#x2192; <strong>while</strong> <a href="10_Statements.html#while_condition"><em>while&#x6761;&#x4EF6;</em></a> <a href="05_Declarations.html#code_block"><em>&#x4EE3;&#x7801;&#x5757;</em></a><br><em>&#x6761;&#x4EF6;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> | <a href="05_Declarations.html#declaration"><em>&#x58F0;&#x660E;</em></a><br><em>&#x6761;&#x4EF6;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x6761;&#x4EF6;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> | <a href="TODO"><em>&#x6761;&#x4EF6;&#x5217;&#x8868;</em></a><br><em>&#x6761;&#x4EF6;</em> &#x2192; <a href="10_Statement.html#availability"><em>&#x53EF;&#x7528;&#x6761;&#x4EF6;</em></a> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a><br><em>&#x6761;&#x4EF6;&#x5217;&#x8868;</em> &#x2192; <a href="TODO"><em>&#x6761;&#x4EF6;&#x6761;&#x4EF6;</em></a>  <a href="TODO"><em>&#x6761;&#x4EF6;&#x5217;&#x8868;</em></a><br><em>&#x6761;&#x4EF6;</em> &#x2192; <a href="10_Statement.html#availability"><em>&#x53EF;&#x7528;&#x6761;&#x4EF6;</em></a> <a href="../chapter2/01_The_Basics.html#optional_binding">&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x6761;&#x4EF6;</a><br><em>case&#x6761;&#x4EF6;</em> &#x2192; <strong>case</strong> <a href="07_Patterns.html#pattern"><em>&#x6A21;&#x5F0F;</em></a> <a href="TODO">&#x6784;&#x9020;&#x5668;</a> <a href="DOTO">where</a><br><em>&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x6761;&#x4EF6;</em> &#x2192; <a href="TODO">&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x5934;</a> <a href="TODO">&#x6301;&#x7EED;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;</a> <a href="TODO">&#x6301;&#x7EED;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x5217;&#x8868;</a><br><em>&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x5934;</em> &#x2192; <strong>let</strong> <a href="07_Patterns.html#pattern"><em>&#x6A21;&#x5F0F;</em></a>  <a href="TODO">&#x6784;&#x9020;&#x5668;</a>  <strong>var</strong>  <a href="07_Patterns.html#pattern"><em>&#x6A21;&#x5F0F;</em></a>  <a href="TODO">&#x6784;&#x9020;&#x5668;</a><br> <em>&#x53EF;&#x6301;&#x7EED;&#x7ED1;&#x5B9A;&#x5217;&#x8868;</em> &#x2192;  <a href="07_Patterns.html#pattern"><em>&#x6A21;&#x5F0F;</em></a> |  <a href="TODO">&#x6784;&#x9020;&#x5668;</a> <a href="TODO">&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x5934;</a></p>
+</blockquote>
+<p><a name="while-while_statements"></a></p>
+<h3 id="repeatwhile-&#x8BED;&#x53E5;">Repeat-While &#x8BED;&#x53E5;</h3>
+<p><code>repeat-while</code>&#x8BED;&#x53E5;&#x5141;&#x8BB8;&#x4EE3;&#x7801;&#x5757;&#x88AB;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x6216;&#x591A;&#x6B21;&#x3002;</p>
+<p><code>repeat-while</code>&#x8BED;&#x53E5;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>repeat {<br>    <code>statements</code><br>} while <code>condition</code>  </p>
+</blockquote>
+<p><code>repeat-while</code>&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x6267;&#x884C; <em>statements</em>&#xFF0C;&#x7136;&#x540E;&#x8F6C;&#x5230;&#x7B2C;2&#x6B65;&#x3002;</li>
+<li>&#x8BA1;&#x7B97; <em>condition</em> &#x8868;&#x8FBE;&#x5F0F;&#xFF1A;
+ &#x5982;&#x679C;&#x4E3A;<code>true</code>&#xFF0C;&#x8F6C;&#x5230;&#x7B2C;1&#x6B65;&#x3002;&#x5982;&#x679C;&#x4E3A;<code>false</code>&#xFF0C;<code>repeat-while</code>&#x81F3;&#x6B64;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x3002;</li>
+</ol>
+<p>&#x7531;&#x4E8E; <em>condition</em> &#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x662F;&#x5728; <em>statements</em> &#x6267;&#x884C;&#x540E;&#x624D;&#x8BA1;&#x7B97;&#x51FA;&#xFF0C;&#x56E0;&#x6B64;<code>repeat-while</code>&#x8BED;&#x53E5;&#x4E2D;&#x7684; <em>statements</em> &#x81F3;&#x5C11;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x3002;</p>
+<p><em>condition</em> &#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>BooleanType</code>&#x534F;&#x8BAE;&#x3002;&#x540C;&#x65F6;&#xFF0C;<em>condition</em> &#x8868;&#x8FBE;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/01_The_Basics.html#optional_binding">&#x53EF;&#x9009;&#x7ED1;&#x5B9A;</a>&#x3002;</p>
+<blockquote>
+<p>Repeat-While &#x5FAA;&#x73AF;&#x8BED;&#x6CD5;  </p>
+<ul>
+<li>repeat-while&#x8BED;&#x53E5;<em> &#x2192; <strong>repeat</strong> [</em>&#x4EE3;&#x7801;&#x5757;<em>](../chapter3/05_Declarations.html#code_block) <strong>while</strong> [</em>while&#x6761;&#x4EF6;*](../chapter3/10_Statements.html#while_condition)  </li>
+</ul>
+</blockquote>
+<p><a name="branch_statements"></a></p>
+<h2 id="&#x5206;&#x652F;&#x8BED;&#x53E5;">&#x5206;&#x652F;&#x8BED;&#x53E5;</h2>
+<p>&#x53D6;&#x51B3;&#x4E8E;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x6761;&#x4EF6;&#x7684;&#x503C;&#xFF0C;&#x5206;&#x652F;&#x8BED;&#x53E5;&#x5141;&#x8BB8;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x6307;&#x5B9A;&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x663E;&#x7136;&#xFF0C;&#x5206;&#x652F;&#x8BED;&#x53E5;&#x4E2D;&#x6761;&#x4EF6;&#x7684;&#x503C;&#x5C06;&#x4F1A;&#x51B3;&#x5B9A;&#x5982;&#x4F55;&#x5206;&#x652F;&#x4EE5;&#x53CA;&#x6267;&#x884C;&#x54EA;&#x4E00;&#x5757;&#x4EE3;&#x7801;&#x3002;Swift &#x63D0;&#x4F9B;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5206;&#x652F;&#x8BED;&#x53E5;&#xFF1A;<code>if</code>&#x8BED;&#x53E5;&#x548C;<code>switch</code>&#x8BED;&#x53E5;&#x3002;</p>
+<p><code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x63A7;&#x5236;&#x6D41;&#x53EF;&#x4EE5;&#x7528;<code>break</code>&#x8BED;&#x53E5;&#x4FEE;&#x6539;&#xFF0C;&#x8BE6;&#x60C5;&#x8BF7;&#x89C1;<a href="#break_statement">Break &#x8BED;&#x53E5;</a>&#x3002;</p>
+<blockquote>
+<p>&#x5206;&#x652F;&#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>&#x5206;&#x652F;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#if_statement"><em>if&#x8BED;&#x53E5;</em></a><br><em>&#x5206;&#x652F;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#switch_statement"><em>switch&#x8BED;&#x53E5;</em></a>  </p>
+</blockquote>
+<p><a name="if_statements"></a></p>
+<h3 id="if-&#x8BED;&#x53E5;">If &#x8BED;&#x53E5;</h3>
+<p>&#x53D6;&#x51B3;&#x4E8E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6761;&#x4EF6;&#x7684;&#x503C;&#xFF0C;<code>if</code>&#x8BED;&#x53E5;&#x5C06;&#x51B3;&#x5B9A;&#x6267;&#x884C;&#x54EA;&#x4E00;&#x5757;&#x4EE3;&#x7801;&#x3002;</p>
+<p><code>if</code>&#x8BED;&#x53E5;&#x6709;&#x4E24;&#x79CD;&#x6807;&#x51C6;&#x5F62;&#x5F0F;&#xFF0C;&#x5728;&#x8FD9;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x91CC;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x5927;&#x62EC;&#x53F7;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x662F;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x65F6;&#x6267;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<blockquote>
+<p>if <code>condition</code> {<br>    <code>statements</code><br>}  </p>
+</blockquote>
+<p>&#x7B2C;&#x4E8C;&#x79CD;&#x5F62;&#x5F0F;&#x662F;&#x5728;&#x7B2C;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x6DFB;&#x52A0; <em>else &#x8BED;&#x53E5;</em>&#xFF0C;&#x5F53;&#x53EA;&#x6709;&#x4E00;&#x4E2A; else &#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<blockquote>
+<p>if <code>condition</code> {<br>    <code>statements to execute if condition is true</code><br>} else {<br>    <code>statements to execute if condition is false</code><br>}</p>
+</blockquote>
+<p>&#x540C;&#x65F6;&#xFF0C;else &#x8BED;&#x53E5;&#x4E5F;&#x53EF;&#x5305;&#x542B;<code>if</code>&#x8BED;&#x53E5;&#xFF0C;&#x4ECE;&#x800C;&#x5F62;&#x6210;&#x4E00;&#x6761;&#x94FE;&#x6765;&#x6D4B;&#x8BD5;&#x66F4;&#x591A;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<blockquote>
+<p>if <code>condition 1</code> {<br>    <code>statements to execute if condition 1 is true</code><br>} else if <code>condition 2</code> {<br>    <code>statements to execute if condition 2 is true</code><br>}<br>else {<br>    <code>statements to execute if both conditions are false</code><br>}  </p>
+</blockquote>
+<p><code>if</code>&#x8BED;&#x53E5;&#x4E2D;&#x6761;&#x4EF6;&#x7684;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>LogicValue</code>&#x534F;&#x8BAE;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x6761;&#x4EF6;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/01_The_Basics.html#optional_binding">&#x53EF;&#x9009;&#x7ED1;&#x5B9A;</a>&#x3002;</p>
+<blockquote>
+<p>If&#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>if&#x8BED;&#x53E5;</em> &#x2192; <strong>if</strong> <a href="10_Statements.html#if_condition"><em>if&#x6761;&#x4EF6;</em></a> <a href="05_Declarations.html#code_block"><em>&#x4EE3;&#x7801;&#x5757;</em></a> <a href="10_Statements.html#else_clause"><em>else(Clause)</em></a> <em>&#x53EF;&#x9009;</em><br><em>if&#x6761;&#x4EF6;</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> | <a href="05_Declarations.html#declaration"><em>&#x58F0;&#x660E;</em></a><br><em>else(Clause)</em> &#x2192; <strong>else</strong> <a href="05_Declarations.html#code_block"><em>&#x4EE3;&#x7801;&#x5757;</em></a> | <strong>else</strong> <a href="10_Statements.html#if_statement"><em>if&#x8BED;&#x53E5;</em></a>     </p>
+</blockquote>
+<p><a name="guard_statements"></a></p>
+<h3 id="guard-&#x8BED;&#x53E5;">Guard &#x8BED;&#x53E5;</h3>
+<p><code>guard</code> &#x8BED;&#x53E5;&#x7528;&#x6765;&#x8F6C;&#x79FB;&#x7A0B;&#x5E8F;&#x63A7;&#x5236;&#x51FA;&#x5176;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x6761;&#x4EF6;&#x4E0D;&#x6210;&#x7ACB;&#x3002;
+ <code>guard</code> &#x8BED;&#x53E5;&#x7684;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;    </p>
+<blockquote>
+<p>guard <code>condition</code> else {<br>   <code>statements</code><br>}    </p>
+</blockquote>
+<p> <code>guard</code>&#x8BED;&#x53E5;&#x4E2D;&#x6761;&#x4EF6;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x9075;&#x5FAA;<code>LogicValue</code>&#x534F;&#x8BAE;&#x3002;&#x4E14;&#x6761;&#x4EF6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/01_The_Basics.html#optional_binding">&#x53EF;&#x9009;&#x7ED1;&#x5B9A;</a>&#x3002;</p>
+<p> &#x5728;<code>guard</code>&#x8BED;&#x53E5;&#x4E2D;&#x58F0;&#x660E;&#x7684;&#x5E38;&#x91CF;&#x6216;&#x8005;&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x7528;&#x8303;&#x56F4;&#x4ECE;&#x58F0;&#x660E;&#x5F00;&#x59CB;&#x5230;&#x4F5C;&#x7528;&#x57DF;&#x7ED3;&#x675F;,&#x5E38;&#x91CF;&#x548C;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x4ECE;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x58F0;&#x660E;&#x4E2D;&#x5206;&#x914D;&#x3002;</p>
+<p> <code>guard</code>&#x8BED;&#x53E5;&#x9700;&#x8981;&#x6709;<code>else</code>&#x5B50;&#x53E5;&#xFF0C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x8C03;&#x7528;&#x88AB;<code>noreturn</code>&#x5C5E;&#x6027;&#x6807;&#x8BB0;&#x7684;&#x51FD;&#x6570;,&#x6216;&#x8005;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x628A;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x8F6C;&#x79FB;&#x5230;guard&#x8BED;&#x53E5;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5916;&#x3002;    </p>
+<ul>
+<li><code>return</code></li>
+<li><code>break</code></li>
+<li><code>continue</code></li>
+<li><code>throw</code>    </li>
+</ul>
+<p>&#x6267;&#x884C;&#x8F6C;&#x79FB;&#x8BED;&#x53E5;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="TODO">&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</a></p>
+<p><a name="switch_statements"></a></p>
+<h3 id="switch-&#x8BED;&#x53E5;">Switch &#x8BED;&#x53E5;</h3>
+<p>&#x53D6;&#x51B3;&#x4E8E;<code>switch</code>&#x8BED;&#x53E5;&#x7684;<em>&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;control expression&#xFF09;</em>&#xFF0C;<code>switch</code>&#x8BED;&#x53E5;&#x5C06;&#x51B3;&#x5B9A;&#x6267;&#x884C;&#x54EA;&#x4E00;&#x5757;&#x4EE3;&#x7801;&#x3002;</p>
+<p><code>switch</code>&#x8BED;&#x53E5;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>switch <code>control expression</code> {<br>    case <code>pattern 1</code>:<br>        <code>statements</code><br>    case <code>pattern 2</code> where <code>condition</code>:<br>        <code>statements</code><br>    case <code>pattern 3</code> where <code>condition</code>,<br>    <code>pattern 4</code> where <code>condition</code>:<br>        <code>statements</code><br>    default:<br>        <code>statements</code><br>}  </p>
+</blockquote>
+<p><code>switch</code>&#x8BED;&#x53E5;&#x7684;<em>&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;control expression&#xFF09;</em>&#x4F1A;&#x9996;&#x5148;&#x88AB;&#x8BA1;&#x7B97;&#xFF0C;&#x7136;&#x540E;&#x4E0E;&#x6BCF;&#x4E00;&#x4E2A; case &#x7684;&#x6A21;&#x5F0F;&#xFF08;pattern&#xFF09;&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x5339;&#x914D;&#x6210;&#x529F;&#xFF0C;&#x7A0B;&#x5E8F;&#x5C06;&#x4F1A;&#x6267;&#x884C;&#x5BF9;&#x5E94;&#x7684; case &#x5206;&#x652F;&#x91CC;&#x7684; <em>statements</em>&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A; case &#x5206;&#x652F;&#x90FD;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5728;&#x6BCF;&#x4E00;&#x4E2A; case &#x5206;&#x652F;&#x4E2D;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x5728;&#x5339;&#x914D;&#x5230;&#x7684; case &#x5206;&#x652F;&#x4E2D;&#x6267;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x53EA;&#x9700;&#x5728;&#x8BE5;&#x5206;&#x652F;&#x91CC;&#x5199;&#x4E00;&#x6761;<code>break</code>&#x8BED;&#x53E5;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x4F5C;&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x662F;&#x5341;&#x5206;&#x7075;&#x6D3B;&#x7684;&#xFF0C;&#x9664;&#x4E86;&#x6807;&#x91CF;&#x7C7B;&#x578B;(scalar types&#xFF0C;&#x5982;<code>Int</code>&#x3001;<code>Character</code>)&#x5916;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x5305;&#x62EC;&#x6D6E;&#x70B9;&#x6570;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5143;&#x7EC4;&#x3001;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x548C;&#x53EF;&#x9009;&#xFF08;optional&#xFF09;&#x7C7B;&#x578B;&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#x503C;&#x548C;&#x6307;&#x5B9A;&#x7684;&#x8303;&#x56F4;(range)&#x7B49;&#x3002;&#x5173;&#x4E8E;&#x5728;<code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/05_Control_Flow.html">&#x63A7;&#x5236;&#x6D41;</a>&#x4E00;&#x7AE0;&#x7684; <a href="../chapter2/05_Control_Flow.html#switch">Switch</a>&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x6A21;&#x5F0F;&#x540E;&#x9762;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8D77;&#x4FDD;&#x62A4;&#x4F5C;&#x7528;&#x7684;&#x8868;&#x8FBE;&#x5F0F;(guard expression)&#x3002;<em>&#x8D77;&#x4FDD;&#x62A4;&#x4F5C;&#x7528;&#x7684;&#x8868;&#x8FBE;&#x5F0F;</em>&#x662F;&#x8FD9;&#x6837;&#x6784;&#x6210;&#x7684;&#xFF1A;&#x5173;&#x952E;&#x5B57;<code>where</code>&#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x4F5C;&#x4E3A;&#x989D;&#x5916;&#x6D4B;&#x8BD5;&#x6761;&#x4EF6;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;<em>&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;</em>&#x5339;&#x914D;&#x4E00;&#x4E2A;<em>case</em>&#x7684;&#x67D0;&#x4E2A;&#x6A21;&#x5F0F;&#x4E14;&#x8D77;&#x4FDD;&#x62A4;&#x4F5C;&#x7528;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;&#x771F;&#x65F6;&#xFF0C;&#x5BF9;&#x5E94; case &#x5206;&#x652F;&#x4E2D;&#x7684; <em>statements</em> &#x624D;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<em>&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;</em>&#x53EA;&#x4F1A;&#x5339;&#x914D;&#x542B;&#x4E24;&#x4E2A;&#x76F8;&#x7B49;&#x5143;&#x7D20;&#x7684;&#x5143;&#x7EC4;&#xFF0C;&#x5982;<code>(1, 1)</code>&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">case</span> <span class="token keyword">let</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">where</span> x <span class="token operator">==</span> y<span class="token punctuation">:</span>
+</code></pre>
+<p>&#x6B63;&#x5982;&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x6A21;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;<code>let</code>&#xFF08;&#x6216;<code>var</code>&#xFF09;&#x8BED;&#x53E5;&#x6765;&#x7ED1;&#x5B9A;&#x5E38;&#x91CF;&#xFF08;&#x6216;&#x53D8;&#x91CF;&#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x5E38;&#x91CF;&#xFF08;&#x6216;&#x53D8;&#x91CF;&#xFF09;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x8D77;&#x4FDD;&#x62A4;&#x4F5C;&#x7528;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x5176;&#x5BF9;&#x5E94;&#x7684;<em>case</em>&#x5757;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x5F15;&#x7528;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C; case &#x4E2D;&#x6709;&#x591A;&#x4E2A;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#x90FD;&#x4E0D;&#x80FD;&#x7ED1;&#x5B9A;&#x5E38;&#x91CF;&#xFF08;&#x6216;&#x53D8;&#x91CF;&#xFF09;&#x3002;</p>
+<p><code>switch</code>&#x8BED;&#x53E5;&#x4E5F;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x9ED8;&#x8BA4;&#xFF08;<code>default</code>&#xFF09;&#x5206;&#x652F;&#xFF0C;&#x53EA;&#x6709;&#x5176;&#x5B83; case &#x5206;&#x652F;&#x90FD;&#x65E0;&#x6CD5;&#x5339;&#x914D;&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x624D;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x4E00;&#x4E2A;<code>switch</code>&#x8BED;&#x53E5;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#xFF0C;&#x800C;&#x4E14;&#x5FC5;&#x987B;&#x5728;<code>switch</code>&#x8BED;&#x53E5;&#x7684;&#x6700;&#x540E;&#x9762;&#x3002;</p>
+<p>&#x5C3D;&#x7BA1;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x64CD;&#x4F5C;&#x5B9E;&#x9645;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x6A21;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x987A;&#x5E8F;&#x662F;&#x4E0D;&#x53EF;&#x77E5;&#x7684;&#xFF0C;&#x4F46;&#x662F; Swift &#x89C4;&#x5B9A;<code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x7684;&#x987A;&#x5E8F;&#x548C;&#x4E66;&#x5199;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x987A;&#x5E8F;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x591A;&#x4E2A;&#x6A21;&#x5F0F;&#x542B;&#x6709;&#x76F8;&#x540C;&#x7684;&#x503C;&#x4E14;&#x80FD;&#x591F;&#x5339;&#x914D;&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x53EA;&#x4F1A;&#x6267;&#x884C;&#x6E90;&#x4EE3;&#x7801;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x7684; case &#x5206;&#x652F;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<h4 id="switch-&#x8BED;&#x53E5;&#x5FC5;&#x987B;&#x662F;&#x5B8C;&#x5907;&#x7684;">Switch &#x8BED;&#x53E5;&#x5FC5;&#x987B;&#x662F;&#x5B8C;&#x5907;&#x7684;</h4>
+<p>&#x5728; Swift &#x4E2D;&#xFF0C;<code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x503C;&#x90FD;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A; case &#x5206;&#x652F;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7C7B;&#x578B;&#x662F;<code>Int</code>&#xFF09;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x5757;&#x6EE1;&#x8DB3;&#x8BE5;&#x8981;&#x6C42;&#x3002;</p>
+<h4 id="&#x4E0D;&#x5B58;&#x5728;&#x9690;&#x5F0F;&#x7684;&#x8D2F;&#x7A7F;fall-through">&#x4E0D;&#x5B58;&#x5728;&#x9690;&#x5F0F;&#x7684;&#x8D2F;&#x7A7F;(fall through)</h4>
+<p>&#x5F53;&#x5339;&#x914D;&#x7684; case &#x5206;&#x652F;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x7EC8;&#x6B62;<code>switch</code>&#x8BED;&#x53E5;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x4E2A; case &#x5206;&#x652F;&#x3002;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x4E2A; case &#x5206;&#x652F;&#xFF0C;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x5730;&#x5728;&#x4F60;&#x9700;&#x8981;&#x7684; case &#x5206;&#x652F;&#x91CC;&#x4F7F;&#x7528;<code>fallthrough</code>&#x8BED;&#x53E5;&#x3002;&#x5173;&#x4E8E;<code>fallthrough</code>&#x8BED;&#x53E5;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1; <a href="#fallthrough_statement">Fallthrough &#x8BED;&#x53E5;</a>&#x3002;</p>
+<blockquote>
+<p>Switch&#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>switch&#x8BED;&#x53E5;</em> &#x2192; <strong>switch</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <strong>{</strong> <a href="10_Statements.html#switch_cases"><em>SwitchCase&#x5217;&#x8868;</em></a> <em>&#x53EF;&#x9009;</em> <strong>}</strong><br><em>SwitchCase&#x5217;&#x8868;</em> &#x2192; <a href="10_Statements.html#switch_case"><em>SwitchCase</em></a> <a href="10_Statements.html#switch_cases"><em>SwitchCase&#x5217;&#x8868;</em></a> <em>&#x53EF;&#x9009;</em><br><em>SwitchCase</em> &#x2192; <a href="10_Statements.html#case_label"><em>case&#x6807;&#x7B7E;</em></a> <a href="10_Statements.html#statements"><em>&#x591A;&#x6761;&#x8BED;&#x53E5;(Statements)</em></a> | <a href="10_Statements.html#default_label"><em>default&#x6807;&#x7B7E;</em></a> <a href="10_Statements.html#statements"><em>&#x591A;&#x6761;&#x8BED;&#x53E5;(Statements)</em></a><br><em>SwitchCase</em> &#x2192; <a href="10_Statements.html#case_label"><em>case&#x6807;&#x7B7E;</em></a> <strong>;</strong> | <a href="10_Statements.html#default_label"><em>default&#x6807;&#x7B7E;</em></a> <strong>;</strong><br><em>case&#x6807;&#x7B7E;</em> &#x2192; <strong>case</strong> <a href="10_Statements.html#case_item_list"><em>case&#x9879;&#x5217;&#x8868;</em></a> <strong>:</strong><br><em>case&#x9879;&#x5217;&#x8868;</em> &#x2192; <a href="07_Patterns.html#pattern"><em>&#x6A21;&#x5F0F;</em></a> <a href="10_Statements.html#guard_clause"><em>guard-clause</em></a> <em>&#x53EF;&#x9009;</em> | <a href="07_Patterns.html#pattern"><em>&#x6A21;&#x5F0F;</em></a> <a href="10_Statements.html#guard_clause"><em>guard-clause</em></a> <em>&#x53EF;&#x9009;</em> <strong>,</strong> <a href="10_Statements.html#case_item_list"><em>case&#x9879;&#x5217;&#x8868;</em></a><br><em>default&#x6807;&#x7B7E;</em> &#x2192; <strong>default</strong> <strong>:</strong><br><em>where-clause</em> &#x2192; <strong>where</strong> <a href="10_Statements.html#guard"><em>guard-expression</em></a><br><em>where-expression</em> &#x2192; <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a>  </p>
+</blockquote>
+<p><a name="labeled_statements">&lt;/a&gt;
+<a name="control_transfer_statements"></a></a></p>
+<h2 id="&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x8BED;&#x53E5;">&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x8BED;&#x53E5;</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x6216;<code>switch</code>&#x8BED;&#x53E5;&#x524D;&#x9762;&#x52A0;&#x4E0A;<em>&#x6807;&#x7B7E;</em>&#xFF0C;&#x5B83;&#x7531;&#x6807;&#x7B7E;&#x540D;&#x548C;&#x7D27;&#x968F;&#x5176;&#x540E;&#x7684;&#x5192;&#x53F7;(:)&#x7EC4;&#x6210;&#x3002;&#x5728;<code>break</code>&#x548C;<code>continue</code>&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x6807;&#x7B7E;&#x540D;&#x53EF;&#x4EE5;&#x663E;&#x5F0F;&#x5730;&#x5728;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x6216;<code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x66F4;&#x6539;&#x63A7;&#x5236;&#x6D41;&#xFF0C;&#x628A;&#x63A7;&#x5236;&#x6743;&#x4F20;&#x9012;&#x7ED9;&#x6307;&#x5B9A;&#x6807;&#x7B7E;&#x6807;&#x8BB0;&#x7684;&#x8BED;&#x53E5;&#x3002;&#x5173;&#x4E8E;&#x8FD9;&#x4E24;&#x6761;&#x8BED;&#x53E5;&#x7528;&#x6CD5;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1; <a href="#break_statement">Break &#x8BED;&#x53E5;</a>&#x548C; <a href="#continue_statement">Continue &#x8BED;&#x53E5;</a>&#x3002;</p>
+<p>&#x6807;&#x7B7E;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x8BE5;&#x6807;&#x7B7E;&#x6240;&#x6807;&#x8BB0;&#x7684;&#x8BED;&#x53E5;&#x4E4B;&#x540E;&#x7684;&#x6240;&#x6709;&#x8BED;&#x53E5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4E0D;&#x4F7F;&#x7528;&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x4F46;&#x53EA;&#x8981;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x6807;&#x7B7E;&#x540D;&#x5C31;&#x5FC5;&#x552F;&#x4E00;&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x4F7F;&#x7528;&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x8BED;&#x53E5;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/05_Control_Flow.html">&#x63A7;&#x5236;&#x6D41;</a>&#x4E00;&#x7AE0;&#x7684;<a href="../chapter2/05_Control_Flow.html#labeled_statements">&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x8BED;&#x53E5;</a>&#x3002;</p>
+<blockquote>
+<p>&#x6807;&#x8BB0;&#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>&#x6807;&#x8BB0;&#x8BED;&#x53E5;(Labeled Statement)</em> &#x2192; <a href="10_Statements.html#statement_label"><em>&#x8BED;&#x53E5;&#x6807;&#x7B7E;</em></a> <a href="10_Statements.html#loop_statement"><em>&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</em></a> | <a href="10_Statements.html#statement_label"><em>&#x8BED;&#x53E5;&#x6807;&#x7B7E;</em></a> <a href="10_Statements.html#switch_statement"><em>switch&#x8BED;&#x53E5;</em></a><br><em>&#x8BED;&#x53E5;&#x6807;&#x7B7E;</em> &#x2192; <a href="10_Statements.html#label_name"><em>&#x6807;&#x7B7E;&#x540D;&#x79F0;</em></a> <strong>:</strong><br><em>&#x6807;&#x7B7E;&#x540D;&#x79F0;</em> &#x2192; <a href="02_Lexical_Structure.html#identifier"><em>&#x6807;&#x8BC6;&#x7B26;</em></a>  </p>
+</blockquote>
+<p><a name="control_transfer_statements"></a></p>
+<h2 id="&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;">&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</h2>
+<p>&#x901A;&#x8FC7;&#x65E0;&#x6761;&#x4EF6;&#x5730;&#x628A;&#x63A7;&#x5236;&#x6743;&#x4ECE;&#x4E00;&#x7247;&#x4EE3;&#x7801;&#x4F20;&#x9012;&#x5230;&#x53E6;&#x4E00;&#x7247;&#x4EE3;&#x7801;&#xFF0C;&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;&#x80FD;&#x591F;&#x6539;&#x53D8;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7684;&#x987A;&#x5E8F;&#x3002;Swift &#x63D0;&#x4F9B;&#x56DB;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;&#xFF1A;<code>break</code>&#x8BED;&#x53E5;&#x3001;<code>continue</code>&#x8BED;&#x53E5;&#x3001;<code>fallthrough</code>&#x8BED;&#x53E5;&#x548C;<code>return</code>&#x8BED;&#x53E5;&#x3002;</p>
+<blockquote>
+<p>&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;(Control Transfer Statement) &#x8BED;&#x6CD5;<br><em>&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#break_statement"><em>break&#x8BED;&#x53E5;</em></a><br><em>&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#continue_statement"><em>continue&#x8BED;&#x53E5;</em></a><br><em>&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#fallthrough_statement"><em>fallthrough&#x8BED;&#x53E5;</em></a><br><em>&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#return_statement"><em>return&#x8BED;&#x53E5;</em></a><br><em>&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</em> &#x2192; <a href="10_Statements.html#throw_statement"><em>throw&#x8BED;&#x53E5;</em></a>  </p>
+</blockquote>
+<p><a name="break_statements"></a></p>
+<h3 id="break-&#x8BED;&#x53E5;">Break &#x8BED;&#x53E5;</h3>
+<p><code>break</code>&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x7EC8;&#x6B62;&#x5FAA;&#x73AF;&#x6216;<code>switch</code>&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#x3002;&#x4F7F;&#x7528;<code>break</code>&#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x53EA;&#x5199;<code>break</code>&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x8BCD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;<code>break</code>&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x6807;&#x7B7E;&#x540D;&#xFF08;label name&#xFF09;&#xFF0C;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<blockquote>
+<p>break<br>break <code>label name</code></p>
+</blockquote>
+<p>&#x5F53;<code>break</code>&#x8BED;&#x53E5;&#x540E;&#x9762;&#x5E26;&#x6807;&#x7B7E;&#x540D;&#x65F6;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x7EC8;&#x6B62;&#x7531;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x6807;&#x8BB0;&#x7684;&#x5FAA;&#x73AF;&#x6216;<code>switch</code>&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x800C;&#x5F53;&#x53EA;&#x5199;<code>break</code>&#x65F6;&#xFF0C;&#x5219;&#x4F1A;&#x7EC8;&#x6B62;<code>switch</code>&#x8BED;&#x53E5;&#x6216;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x5305;&#x542B;<code>break</code>&#x8BED;&#x53E5;&#x7684;&#x6700;&#x5185;&#x5C42;&#x5FAA;&#x73AF;&#x7684;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x63A7;&#x5236;&#x6743;&#x90FD;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x5FAA;&#x73AF;&#x6216;<code>switch</code>&#x8BED;&#x53E5;&#x5916;&#x9762;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x4F7F;&#x7528;<code>break</code>&#x8BED;&#x53E5;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/05_Control_Flow.html">&#x63A7;&#x5236;&#x6D41;</a>&#x4E00;&#x7AE0;&#x7684; <a href="../chapter2/05_Control_Flow.html#break">Break</a> &#x548C;<a href="../chapter2/05_Control_Flow.html#labeled_statements">&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x8BED;&#x53E5;</a>&#x3002;</p>
+<blockquote>
+<p>Break &#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>break&#x8BED;&#x53E5;</em> &#x2192; <strong>break</strong> <a href="10_Statements.html#label_name"><em>&#x6807;&#x7B7E;&#x540D;&#x79F0;</em></a> <em>&#x53EF;&#x9009;</em>  </p>
+</blockquote>
+<p><a name="continue_statements"></a></p>
+<h3 id="continue-&#x8BED;&#x53E5;">Continue &#x8BED;&#x53E5;</h3>
+<p><code>continue</code>&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x7EC8;&#x6B62;&#x5FAA;&#x73AF;&#x4E2D;&#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x7EC8;&#x6B62;&#x8BE5;&#x5FAA;&#x73AF;&#x7684;&#x6267;&#x884C;&#x3002;&#x4F7F;&#x7528;<code>continue</code>&#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x53EA;&#x5199;<code>continue</code>&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x8BCD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;<code>continue</code>&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x6807;&#x7B7E;&#x540D;&#xFF08;label name&#xFF09;&#xFF0C;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<blockquote>
+<p>continue<br>continue <code>label name</code>  </p>
+</blockquote>
+<p>&#x5F53;<code>continue</code>&#x8BED;&#x53E5;&#x540E;&#x9762;&#x5E26;&#x6807;&#x7B7E;&#x540D;&#x65F6;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x7EC8;&#x6B62;&#x7531;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x6807;&#x8BB0;&#x7684;&#x5FAA;&#x73AF;&#x4E2D;&#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x7684;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x800C;&#x5F53;&#x53EA;&#x5199;<code>break</code>&#x65F6;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x7EC8;&#x6B62;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x5305;&#x542B;<code>continue</code>&#x8BED;&#x53E5;&#x7684;&#x6700;&#x5185;&#x5C42;&#x5FAA;&#x73AF;&#x4E2D;&#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x7684;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x63A7;&#x5236;&#x6743;&#x90FD;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x5FAA;&#x73AF;&#x5916;&#x9762;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x5728;<code>for</code>&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;<code>continue</code>&#x8BED;&#x53E5;&#x6267;&#x884C;&#x540E;&#xFF0C;<em>increment</em> &#x8868;&#x8FBE;&#x5F0F;&#x8FD8;&#x662F;&#x4F1A;&#x88AB;&#x8BA1;&#x7B97;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x4F53;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E; <em>increment</em> &#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x4F1A;&#x88AB;&#x8BA1;&#x7B97;&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x4F7F;&#x7528;<code>continue</code>&#x8BED;&#x53E5;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/05_Control_Flow.html">&#x63A7;&#x5236;&#x6D41;</a>&#x4E00;&#x7AE0;&#x7684; <a href="../chapter2/05_Control_Flow.html#continue">Continue</a> &#x548C;<a href="../chapter2/05_Control_Flow.html#labeled_statements">&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x8BED;&#x53E5;</a>&#x3002;</p>
+<blockquote>
+<p>Continue &#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>continue&#x8BED;&#x53E5;</em> &#x2192; <strong>continue</strong> <a href="10_Statements.html#label_name"><em>&#x6807;&#x7B7E;&#x540D;&#x79F0;</em></a> <em>&#x53EF;&#x9009;</em>  </p>
+</blockquote>
+<p><a name="fallthrough_statements"></a></p>
+<h3 id="fallthrough-&#x8BED;&#x53E5;">Fallthrough &#x8BED;&#x53E5;</h3>
+<p><code>fallthrough</code>&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x5728;<code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x4F20;&#x9012;&#x63A7;&#x5236;&#x6743;&#x3002;<code>fallthrough</code>&#x8BED;&#x53E5;&#x4F1A;&#x628A;&#x63A7;&#x5236;&#x6743;&#x4ECE;<code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x4E00;&#x4E2A; case &#x4F20;&#x9012;&#x7ED9;&#x4E0B;&#x4E00;&#x4E2A; case &#x3002;&#x8FD9;&#x79CD;&#x4F20;&#x9012;&#x662F;&#x65E0;&#x6761;&#x4EF6;&#x7684;&#xFF0C;&#x5373;&#x4F7F;&#x4E0B;&#x4E00;&#x4E2A; case &#x7684;&#x6A21;&#x5F0F;&#x4E0E;<code>switch</code>&#x8BED;&#x53E5;&#x7684;&#x63A7;&#x5236;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4E0D;&#x5339;&#x914D;&#x3002;</p>
+<p><code>fallthrough</code>&#x8BED;&#x53E5;&#x53EF;&#x51FA;&#x73B0;&#x5728;<code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x4EFB;&#x610F; case &#x91CC;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x6700;&#x540E;&#x4E00;&#x4E2A; case &#x5206;&#x652F;&#x4E2D;&#x3002;&#x540C;&#x65F6;&#xFF0C;<code>fallthrough</code>&#x8BED;&#x53E5;&#x4E5F;&#x4E0D;&#x80FD;&#x628A;&#x63A7;&#x5236;&#x6743;&#x4F20;&#x9012;&#x7ED9;&#x4F7F;&#x7528;&#x4E86;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x7684; case &#x5206;&#x652F;&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x5728;<code>switch</code>&#x8BED;&#x53E5;&#x4E2D;&#x4F7F;&#x7528;<code>fallthrough</code>&#x8BED;&#x53E5;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="../chapter2/05_Control_Flow.html">&#x63A7;&#x5236;&#x6D41;</a>&#x4E00;&#x7AE0;&#x7684;<a href="../chapter2/05_Control_Flow.html#control_transfer_statements">&#x63A7;&#x5236;&#x4F20;&#x9012;&#x8BED;&#x53E5;</a>&#x3002;</p>
+<blockquote>
+<p>Fallthrough &#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>fallthrough&#x8BED;&#x53E5;</em> &#x2192; <strong>fallthrough</strong>  </p>
+</blockquote>
+<p><a name="return_statements"></a></p>
+<h3 id="return-&#x8BED;&#x53E5;">Return &#x8BED;&#x53E5;</h3>
+<p><code>return</code>&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x5728;&#x51FD;&#x6570;&#x6216;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#x5C06;&#x63A7;&#x5236;&#x6743;&#x4F20;&#x9012;&#x7ED9;&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x63A5;&#x7740;&#x7A0B;&#x5E8F;&#x5C06;&#x4F1A;&#x4ECE;&#x8C03;&#x7528;&#x8005;&#x7684;&#x4F4D;&#x7F6E;&#x7EE7;&#x7EED;&#x5411;&#x4E0B;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>return</code>&#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x53EA;&#x5199;<code>return</code>&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x8BCD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;<code>return</code>&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<blockquote>
+<p>return<br>return <code>expression</code>  </p>
+</blockquote>
+<p>&#x5F53;<code>return</code>&#x8BED;&#x53E5;&#x540E;&#x9762;&#x5E26;&#x8868;&#x8FBE;&#x5F0F;&#x65F6;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x7ED9;&#x8C03;&#x7528;&#x8005;&#x3002;&#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x4E0E;&#x8C03;&#x7528;&#x8005;&#x671F;&#x671B;&#x7684;&#x7C7B;&#x578B;&#x4E0D;&#x5339;&#x914D;&#xFF0C;Swift &#x5219;&#x4F1A;&#x5728;&#x8FD4;&#x56DE;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x4E4B;&#x524D;&#x5C06;&#x8868;&#x8FBE;&#x5F0F;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;&#x8C03;&#x7528;&#x8005;&#x671F;&#x671B;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x800C;&#x5F53;&#x53EA;&#x5199;<code>return</code>&#x65F6;&#xFF0C;&#x4EC5;&#x4EC5;&#x662F;&#x5C06;&#x63A7;&#x5236;&#x6743;&#x4ECE;&#x8BE5;&#x51FD;&#x6570;&#x6216;&#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x7ED9;&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x800C;&#x4E0D;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#xFF08;&#x8FD9;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x6216;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E3A;<code>Void</code>&#x6216;<code>()</code>&#xFF09;</p>
+<blockquote>
+<p>Return &#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>return&#x8BED;&#x53E5;</em> &#x2192; <strong>return</strong> <a href="04_Expressions.html#expression"><em>&#x8868;&#x8FBE;&#x5F0F;</em></a> <em>&#x53EF;&#x9009;</em>     </p>
+</blockquote>
+<p><a name="availability_statements"></a></p>
+<h3 id="availability-&#x8BED;&#x53E5;">Availability &#x8BED;&#x53E5;</h3>
+<p>&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;&#xFF0C;&#x88AB;&#x5F53;&#x505A;<code>if</code> &#xFF0C;<code>while</code> &#x8BED;&#x53E5;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14; <code>guard</code> &#x8BED;&#x53E5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x57FA;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;&#x7684;&#x53EF;&#x7528;&#x6027;&#x3002;    </p>
+<p>avaliability &#x8BED;&#x53E5;&#x7684;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>if #available(<code>platform name version</code>,<code>...</code>, *) {<br>  <code>statements to execute if the APIs are available</code><br>} else {<br> <code>fallback statements to execute if the APIs are unavailable</code><br>}    </p>
+</blockquote>
+<p>&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x65F6;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x63A5;&#x53E3;&#x662F;&#x5426;&#x53EF;&#x7528;&#x3002;
+&#x5F53;&#x7F16;&#x8BD1;&#x5668;&#x68C0;&#x67E5;&#x5230;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x7684;&#x63A5;&#x53E3;&#x662F;&#x53EF;&#x7528;&#x7684;&#xFF0C;&#x5219;&#x4ECE;&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;&#x4E2D;&#x83B7;&#x53D6;&#x76F8;&#x5E94;&#x4FE1;&#x606F;&#x3002;    </p>
+<p>&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x5E73;&#x53F0;&#x540D;&#x79F0;&#x548C;&#x7248;&#x672C;&#x5217;&#x8868;&#x3002;&#x4F7F;&#x7528;<code>iOS</code>&#xFF0C;<code>OSX</code>&#xFF0C;&#x4EE5;&#x53CA;<code>watchOS</code>&#x4E3A;&#x5E73;&#x53F0;&#x540D;&#x79F0;&#xFF0C;&#x5305;&#x62EC;&#x76F8;&#x5E94;&#x7684;&#x7248;&#x672C;&#x53F7;&#x3002;*&#x53C2;&#x6570;&#x662F;&#x5FC5;&#x9700;&#x7684;&#x3002;&#x5728;&#x4EFB;&#x4F55;&#x5E73;&#x53F0;&#x4E0A;&#x4EE3;&#x7801;&#x5757;&#x4E3B;&#x4F53;&#x90FD;&#x88AB;&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;&#x4FDD;&#x62A4;&#x8D77;&#x6765;&#xFF0C;&#x7531;&#x6EE1;&#x8DB3;&#x6700;&#x4F4E;&#x90E8;&#x7F72;&#x6761;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#x8BBE;&#x5907;&#x8FD0;&#x884C;&#x3002;        </p>
+<p>&#x4E0E;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x6761;&#x4EF6;&#x4E0D;&#x540C;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26; <strong>&amp;&amp;</strong> &#x548C; <strong>||</strong> &#x5408;&#x5E76;&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;&#x3002; </p>
+<blockquote>
+<p>&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;&#x8BED;&#x6CD5;<br><em>&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;</em> &#x2192; <strong>#available</strong> ( <a href="TODO">availability-arguments&#xAD;</a> )<br><em>&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;</em> &#x2192; <a href="TODO">availability-argument&#xAD;</a> |  <a href="TODO">availability-argument</a>&#xAD; ,&#xAD; <a href="TODO">availability-arguments&#xAD;</a><br><em>&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;</em> &#x2192; <a href="TODO">&#x5E73;&#x53F0;&#x540D;&#x79F0;</a>  <a href="TODO">&#x7248;&#x672C;&#x53F7;</a><br><em>&#x53EF;&#x7528;&#x6027;&#x6761;&#x4EF6;</em> &#x2192;   <strong>*</strong><br><em>&#x5E73;&#x53F0;&#x540D;&#x79F0;</em> &#x2192;  <strong>iOS</strong> |  <strong>iOSApplicationExtension</strong><br><em>&#x5E73;&#x53F0;&#x540D;&#x79F0;</em> &#x2192; <strong>OSX</strong>  |  <strong>OSXApplicationExtension&#xAD;</strong><br><em>&#x5E73;&#x53F0;&#x540D;&#x79F0;</em> &#x2192; <strong>watchOS</strong><br><em>&#x7248;&#x672C;&#x53F7;</em> &#x2192; <a href="TODO">&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;</a><br><em>&#x7248;&#x672C;&#x53F7;</em> &#x2192; <a href="TODO">&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;</a>  <strong>.</strong> <a href="TODO">&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;</a><br><em>&#x7248;&#x672C;&#x53F7;</em> &#x2192; <a href="TODO">&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;</a>  <strong>.</strong> <a href="TODO">&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;</a> <strong>.</strong> <a href="TODO">&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;</a></p>
+</blockquote>
+<p><a name="throw_statements"></a></p>
+<h3 id="throw-&#x8BED;&#x53E5;">Throw &#x8BED;&#x53E5;</h3>
+<p><code>throw</code>&#x8BED;&#x53E5;&#x51FA;&#x73B0;&#x5728;&#x629B;&#x51FA;&#x51FD;&#x6570;&#x6216;&#x8005;&#x629B;&#x51FA;&#x65B9;&#x6CD5;&#x4F53;&#x5185;&#xFF0C;&#x6216;&#x8005;&#x7C7B;&#x578B;&#x88AB;<code>throws</code>&#x5173;&#x952E;&#x5B57;&#x6807;&#x8BB0;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x4F53;&#x5185;&#x3002;   </p>
+<p><code>throw</code>&#x8BED;&#x53E5;&#x4F7F;&#x7A0B;&#x5E8F;&#x7ED3;&#x675F;&#x6267;&#x884C;&#x5F53;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5E76;&#x5728;&#x5C01;&#x95ED;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x4F20;&#x64AD;&#x9519;&#x8BEF;&#x3002;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#x4F1A;&#x4E00;&#x76F4;&#x4F20;&#x64AD;&#xFF0C;&#x76F4;&#x5230;&#x88AB;<code>do</code>&#x8BED;&#x53E5;&#x7684;<code>catch</code>&#x5B50;&#x53E5;&#x5904;&#x7406;&#x6389;&#x3002;    </p>
+<p><code>throw</code>&#x8BED;&#x53E5;&#x7531;<code>throw</code>&#x5173;&#x952E;&#x5B57; &#x8DDF;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7EC4;&#x6210; &#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;    </p>
+<blockquote>
+<p>throw <code>expression</code>    </p>
+</blockquote>
+<p>&#x8868;&#x8FBE;&#x5F0F;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x9075;&#x5FAA; <code>LogicValue</code>&#x534F;&#x8BAE;     </p>
+<p>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x4F7F;&#x7528;<code>throw</code>&#x8BED;&#x53E5;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="TODO">&#x9519;&#x8BEF;&#x5904;&#x7406;</a>&#x4E00;&#x7AE0;&#x7684;<a href="TODO">&#x629B;&#x51FA;&#x9519;&#x8BEF;</a>&#x3002;    </p>
+<blockquote>
+<p>throw &#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>&#x629B;&#x51FA;&#x8BED;&#x53E5;</em> &#x2192; <strong>throw</strong>  <em><a href="TODO">&#x8868;&#x8FBE;&#x5F0F;&#xAD;</a></em>    </p>
+</blockquote>
+<p><a name="defer_statements"></a></p>
+<h3 id="defer-&#x8BED;&#x53E5;">Defer &#x8BED;&#x53E5;</h3>
+<p> <code>defer</code> &#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x8F6C;&#x79FB;&#x7A0B;&#x5E8F;&#x63A7;&#x5236;&#x51FA;&#x5EF6;&#x8FDF;&#x8BED;&#x53E5;&#x4F5C;&#x7528;&#x57DF;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x3002;    </p>
+<p>&#x5728; <code>defer</code> &#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x65E0;&#x8BBA;&#x7A0B;&#x5E8F;&#x63A7;&#x5236;&#x5982;&#x4F55;&#x8F6C;&#x79FB;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740; <code>defer</code> &#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x88AB;&#x4F7F;&#x7528;&#x5728;&#x4EE5;&#x4E0B;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#xFF0C;&#x50CF;&#x624B;&#x52A8;&#x5F97;&#x6267;&#x884C;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#xFF0C;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#xFF0C;&#x6216;&#x8005;&#x5373;&#x4F7F;&#x629B;&#x51FA;&#x4E86;&#x9519;&#x8BEF;&#x4E5F;&#x9700;&#x8981;&#x53BB;&#x5B9E;&#x73B0;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x52A8;&#x4F5C;&#x3002;    </p>
+<p>&#x5982;&#x679C;&#x591A;&#x4E2A; <code>defer</code> &#x8BED;&#x53E5;&#x51FA;&#x73B0;&#x5728;&#x540C;&#x4E00;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4EEC;&#x6267;&#x884C;&#x7684;&#x987A;&#x5E8F;&#x4E0E;&#x51FA;&#x73B0;&#x7684;&#x987A;&#x5E8F;&#x76F8;&#x53CD;&#x3002;&#x7ED9;&#x5B9A;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;<code>defer</code> &#x8BED;&#x53E5;&#xFF0C;&#x4F1A;&#x5728;&#x6700;&#x540E;&#x6267;&#x884C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6700;&#x540E;&#x6267;&#x884C;&#x7684;&#x5EF6;&#x8FDF;&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x6D89;&#x53CA;&#x7684;&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x88AB;&#x5176;&#x4ED6; <code>defer</code>&#x8BED;&#x53E5;&#x6E05;&#x7406;&#x6389;&#x3002;    </p>
+<blockquote>
+<p>1  func f( ) {<br>2  defer { print(&quot;First&quot;) }<br>3  defer { print(&quot;Second&quot;) }<br>4  defer { print(&quot;Third&quot;) }<br>5  }<br>6  f()<br>7  // prints &quot;Third&quot;<br>8  // prints &quot;Second&quot;<br>9  // prints &quot;First&quot;    </p>
+</blockquote>
+<p><code>defer</code> &#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x65E0;&#x6CD5;&#x8F6C;&#x79FB;&#x7A0B;&#x5E8F;&#x63A7;&#x5236;&#x51FA;&#x5EF6;&#x8FDF;&#x8BED;&#x53E5;&#x3002;    </p>
+<blockquote>
+<p>defer &#x8BED;&#x53E5;&#x8BED;&#x6CD5;<br><em>&#x5EF6;&#x8FDF;&#x8BED;&#x53E5;</em>  &#x2192; <strong>defer</strong> <em><a href="TODO">&#x4EE3;&#x7801;&#x5757;</a></em>    </p>
+</blockquote>
+<p><a name="do_statements"></a></p>
+<h3 id="do-&#x8BED;&#x53E5;">Do &#x8BED;&#x53E5;</h3>
+<p><code>do</code> &#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4F5C;&#x7528;&#x57DF;,&#x8BE5;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x53EF;&#x4EE5;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;<code>catch</code>&#x5B50;&#x53E5;,catch&#x5B50;&#x53E5;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E9B;&#x5339;&#x914D;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#x7684;&#x6A21;&#x5F0F;&#x3002;<code>do</code> &#x8BED;&#x53E5;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x5B9A;&#x4E49;&#x7684;&#x5E38;&#x91CF;&#x548C;&#x53D8;&#x91CF;&#xFF0C;&#x53EA;&#x80FD;&#x5728;do&#x8BED;&#x53E5;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x8BBF;&#x95EE;&#x3002;    </p>
+<p>swift &#x4E2D;&#x7684; do &#x8BED;&#x53E5;&#x4E0E;C &#x4E2D;&#x9650;&#x5B9A;&#x4EE3;&#x7801;&#x5757;&#x754C;&#x9650;&#x7684;&#x5927;&#x62EC;&#x53F7; &#xFF08;{}&#xFF09;&#x5F88;&#x76F8;&#x4F3C;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x5E76;&#x4E0D;&#x4F1A;&#x9020;&#x6210;&#x7CFB;&#x7EDF;&#x5F00;&#x9500;&#x3002;    </p>
+<blockquote>
+<p>do {<br>   try <code>expression</code><br>   <code>statements</code><br>} catch <code>pattern 1</code> {<br>    <code>statements</code><br>} catch <code>pattern 2</code> where condition {<br>    <code>statements</code><br>}    </p>
+</blockquote>
+<p>&#x5982;&#x540C;<code>switch</code>&#x8BED;&#x53E5;,&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x5224;&#x65AD;<code>catch</code>&#x5B50;&#x53E5;&#x662F;&#x5426;&#x88AB;&#x9057;&#x6F0F;&#x3002;&#x5982;&#x679C;catch&#x6CA1;&#x6709;&#x88AB;&#x9057;&#x6F0F;&#xFF0C;&#x5219;&#x8BA4;&#x4E3A;&#x9519;&#x8BEF;&#x88AB;&#x5904;&#x7406;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x9519;&#x8BEF;&#x4F1A;&#x81EA;&#x52A8;&#x4F20;&#x64AD;&#x51FA;&#x5305;&#x542B;&#x4F5C;&#x7528;&#x57DF;,&#x88AB;&#x4E00;&#x4E2A;&#x5C01;&#x95ED;&#x7684;<code>catch</code>&#x8BED;&#x53E5;&#x6216;&#x629B;&#x51FA;&#x51FD;&#x6570;&#x5904;&#x7406;&#x6389;&#xFF0C;&#x5305;&#x542B;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x4EE5;<code>throws</code>&#x5173;&#x952E;&#x5B57;&#x58F0;&#x660E;&#x3002;    </p>
+<p>&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x9519;&#x8BEF;&#x5DF2;&#x7ECF;&#x88AB;&#x5904;&#x7406;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x6240;&#x6709;&#x9519;&#x8BEF;&#x7684;<code>catch</code>&#x5B50;&#x53E5;&#xFF0C;&#x5982;&#x901A;&#x914D;&#x7B26;&#x6A21;&#x5F0F;&#xFF08;_&#xFF09;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;<code>catch</code>&#x5B50;&#x53E5;&#x4E0D;&#x6307;&#x5B9A;&#x4E00;&#x79CD;&#x6A21;&#x5F0F;&#xFF0C;<code>catch</code>&#x5B50;&#x53E5;&#x4F1A;&#x5339;&#x914D;&#x548C;&#x7EA6;&#x675F;&#x4EFB;&#x4F55;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x547D;&#x540D;&#x7684;<code>error</code>&#x3002;&#x6709;&#x5173;&#x5728;<code>catch</code>&#x5B50;&#x53E5;&#x4E2D;&#x4F7F;&#x7528;&#x6A21;&#x5F0F;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BE6;&#x89C1;<a href="TODO">&#x6A21;&#x5F0F;</a>&#x3002;    </p>
+<p>&#x5173;&#x4E8E;&#x5728;&#x4E00;&#x4E9B;<code>catch</code>&#x5B50;&#x53E5;&#x4E2D;&#x5982;&#x4F55;&#x4F7F;&#x7528;<code>do</code>&#x8BED;&#x53E5;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x89C1;<a href="TODO">&#x9519;&#x8BEF;&#x5904;&#x7406;</a>&#x4E00;&#x7AE0;&#x7684;<a href="TODO">&#x629B;&#x51FA;&#x9519;&#x8BEF;</a>&#x3002;       </p>
+<blockquote>
+<p>do &#x8BED;&#x53E5;&#x8BED;&#x6CD5;  &#x2192; <strong>do</strong> <em>[</em>&#x4EE3;&#x7801;&#x5757;<em>](../chapter3/05_Declarations.html#code_block) <a href="TODO">catch</a></em><br>catch  &#x2192; <em><a href="TODO">catch&#x5B50;&#x53E5;</a> <a href="TODO">catch&#x5B50;&#x53E5;</a></em><br>catch  &#x2192; <strong>catch</strong> <em>[</em>&#x6A21;&#x5F0F;<em>](../chapter3/07_Patterns.html#pattern)** </em>&#x53EF;&#x9009;&#x7684;<em> [</em>where<em>]() </em>&#x53EF;&#x9009;&#x7684;<em>  [</em>&#x4EE3;&#x7801;&#x5757;*](../chapter3/05_Declarations.html#code_block)</p>
+</blockquote>
+<p><a name="compiler_control_statements"></a></p>
+<h3 id="&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;">&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;</h3>
+<p>&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x5141;&#x8BB8;&#x7A0B;&#x5E8F;&#x6539;&#x53D8;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x884C;&#x4E3A;&#x3002;Swift &#x6709;&#x4E24;&#x79CD;&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#xFF1A;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#x548C;&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x3002;</p>
+<blockquote>
+<p>&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x8BED;&#x6CD5;
+<em>&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;</em>   &#x2192; <a href="04_Expressions.html#build_config_statements"><em>&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;</em></a>
+<em>&#x7F16;&#x8BD1;&#x63A7;&#x5236;&#x8BED;&#x53E5;</em>   &#x2192; <a href="04_Expressions.html#line_control_statements"><em>&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;</em></a></p>
+</blockquote>
+<p><a name="build_config_statements"></a></p>
+<h4 id="&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;">&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;</h4>
+<p>&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x914D;&#x7F6E;&#x9879;&#x6765;&#x6709;&#x6761;&#x4EF6;&#x7684;&#x7F16;&#x8BD1;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#x90FD;&#x4EE5; <code>#if</code> &#x5F00;&#x59CB;&#xFF0C; <code>#endif</code> &#x7ED3;&#x675F;&#x3002;&#x5982;&#x4E0B;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#xFF1A;</p>
+<pre><code>#if build configuration
+statements
+#endif
+</code></pre><p>&#x548C; <code>if</code> &#x8BED;&#x53E5;&#x7684;&#x6761;&#x4EF6;&#x4E0D;&#x540C;&#xFF0C;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x7684;&#x6761;&#x4EF6;&#x662F;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x7684;&#x3002;&#x5B83;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF1A;&#x53EA;&#x6709;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x5224;&#x65AD;&#x4E3A; <code>true</code> &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x8BED;&#x53E5;&#x624D;&#x4F1A;&#x88AB;&#x7F16;&#x8BD1;&#x548C;&#x6267;&#x884C;&#x3002;</p>
+<p><em>&#x6784;&#x5EFA;&#x914D;&#x7F6E;</em> &#x53EF;&#x4EE5;&#x662F; <code>true</code> &#x548C; <code>false</code> &#x7684;&#x5E38;&#x91CF;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4F7F;&#x7528; <code>-D</code> &#x547D;&#x4EE4;&#x884C;&#x6807;&#x5FD7;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x4E0B;&#x5217;&#x8868;&#x683C;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5E73;&#x53F0;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x53EF;&#x7528;&#x53C2;&#x6570;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>os()</td>
+<td>OSX, iOS, watchOS, tvOS</td>
+</tr>
+<tr>
+<td>arch()</td>
+<td>i386, x86_64, arm, arm64 &#xFF5C;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x6CE8;&#x610F;
+<code>arch(arm)</code> &#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x5728; ARM 64&#x4F4D;&#x8BBE;&#x5907;&#x4E0A;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE; <code>true</code>&#x3002;&#x5982;&#x679C;&#x4EE3;&#x7801;&#x7684;&#x6784;&#x5EFA;&#x76EE;&#x6807;&#x662F; 32 &#x4F4D;&#x7684; iOS &#x6A21;&#x62DF;&#x5668;&#xFF0C;<code>arch(i386)</code> &#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8FD4;&#x56DE; <code>true</code>&#x3002;</p>
+</blockquote>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x903B;&#x8F91;&#x64CD;&#x4F5C;&#x7B26; <code>&amp;&amp;</code>&#x3001;<code>||</code> &#x548C; <code>!</code> &#x6765;&#x8FDE;&#x63A5;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5706;&#x62EC;&#x53F7;&#x6765;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#x3002;</p>
+<p>&#x5C31;&#x50CF; <code>if</code> &#x8BED;&#x53E5;&#x4E00;&#x6837;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;  <code>#elseif</code> &#x5206;&#x53E5;&#x6765;&#x6DFB;&#x52A0;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x6761;&#x4EF6;&#x5206;&#x652F;&#x6765;&#x6D4B;&#x8BD5;&#x4E0D;&#x540C;&#x7684;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>#else</code> &#x5206;&#x53E5;&#x6765;&#x6DFB;&#x52A0;&#x6700;&#x7EC8;&#x7684;&#x6761;&#x4EF6;&#x5206;&#x652F;&#x3002;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#x4F8B;&#x5B50;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>#if build configuration 1
+statements to compile if build configuration 1 is true
+#elseif build configuration 2
+statements to compile if build configuration 2 is true
+#else
+statements to compile if both build configurations are false
+#endif
+</code></pre><blockquote>
+<p>&#x6CE8;&#x610F;
+&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x88AB;&#x7F16;&#x8BD1;&#xFF0C;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5206;&#x53E5;&#x4ECD;&#x7136;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#x3002;</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#x8BED;&#x6CD5;
+&#x5355;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5; &#x2192; #if&#xAD; &#x591A;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#xFF08;&#x53EF;&#x9009;&#xFF09; &#x591A;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E; <code>elseif</code> &#x5206;&#x53E5;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#xAD; &#x5355;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E; <code>else</code> &#x5206;&#x53E5;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#xAD;#endif&#xAD;
+&#x591A;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E; <code>elseif</code> &#x5206;&#x53E5; &#x2192; &#x5355;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E; <code>elseif</code>&#xAD; &#x5206;&#x53E5; &#x591A;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E; <code>elseif</code> &#x5206;&#x53E5;&#xFF08;&#x53EF;&#x9009;&#xFF09;
+&#x5355;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E; <code>elseif</code>&#xAD; &#x5206;&#x53E5; &#x2192; #elseif&#xAD; &#x591A;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#x8BED;&#x53E5;&#xFF08;&#x53EF;&#x9009;&#xFF09;
+&#x5355;&#x4E2A;&#x6784;&#x5EFA;&#x914D;&#x7F6E; <code>else</code> &#x5206;&#x53E5; &#x2192; #else&#xAD; &#x8BED;&#x53E5;&#xFF08;&#x53EF;&#x9009;&#xFF09;
+&#x6784;&#x5EFA;&#x914D;&#x7F6E; &#x2192; &#x5E73;&#x53F0;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;
+&#x6784;&#x5EFA;&#x914D;&#x7F6E; &#x2192; &#x6807;&#x8BC6;&#x7B26;
+&#x6784;&#x5EFA;&#x914D;&#x7F6E; &#x2192; boolean &#x5E38;&#x91CF;
+&#x6784;&#x5EFA;&#x914D;&#x7F6E; &#x2192; (&#xAD;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#xAD;)&#xAD;
+&#x6784;&#x5EFA;&#x914D;&#x7F6E; &#x2192; !&#xAD; &#x6784;&#x5EFA;&#x914D;&#x7F6E;&#xAD;
+&#x6784;&#x5EFA;&#x914D;&#x7F6E; &#x2192; &#x6784;&#x5EFA;&#x914D;&#x7F6E; &amp;&amp;&#xAD; &#x6784;&#x5EFA;&#x914D;&#x7F6E;&#xAD;
+&#x6784;&#x5EFA;&#x914D;&#x7F6E; &#x2192; &#x6784;&#x5EFA;&#x914D;&#x7F6E; &#xAD;||&#xAD; &#x6784;&#x5EFA;&#x914D;&#x7F6E;&#xAD;
+&#x5E73;&#x53F0;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5; &#x2192; os&#xAD;(&#xAD;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;)&#xAD;
+&#x5E73;&#x53F0;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5; &#x2192; arch&#xAD;(&#xAD;&#x67B6;&#x6784;)&#xAD;
+&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF; &#x2192; OSX&#xAD;  iOS&#xAD;  watchOS&#xAD;  tvOS&#xAD;
+&#x67B6;&#x6784; &#x2192; i386&#xAD;  x86_64&#xAD;  arm&#xAD;  arm64&#xAD;</p>
+</blockquote>
+<p><a name="line_control_statements"></a></p>
+<h4 id="&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;">&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;</h4>
+<p>&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x7528;&#x6765;&#x7ED9;&#x88AB;&#x7F16;&#x8BD1;&#x6E90;&#x4EE3;&#x7801;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x4E0E;&#x539F;&#x59CB;&#x884C;&#x53F7;&#x548C;&#x6587;&#x4EF6;&#x540D;&#x4E0D;&#x540C;&#x7684;&#x884C;&#x53F7;&#x548C;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x4F7F;&#x7528;&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x6539;&#x53D8; Swift &#x4F7F;&#x7528;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4EE5;&#x4FBF;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x548C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x7684;&#x4F8B;&#x5B50;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>#line line number filename
+</code></pre><p>&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x6539;&#x53D8;&#x4E86;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F; <code>__LINE__</code> &#x548C; <code>__FILE__</code> &#x7684;&#x503C;&#xFF0C;&#x4EE5;&#x4E00;&#x884C;&#x6E90;&#x4EE3;&#x7801;&#x5F00;&#x5934;&#xFF0C;&#x7136;&#x540E;&#x8DDF;&#x7740;&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x3002;<code>line number</code> &#x6539;&#x53D8;&#x4E86; <code>__LINE__</code> &#x7684;&#x503C;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x4E8E; 0 &#x7684;&#x5E38;&#x91CF;&#x3002;<code>filename</code> &#x6539;&#x53D8;&#x4E86; <code>__FILE__</code> &#x7684;&#x503C;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5199;&#x4E00;&#x53E5;&#x4E0D;&#x6307;&#x5B9A; <code>line number</code> &#x548C; <code>filename</code> &#x7684;&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x6765;&#x5427;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x4F4D;&#x7F6E;&#x56DE;&#x9000;&#x5230;&#x521D;&#x59CB;&#x7684;&#x884C;&#x53F7;&#x548C;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x5FC5;&#x987B;&#x51FA;&#x73B0;&#x5728;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x90A3;&#x4E00;&#x884C;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x80FD;&#x662F;&#x6E90;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x540E;&#x4E00;&#x884C;&#x3002;</p>
+<blockquote>
+<p>&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5;</p>
+<p>&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5; &#x2192; #line&#xAD;
+&#x6E90;&#x4EE3;&#x7801;&#x63A7;&#x5236;&#x8BED;&#x53E5; &#x2192; #line&#xAD; line-number&#xAD; file-name&#xAD;
+line-number &#x2192; &#x5927;&#x4E8E; 0 &#x7684;&#x5341;&#x8FDB;&#x5236;&#x6570;
+file-name &#x2192; &#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter3/04_Expressions.html" class="navigation navigation-prev " aria-label="Previous page: 表达式"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter3/05_Declarations.html" class="navigation navigation-next " aria-label="Next page: 声明"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"prism":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

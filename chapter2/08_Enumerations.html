@@ -1,0 +1,1159 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>枚举 | 2.0 新的开始</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-prism/prism-okaidia.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter2/09_Classes_and_Structures.html" />
+    
+    
+    <link rel="prev" href="../chapter2/07_Closures.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.8" data-chapter-title="枚举" data-filepath="chapter2/08_Enumerations.md" data-basepath=".." data-revision="Tue Nov 03 2015 15:22:37 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/chapter1.html">
+            
+                
+                    <a href="../chapter1/chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        欢迎使用 Swift
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/01_swift.html">
+            
+                
+                    <a href="../chapter1/01_swift.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        关于 Swift
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/02_a_swift_tour.html">
+            
+                
+                    <a href="../chapter1/02_a_swift_tour.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Swift 初见
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/03_revision_history.html">
+            
+                
+                    <a href="../chapter1/03_revision_history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Swift 版本历史记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="v1.0.html">
+            
+                
+                    <a href="../v1.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Swift 1.0 发布内容
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/chapter2.html">
+            
+                
+                    <a href="../chapter2/chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Swift 教程
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01_The_Basics.html">
+            
+                
+                    <a href="../chapter2/01_The_Basics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基础部分
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/02_Basic_Operators.html">
+            
+                
+                    <a href="../chapter2/02_Basic_Operators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        基本运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/03_Strings_and_Characters.html">
+            
+                
+                    <a href="../chapter2/03_Strings_and_Characters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        字符串和字符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter2/04_Collection_Types.html">
+            
+                
+                    <a href="../chapter2/04_Collection_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        集合类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="chapter2/05_Control_Flow.html">
+            
+                
+                    <a href="../chapter2/05_Control_Flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        控制流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="chapter2/06_Functions.html">
+            
+                
+                    <a href="../chapter2/06_Functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="chapter2/07_Closures.html">
+            
+                
+                    <a href="../chapter2/07_Closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8" data-path="chapter2/08_Enumerations.html">
+            
+                
+                    <a href="../chapter2/08_Enumerations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        枚举
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="chapter2/09_Classes_and_Structures.html">
+            
+                
+                    <a href="../chapter2/09_Classes_and_Structures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        类和结构体
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="chapter2/10_Properties.html">
+            
+                
+                    <a href="../chapter2/10_Properties.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="chapter2/11_Methods.html">
+            
+                
+                    <a href="../chapter2/11_Methods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="chapter2/12_Subscripts.html">
+            
+                
+                    <a href="../chapter2/12_Subscripts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        下标脚本
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="chapter2/13_Inheritance.html">
+            
+                
+                    <a href="../chapter2/13_Inheritance.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="chapter2/14_Initialization.html">
+            
+                
+                    <a href="../chapter2/14_Initialization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        构造过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="chapter2/15_Deinitialization.html">
+            
+                
+                    <a href="../chapter2/15_Deinitialization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        析构过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="chapter2/16_Automatic_Reference_Counting.html">
+            
+                
+                    <a href="../chapter2/16_Automatic_Reference_Counting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        自动引用计数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="chapter2/17_Optional_Chaining.html">
+            
+                
+                    <a href="../chapter2/17_Optional_Chaining.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.17.</b>
+                        
+                        可选链
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="chapter2/18_Error_Handling.html">
+            
+                
+                    <a href="../chapter2/18_Error_Handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.18.</b>
+                        
+                        错误处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="chapter2/19_Type_Casting.html">
+            
+                
+                    <a href="../chapter2/19_Type_Casting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.19.</b>
+                        
+                        类型转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.20" data-path="chapter2/20_Nested_Types.html">
+            
+                
+                    <a href="../chapter2/20_Nested_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.20.</b>
+                        
+                        嵌套类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.21" data-path="chapter2/21_Extensions.html">
+            
+                
+                    <a href="../chapter2/21_Extensions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.21.</b>
+                        
+                        扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.22" data-path="chapter2/22_Protocols.html">
+            
+                
+                    <a href="../chapter2/22_Protocols.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.22.</b>
+                        
+                        协议
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.23" data-path="chapter2/23_Generics.html">
+            
+                
+                    <a href="../chapter2/23_Generics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.23.</b>
+                        
+                        泛型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.24" data-path="chapter2/24_Access_Control.html">
+            
+                
+                    <a href="../chapter2/24_Access_Control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.24.</b>
+                        
+                        权限控制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.25" data-path="chapter2/25_Advanced_Operators.html">
+            
+                
+                    <a href="../chapter2/25_Advanced_Operators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.25.</b>
+                        
+                        高级操作符
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 语言参考</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/01_About_the_Language_Reference.html">
+            
+                
+                    <a href="../chapter3/01_About_the_Language_Reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        关于语言参考
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02_Lexical_Structure.html">
+            
+                
+                    <a href="../chapter3/02_Lexical_Structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        词法结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/03_Types.html">
+            
+                
+                    <a href="../chapter3/03_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter3/04_Expressions.html">
+            
+                
+                    <a href="../chapter3/04_Expressions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        表达式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter3/10_Statements.html">
+            
+                
+                    <a href="../chapter3/10_Statements.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter3/05_Declarations.html">
+            
+                
+                    <a href="../chapter3/05_Declarations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        声明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="chapter3/06_Attributes.html">
+            
+                
+                    <a href="../chapter3/06_Attributes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        特性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="chapter3/07_Patterns.html">
+            
+                
+                    <a href="../chapter3/07_Patterns.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="chapter3/08_Generic_Parameters_and_Arguments.html">
+            
+                
+                    <a href="../chapter3/08_Generic_Parameters_and_Arguments.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        泛型参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="chapter3/09_Summary_of_the_Grammar.html">
+            
+                
+                    <a href="../chapter3/09_Summary_of_the_Grammar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        语法总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 苹果官方Blog官方翻译</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/01_Access_Control.html">
+            
+                
+                    <a href="../chapter4/01_Access_Control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Access Control 权限控制的黑与白
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/02_Type_Custom.html">
+            
+                
+                    <a href="../chapter4/02_Type_Custom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        造个类型不是梦-白话Swift类型创建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03_Ballons.html">
+            
+                
+                    <a href="../chapter4/03_Ballons.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        WWDC里面的那个“大炮打气球”
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/04_Interacting_with_C_Pointers.html">
+            
+                
+                    <a href="../chapter4/04_Interacting_with_C_Pointers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Swift与C语言指针友好合作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/05_Value_and_Reference_Types.html">
+            
+                
+                    <a href="../chapter4/05_Value_and_Reference_Types.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        引用类型和值类型的恩怨
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/06_Access_Control_and_Protected.html">
+            
+                
+                    <a href="../chapter4/06_Access_Control_and_Protected.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        访问控制和Protected
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/07_Optional_Case_Study.html">
+            
+                
+                    <a href="../chapter4/07_Optional_Case_Study.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        可选类型完美解决占位问题
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >2.0 新的开始</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x679A;&#x4E3E;&#xFF08;enumerations&#xFF09;">&#x679A;&#x4E3E;&#xFF08;Enumerations&#xFF09;</h1>
+<hr>
+<blockquote>
+<p>1.0
+&#x7FFB;&#x8BD1;&#xFF1A;<a href="https://github.com/yankuangshi" target="_blank">yankuangshi</a>
+&#x6821;&#x5BF9;&#xFF1A;<a href="https://github.com/shinyzhu" target="_blank">shinyzhu</a></p>
+<p>2.0
+&#x7FFB;&#x8BD1;+&#x6821;&#x5BF9;&#xFF1A;<a href="https://github.com/futantan" target="_blank">futantan</a></p>
+<p>2.1
+&#x7FFB;&#x8BD1;&#xFF1A;<a href="https://github.com/Channe" target="_blank">Channe</a>
+&#x6821;&#x5BF9;&#xFF1A;<a href="http://codebuild.me" target="_blank">shanks</a></p>
+</blockquote>
+<p>&#x672C;&#x9875;&#x5185;&#x5BB9;&#x5305;&#x542B;&#xFF1A;</p>
+<ul>
+<li><a href="#enumeration_syntax">&#x679A;&#x4E3E;&#x8BED;&#x6CD5;&#xFF08;Enumeration Syntax&#xFF09;</a></li>
+<li><a href="#matching_enumeration_values_with_a_switch_statement">&#x5339;&#x914D;&#x679A;&#x4E3E;&#x503C;&#x4E0E;<code>Swith</code>&#x8BED;&#x53E5;&#xFF08;Matching Enumeration Values with a Switch Statement&#xFF09;</a></li>
+<li><a href="#associated_values">&#x76F8;&#x5173;&#x503C;&#xFF08;Associated Values&#xFF09;</a></li>
+<li><a href="#raw_values">&#x539F;&#x59CB;&#x503C;&#xFF08;Raw Values&#xFF09;</a></li>
+<li><a href="#recursive_enumerations">&#x9012;&#x5F52;&#x679A;&#x4E3E;&#xFF08;Recursive Enumerations&#xFF09;</a></li>
+</ul>
+<p><strong>&#x679A;&#x4E3E;</strong>&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x7EC4;&#x76F8;&#x5173;&#x503C;&#xFF0C;&#x4F7F;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4EE5;&#x4E00;&#x79CD;&#x5B89;&#x5168;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x719F;&#x6089; C &#x8BED;&#x8A00;&#xFF0C;&#x4F60;&#x5C31;&#x4F1A;&#x77E5;&#x9053;&#xFF0C;&#x5728; C &#x8BED;&#x8A00;&#x4E2D;&#x679A;&#x4E3E;&#x5C06;&#x679A;&#x4E3E;&#x540D;&#x548C;&#x4E00;&#x4E2A;&#x6574;&#x578B;&#x503C;&#x76F8;&#x5BF9;&#x5E94;&#x3002;Swift &#x4E2D;&#x7684;&#x679A;&#x4E3E;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#xFF0C;&#x4E0D;&#x5FC5;&#x7ED9;&#x6BCF;&#x4E00;&#x4E2A;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#x5982;&#x679C;&#x7ED9;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x503C;&#xFF08;&#x79F0;&#x4E3A;&#x201C;&#x539F;&#x59CB;&#x201D;&#x503C;&#xFF09;&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B57;&#x7B26;&#xFF0C;&#x6216;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x578B;&#x503C;&#x6216;&#x6D6E;&#x70B9;&#x6570;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x76F8;&#x5173;&#x503C;&#x5B58;&#x50A8;&#x5230;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x503C;&#x4E2D;&#xFF0C;&#x5C31;&#x50CF;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x8054;&#x5408;&#x4F53;&#xFF08;unions&#xFF09;&#x548C;&#x53D8;&#x4F53;&#xFF08;variants&#xFF09;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x901A;&#x7528;&#x7684;&#x76F8;&#x5173;&#x6210;&#x5458;&#x4F5C;&#x4E3A;&#x679A;&#x4E3E;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6BCF;&#x4E00;&#x7EC4;&#x90FD;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x4E00;&#x7EC4;&#x4E0E;&#x5B83;&#x76F8;&#x5173;&#x7684;&#x9002;&#x5F53;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x503C;&#x3002;</p>
+<p>&#x5728; Swift &#x4E2D;&#xFF0C;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x662F;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#xFF08;first-class&#xFF09;&#x3002;&#x5B83;&#x4EEC;&#x91C7;&#x7528;&#x4E86;&#x5F88;&#x591A;&#x4F20;&#x7EDF;&#x4E0A;&#x53EA;&#x88AB;&#x7C7B;&#xFF08;class&#xFF09;&#x6240;&#x652F;&#x6301;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x4F8B;&#x5982;&#x8BA1;&#x7B97;&#x578B;&#x5C5E;&#x6027;&#xFF08;computed properties&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x4F9B;&#x5173;&#x4E8E;&#x679A;&#x4E3E;&#x5F53;&#x524D;&#x503C;&#x7684;&#x9644;&#x52A0;&#x4FE1;&#x606F;&#xFF0C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF08;instance methods&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x4F9B;&#x548C;&#x679A;&#x4E3E;&#x6240;&#x4EE3;&#x8868;&#x7684;&#x503C;&#x76F8;&#x5173;&#x8054;&#x7684;&#x529F;&#x80FD;&#x3002;&#x679A;&#x4E3E;&#x4E5F;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;initializers&#xFF09;&#x6765;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x503C;&#xFF1B;&#x53EF;&#x4EE5;&#x5728;&#x539F;&#x59CB;&#x7684;&#x5B9E;&#x73B0;&#x57FA;&#x7840;&#x4E0A;&#x6269;&#x5C55;&#x5B83;&#x4EEC;&#x7684;&#x529F;&#x80FD;&#xFF1B;&#x53EF;&#x4EE5;&#x9075;&#x5B88;&#x534F;&#x8BAE;&#xFF08;protocols&#xFF09;&#x6765;&#x63D0;&#x4F9B;&#x6807;&#x51C6;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x6B32;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="10_Properties.html">&#x5C5E;&#x6027;&#xFF08;Properties&#xFF09;</a>&#xFF0C;<a href="11_Methods.html">&#x65B9;&#x6CD5;&#xFF08;Methods&#xFF09;</a>&#xFF0C;<a href="14_Initialization.html">&#x6784;&#x9020;&#x8FC7;&#x7A0B;&#xFF08;Initialization&#xFF09;</a>&#xFF0C;<a href="21_Extensions.html">&#x6269;&#x5C55;&#xFF08;Extensions&#xFF09;</a>&#x548C;<a href="22_Protocols.html">&#x534F;&#x8BAE;&#xFF08;Protocols&#xFF09;</a>&#x3002;</p>
+<p><a name="enumeration_syntax"></a></p>
+<h2 id="&#x679A;&#x4E3E;&#x8BED;&#x6CD5;">&#x679A;&#x4E3E;&#x8BED;&#x6CD5;</h2>
+<p>&#x4F7F;&#x7528;<code>enum</code>&#x5173;&#x952E;&#x8BCD;&#x6765;&#x521B;&#x5EFA;&#x679A;&#x4E3E;&#x5E76;&#x4E14;&#x628A;&#x5B83;&#x4EEC;&#x7684;&#x6574;&#x4E2A;&#x5B9A;&#x4E49;&#x653E;&#x5728;&#x4E00;&#x5BF9;&#x5927;&#x62EC;&#x53F7;&#x5185;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">enum</span> <span class="token builtin">SomeEnumeration</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// &#x679A;&#x4E3E;&#x5B9A;&#x4E49;&#x653E;&#x5728;&#x8FD9;&#x91CC;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x662F;&#x6307;&#x5357;&#x9488;&#x56DB;&#x4E2A;&#x65B9;&#x5411;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">enum</span> <span class="token builtin">CompassPoint</span> <span class="token punctuation">{</span>
+  <span class="token keyword">case</span> <span class="token builtin">North</span>
+  <span class="token keyword">case</span> <span class="token builtin">South</span>
+  <span class="token keyword">case</span> <span class="token builtin">East</span>
+  <span class="token keyword">case</span> <span class="token builtin">West</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x679A;&#x4E3E;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x503C;&#xFF08;&#x5982; <code>North</code>&#xFF0C;<code>South</code>&#xFF0C;<code>East</code>&#x548C;<code>West</code>&#xFF09;&#x662F;&#x8FD9;&#x4E2A;&#x679A;&#x4E3E;&#x7684;<strong>&#x6210;&#x5458;&#x503C;</strong>&#xFF08;&#x6216;<strong>&#x6210;&#x5458;</strong>&#xFF09;&#x3002;<code>case</code>&#x5173;&#x952E;&#x8BCD;&#x8868;&#x793A;&#x4E00;&#x884C;&#x65B0;&#x7684;&#x6210;&#x5458;&#x503C;&#x5C06;&#x88AB;&#x5B9A;&#x4E49;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x548C; C &#x548C; Objective-C &#x4E0D;&#x540C;&#xFF0C;Swift &#x7684;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x5728;&#x88AB;&#x521B;&#x5EFA;&#x65F6;&#x4E0D;&#x4F1A;&#x88AB;&#x8D4B;&#x4E88;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6574;&#x578B;&#x503C;&#x3002;&#x5728;&#x4E0A;&#x9762;&#x7684;<code>CompassPoint</code>&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>North</code>&#xFF0C;<code>South</code>&#xFF0C;<code>East</code>&#x548C;<code>West</code>&#x4E0D;&#x4F1A;&#x9690;&#x5F0F;&#x5730;&#x8D4B;&#x503C;&#x4E3A;<code>0</code>&#xFF0C;<code>1</code>&#xFF0C;<code>2</code>&#x548C;<code>3</code>&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x8FD9;&#x4E9B;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x672C;&#x8EAB;&#x5C31;&#x6709;&#x5B8C;&#x5907;&#x7684;&#x503C;&#xFF0C;&#x8FD9;&#x4E9B;&#x503C;&#x662F;&#x5DF2;&#x7ECF;&#x660E;&#x786E;&#x5B9A;&#x4E49;&#x597D;&#x7684;<code>CompassPoint</code>&#x7C7B;&#x578B;&#x3002;</p>
+</blockquote>
+<p>&#x591A;&#x4E2A;&#x6210;&#x5458;&#x503C;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x5728;&#x540C;&#x4E00;&#x884C;&#x4E0A;&#xFF0C;&#x7528;&#x9017;&#x53F7;&#x9694;&#x5F00;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">enum</span> <span class="token builtin">Planet</span> <span class="token punctuation">{</span>
+  <span class="token keyword">case</span> <span class="token builtin">Mercury</span><span class="token punctuation">,</span> <span class="token builtin">Venus</span><span class="token punctuation">,</span> <span class="token builtin">Earth</span><span class="token punctuation">,</span> <span class="token builtin">Mars</span><span class="token punctuation">,</span> <span class="token builtin">Jupiter</span><span class="token punctuation">,</span> <span class="token builtin">Saturn</span><span class="token punctuation">,</span> <span class="token builtin">Uranus</span><span class="token punctuation">,</span> <span class="token builtin">Neptune</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6BCF;&#x4E2A;&#x679A;&#x4E3E;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x50CF; Swift &#x4E2D;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x540D;&#x5B57;&#xFF08;&#x4F8B;&#x5982;<code>CompassPoint</code>&#x548C;<code>Planet</code>&#xFF09;&#x5FC5;&#x987B;&#x4EE5;&#x4E00;&#x4E2A;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x5F00;&#x5934;&#x3002;&#x7ED9;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x8D77;&#x4E00;&#x4E2A;&#x5355;&#x6570;&#x540D;&#x5B57;&#x800C;&#x4E0D;&#x662F;&#x590D;&#x6570;&#x540D;&#x5B57;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x8BFB;&#x8D77;&#x6765;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> directionToHead <span class="token operator">=</span> <span class="token builtin">CompassPoint</span><span class="token punctuation">.</span><span class="token builtin">West</span>
+</code></pre>
+<p><code>directionToHead</code>&#x7684;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x5728;&#x5B83;&#x88AB;<code>CompassPoint</code>&#x7684;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x503C;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x63A8;&#x65AD;&#x51FA;&#x6765;&#x3002;&#x4E00;&#x65E6;<code>directionToHead</code>&#x88AB;&#x58F0;&#x660E;&#x4E3A;&#x4E00;&#x4E2A;<code>CompassPoint</code>&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7F29;&#x5199;&#x8BED;&#x6CD5;&#xFF08;.&#xFF09;&#x5C06;&#x5176;&#x8BBE;&#x7F6E;&#x4E3A;&#x53E6;&#x4E00;&#x4E2A;<code>CompassPoint</code>&#x7684;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-swift">directionToHead <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token builtin">East</span>
+</code></pre>
+<p>&#x5F53;<code>directionToHead</code>&#x7684;&#x7C7B;&#x578B;&#x5DF2;&#x77E5;&#x65F6;&#xFF0C;&#x518D;&#x6B21;&#x4E3A;&#x5176;&#x8D4B;&#x503C;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x679A;&#x4E3E;&#x540D;&#x3002;&#x4F7F;&#x7528;&#x663E;&#x5F0F;&#x7C7B;&#x578B;&#x7684;&#x679A;&#x4E3E;&#x503C;&#x53EF;&#x4EE5;&#x8BA9;&#x4EE3;&#x7801;&#x5177;&#x6709;&#x66F4;&#x597D;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x3002;</p>
+<p><a name="matching_enumeration_values_with_a_switch_statement"></a></p>
+<h2 id="&#x5339;&#x914D;&#x679A;&#x4E3E;&#x503C;&#x548C;switch&#x8BED;&#x53E5;">&#x5339;&#x914D;&#x679A;&#x4E3E;&#x503C;&#x548C;<code>Switch</code>&#x8BED;&#x53E5;</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>switch</code>&#x8BED;&#x53E5;&#x5339;&#x914D;&#x5355;&#x4E2A;&#x679A;&#x4E3E;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-swift">directionToHead <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token builtin">South</span>
+<span class="token keyword">switch</span> directionToHead <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token builtin">North</span><span class="token punctuation">:</span>
+        <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Lots of planets have a north&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token builtin">South</span><span class="token punctuation">:</span>
+        <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Watch out for penguins&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token builtin">East</span><span class="token punctuation">:</span>
+        <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Where the sun rises&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token builtin">West</span><span class="token punctuation">:</span>
+        <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Where the skies are blue&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;Watch out for penguins&#x201D;</span>
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x7406;&#x89E3;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>&#x201C;&#x5224;&#x65AD;<code>directionToHead</code>&#x7684;&#x503C;&#x3002;&#x5F53;&#x5B83;&#x7B49;&#x4E8E;<code>.North</code>&#xFF0C;&#x6253;&#x5370;<code>&#x201C;Lots of planets have a north&#x201D;</code>&#x3002;&#x5F53;&#x5B83;&#x7B49;&#x4E8E;<code>.South</code>&#xFF0C;&#x6253;&#x5370;<code>&#x201C;Watch out for penguins&#x201D;</code>&#x3002;&#x201D;</p>
+<p>&#x7B49;&#x7B49;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p>
+<p>&#x6B63;&#x5982;&#x5728;<a href="05_Control_Flow.html">&#x63A7;&#x5236;&#x6D41;&#xFF08;Control Flow&#xFF09;</a>&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x5728;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x65F6;&#xFF0C;<code>switch</code>&#x8BED;&#x53E5;&#x5FC5;&#x987B;&#x7A77;&#x4E3E;&#x6240;&#x6709;&#x60C5;&#x51B5;&#x3002;&#x5982;&#x679C;&#x5FFD;&#x7565;&#x4E86;<code>.West</code>&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x4E0A;&#x9762;&#x90A3;&#x6BB5;&#x4EE3;&#x7801;&#x5C06;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6CA1;&#x6709;&#x8003;&#x8651;&#x5230;<code>CompassPoint</code>&#x7684;&#x5168;&#x90E8;&#x6210;&#x5458;&#x3002;&#x5F3A;&#x5236;&#x6027;&#x5168;&#x90E8;&#x7A77;&#x4E3E;&#x7684;&#x8981;&#x6C42;&#x786E;&#x4FDD;&#x4E86;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x4E0D;&#x4F1A;&#x88AB;&#x610F;&#x5916;&#x9057;&#x6F0F;&#x3002;</p>
+<p>&#x5F53;&#x4E0D;&#x9700;&#x8981;&#x5339;&#x914D;&#x6BCF;&#x4E2A;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;<code>default</code>&#x5206;&#x652F;&#x6765;&#x6DB5;&#x76D6;&#x6240;&#x6709;&#x672A;&#x660E;&#x786E;&#x88AB;&#x63D0;&#x51FA;&#x7684;&#x679A;&#x4E3E;&#x6210;&#x5458;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">let</span> somePlanet <span class="token operator">=</span> <span class="token builtin">Planet</span><span class="token punctuation">.</span><span class="token builtin">Earth</span>
+<span class="token keyword">switch</span> somePlanet <span class="token punctuation">{</span>
+<span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token builtin">Earth</span><span class="token punctuation">:</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Mostly harmless&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">default</span><span class="token punctuation">:</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Not a safe place for humans&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;Mostly harmless&#x201D;</span>
+</code></pre>
+<p><a name="associated_values"></a></p>
+<h2 id="&#x76F8;&#x5173;&#x503C;&#xFF08;associated-values&#xFF09;">&#x76F8;&#x5173;&#x503C;&#xFF08;Associated Values&#xFF09;</h2>
+<p>&#x4E0A;&#x4E00;&#x5C0F;&#x8282;&#x7684;&#x4F8B;&#x5B50;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#xFF08;&#x5206;&#x7C7B;&#xFF09;&#x679A;&#x4E3E;&#x7684;&#x6210;&#x5458;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4E3A;<code>Planet.Earth</code>&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x6216;&#x8005;&#x53D8;&#x91CF;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x8D4B;&#x503C;&#x4E4B;&#x540E;&#x67E5;&#x770B;&#x8FD9;&#x4E2A;&#x503C;&#x3002;&#x4E0D;&#x7BA1;&#x600E;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x65F6;&#x5019;&#x80FD;&#x591F;&#x628A;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;<strong>&#x76F8;&#x5173;&#x503C;</strong>&#x548C;&#x6210;&#x5458;&#x503C;&#x4E00;&#x8D77;&#x5B58;&#x50A8;&#x8D77;&#x6765;&#x4F1A;&#x5F88;&#x6709;&#x7528;&#x3002;&#x8FD9;&#x80FD;&#x8BA9;&#x4F60;&#x5B58;&#x50A8;&#x6210;&#x5458;&#x503C;&#x4E4B;&#x5916;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x4F60;&#x6BCF;&#x6B21;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x8BE5;&#x6210;&#x5458;&#x65F6;&#x5141;&#x8BB8;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x4EA7;&#x751F;&#x53D8;&#x5316;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49; Swift &#x7684;&#x679A;&#x4E3E;&#x5B58;&#x50A8;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x76F8;&#x5173;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x7684;&#x8BDD;&#xFF0C;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x662F;&#x5404;&#x4E0D;&#x76F8;&#x540C;&#x7684;&#x3002;&#x679A;&#x4E3E;&#x7684;&#x8FD9;&#x79CD;&#x7279;&#x6027;&#x8DDF;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x53EF;&#x8FA8;&#x8BC6;&#x8054;&#x5408;&#xFF08;discriminated unions&#xFF09;&#xFF0C;&#x6807;&#x7B7E;&#x8054;&#x5408;&#xFF08;tagged unions&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x53D8;&#x4F53;&#xFF08;variants&#xFF09;&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8BBE;&#x4E00;&#x4E2A;&#x5E93;&#x5B58;&#x8DDF;&#x8E2A;&#x7CFB;&#x7EDF;&#x9700;&#x8981;&#x5229;&#x7528;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x6761;&#x5F62;&#x7801;&#x6765;&#x8DDF;&#x8E2A;&#x5546;&#x54C1;&#x3002;&#x6709;&#x4E9B;&#x5546;&#x54C1;&#x4E0A;&#x6807;&#x6709; UPC-A &#x683C;&#x5F0F;&#x7684;&#x4E00;&#x7EF4;&#x6761;&#x5F62;&#x7801;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;&#x6570;&#x5B57; 0 &#x5230; 9&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x6761;&#x5F62;&#x7801;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x201C;&#x6570;&#x5B57;&#x7CFB;&#x7EDF;&#x201D;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x8BE5;&#x6570;&#x5B57;&#x540E;&#x63A5; 5 &#x4E2A;&#x4EE3;&#x8868;&#x201C;&#x751F;&#x4EA7;&#x4EE3;&#x7801;&#x201D;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x662F;5&#x4F4D;&#x201C;&#x4EA7;&#x54C1;&#x4EE3;&#x7801;&#x201D;&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x662F;&#x201C;&#x68C0;&#x67E5;&#x201D;&#x4F4D;&#xFF0C;&#x7528;&#x6765;&#x9A8C;&#x8BC1;&#x4EE3;&#x7801;&#x662F;&#x5426;&#x88AB;&#x6B63;&#x786E;&#x626B;&#x63CF;&#xFF1A;</p>
+<p><img width="252" height="120" alt="" src="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Art/barcode_UPC_2x.png"></p>
+<p>&#x5176;&#x4ED6;&#x5546;&#x54C1;&#x4E0A;&#x6807;&#x6709; QR &#x7801;&#x683C;&#x5F0F;&#x7684;&#x4E8C;&#x7EF4;&#x7801;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55; ISO 8859-1 &#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x7F16;&#x7801;&#x4E00;&#x4E2A;&#x6700;&#x591A;&#x62E5;&#x6709; 2953 &#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;:</p>
+<p><img width="169" height="169" alt="" src="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Art/barcode_QR_2x.png"></p>
+<p>&#x5BF9;&#x4E8E;&#x5E93;&#x5B58;&#x8DDF;&#x8E2A;&#x7CFB;&#x7EDF;&#x6765;&#x8BF4;&#xFF0C;&#x80FD;&#x591F;&#x628A; UPC-A &#x7801;&#x4F5C;&#x4E3A;&#x56DB;&#x4E2A;&#x6574;&#x578B;&#x503C;&#x7684;&#x5143;&#x7EC4;&#xFF0C;&#x548C;&#x628A; QR &#x7801;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x4EFB;&#x4F55;&#x957F;&#x5EA6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x8D77;&#x6765;&#x662F;&#x65B9;&#x4FBF;&#x7684;&#x3002;</p>
+<p>&#x5728; Swift &#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x5B9A;&#x4E49;&#x4E24;&#x79CD;&#x5546;&#x54C1;&#x6761;&#x7801;&#x7684;&#x679A;&#x4E3E;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">enum</span> <span class="token builtin">Barcode</span> <span class="token punctuation">{</span>
+  <span class="token keyword">case</span> <span class="token function">UPCA<span class="token punctuation">(</span></span><span class="token builtin">Int</span><span class="token punctuation">,</span> <span class="token builtin">Int</span><span class="token punctuation">,</span> <span class="token builtin">Int</span><span class="token punctuation">,</span> <span class="token builtin">Int</span><span class="token punctuation">)</span>
+  <span class="token keyword">case</span> <span class="token function">QRCode<span class="token punctuation">(</span></span><span class="token builtin">String</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x7406;&#x89E3;&#xFF1A;</p>
+<p>&#x201C;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>Barcode</code>&#x7684;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x662F;<code>UPCA</code>&#x7684;&#x4E00;&#x4E2A;&#x76F8;&#x5173;&#x503C;&#xFF08;<code>Int</code>&#xFF0C;<code>Int</code>&#xFF0C;<code>Int</code>&#xFF0C;<code>Int</code>&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x662F;<code>QRCode</code>&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#xFF08;<code>String</code>&#xFF09;&#x76F8;&#x5173;&#x503C;&#x3002;&#x201D;</p>
+<p>&#x8FD9;&#x4E2A;&#x5B9A;&#x4E49;&#x4E0D;&#x63D0;&#x4F9B;&#x4EFB;&#x4F55;<code>Int</code>&#x6216;<code>String</code>&#x7684;&#x5B9E;&#x9645;&#x503C;&#xFF0C;&#x5B83;&#x53EA;&#x662F;&#x5B9A;&#x4E49;&#x4E86;&#xFF0C;&#x5F53;<code>Barcode</code>&#x5E38;&#x91CF;&#x548C;&#x53D8;&#x91CF;&#x7B49;&#x4E8E;<code>Barcode.UPCA</code>&#x6216;<code>Barcode.QRCode</code>&#x65F6;&#xFF0C;&#x76F8;&#x5173;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x4E00;&#x79CD;&#x6761;&#x7801;&#x7C7B;&#x578B;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x6761;&#x7801;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">var</span> productBarcode <span class="token operator">=</span> <span class="token builtin">Barcode</span><span class="token punctuation">.</span><span class="token function">UPCA<span class="token punctuation">(</span></span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">85909</span><span class="token punctuation">,</span> <span class="token number">51226</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4F8B;&#x5B50;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>productBarcode</code>&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5E76;&#x4E14;&#x8D4B;&#x7ED9;&#x5B83;&#x4E00;&#x4E2A;<code>Barcode.UPCA</code>&#x7684;&#x76F8;&#x5173;&#x5143;&#x7EC4;&#x503C;<code>(8, 85909, 51226, 3)</code>&#x3002;</p>
+<p>&#x540C;&#x4E00;&#x4E2A;&#x5546;&#x54C1;&#x53EF;&#x4EE5;&#x88AB;&#x5206;&#x914D;&#x7ED9;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x6761;&#x5F62;&#x7801;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-swift">productBarcode <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token function">QRCode<span class="token punctuation">(</span></span><span class="token string">&quot;ABCDEFGHIJKLMNOP&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8FD9;&#x65F6;&#xFF0C;&#x539F;&#x59CB;&#x7684;<code>Barcode.UPCA</code>&#x548C;&#x5176;&#x6574;&#x6570;&#x503C;&#x88AB;&#x65B0;&#x7684;<code>Barcode.QRCode</code>&#x548C;&#x5176;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#x6240;&#x66FF;&#x4EE3;&#x3002;&#x6761;&#x5F62;&#x7801;&#x7684;&#x5E38;&#x91CF;&#x548C;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x4E00;&#x4E2A;<code>.UPCA</code>&#x6216;&#x8005;&#x4E00;&#x4E2A;<code>.QRCode</code>&#xFF08;&#x8FDE;&#x540C;&#x5B83;&#x7684;&#x76F8;&#x5173;&#x503C;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x4EFB;&#x4F55;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x53EA;&#x80FD;&#x5B58;&#x50A8;&#x5176;&#x4E2D;&#x4E4B;&#x4E00;&#x3002;</p>
+<p>&#x50CF;&#x4EE5;&#x524D;&#x90A3;&#x6837;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6761;&#x5F62;&#x7801;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A; switch &#x8BED;&#x53E5;&#x6765;&#x68C0;&#x67E5;&#xFF0C;&#x7136;&#x800C;&#x8FD9;&#x6B21;&#x76F8;&#x5173;&#x503C;&#x53EF;&#x4EE5;&#x88AB;&#x63D0;&#x53D6;&#x4F5C;&#x4E3A; switch &#x8BED;&#x53E5;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;<code>switch</code>&#x7684; case &#x5206;&#x652F;&#x4EE3;&#x7801;&#x4E2D;&#x63D0;&#x53D6;&#x6BCF;&#x4E2A;&#x76F8;&#x5173;&#x503C;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#xFF08;&#x7528;<code>let</code>&#x524D;&#x7F00;&#xFF09;&#x6216;&#x8005;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF08;&#x7528;<code>var</code>&#x524D;&#x7F00;&#xFF09;&#x6765;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">switch</span> productBarcode <span class="token punctuation">{</span>
+<span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token function">UPCA<span class="token punctuation">(</span></span><span class="token keyword">let</span> numberSystem<span class="token punctuation">,</span> <span class="token keyword">let</span> manufacturer<span class="token punctuation">,</span> <span class="token keyword">let</span> product<span class="token punctuation">,</span> <span class="token keyword">let</span> check<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;UPC-A: \(numberSystem), \(manufacturer), \(product), \(check).&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token function">QRCode<span class="token punctuation">(</span></span><span class="token keyword">let</span> productCode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;QR code: \(productCode).&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;QR code: ABCDEFGHIJKLMNOP.&quot;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x7684;&#x6240;&#x6709;&#x76F8;&#x5173;&#x503C;&#x88AB;&#x63D0;&#x53D6;&#x4E3A;&#x5E38;&#x91CF;&#xFF0C;&#x6216;&#x8005;&#x5B83;&#x4EEC;&#x5168;&#x90E8;&#x88AB;&#x63D0;&#x53D6;&#x4E3A;&#x53D8;&#x91CF;&#xFF0C;&#x4E3A;&#x4E86;&#x7B80;&#x6D01;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53EA;&#x653E;&#x7F6E;&#x4E00;&#x4E2A;<code>var</code>&#x6216;&#x8005;<code>let</code>&#x6807;&#x6CE8;&#x5728;&#x6210;&#x5458;&#x540D;&#x79F0;&#x524D;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">switch</span> productBarcode <span class="token punctuation">{</span>
+<span class="token keyword">case</span> <span class="token keyword">let</span> <span class="token punctuation">.</span><span class="token function">UPCA<span class="token punctuation">(</span></span>numberSystem<span class="token punctuation">,</span> manufacturer<span class="token punctuation">,</span> product<span class="token punctuation">,</span> check<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;UPC-A: \(numberSystem), \(manufacturer), \(product), \(check).&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">case</span> <span class="token keyword">let</span> <span class="token punctuation">.</span><span class="token function">QRCode<span class="token punctuation">(</span></span>productCode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;QR code: \(productCode).&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;QR code: ABCDEFGHIJKLMNOP.&quot;</span>
+</code></pre>
+<p><a name="raw_values"></a></p>
+<h2 id="&#x539F;&#x59CB;&#x503C;&#xFF08;raw-values&#xFF09;">&#x539F;&#x59CB;&#x503C;&#xFF08;Raw Values&#xFF09;</h2>
+<p>&#x5728;<a href="#raw_values">&#x76F8;&#x5173;&#x503C;</a>&#x5C0F;&#x8282;&#x7684;&#x6761;&#x5F62;&#x7801;&#x4F8B;&#x5B50;&#x4E2D;&#x6F14;&#x793A;&#x4E86;&#x4E00;&#x4E2A;&#x679A;&#x4E3E;&#x7684;&#x6210;&#x5458;&#x5982;&#x4F55;&#x58F0;&#x660E;&#x5B83;&#x4EEC;&#x5B58;&#x50A8;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x76F8;&#x5173;&#x503C;&#x3002;&#x4F5C;&#x4E3A;&#x76F8;&#x5173;&#x503C;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x9009;&#x62E9;&#xFF0C;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x88AB;&#x9ED8;&#x8BA4;&#x503C;&#xFF08;&#x79F0;&#x4E3A;&#x539F;&#x59CB;&#x503C;&#xFF09;&#x8D4B;&#x503C;&#xFF0C;&#x5176;&#x4E2D;&#x8FD9;&#x4E9B;&#x539F;&#x59CB;&#x503C;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x5B58;&#x50A8; ASCII &#x7801;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">enum</span> <span class="token builtin">ASCIIControlCharacter</span><span class="token punctuation">:</span> <span class="token builtin">Character</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token builtin">Tab</span> <span class="token operator">=</span> <span class="token string">&quot;\t&quot;</span>
+    <span class="token keyword">case</span> <span class="token builtin">LineFeed</span> <span class="token operator">=</span> <span class="token string">&quot;\n&quot;</span>
+    <span class="token keyword">case</span> <span class="token builtin">CarriageReturn</span> <span class="token operator">=</span> <span class="token string">&quot;\r&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#xFF0C;<code>ASCIIControlCharacter</code>&#x7684;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x7684;&#x539F;&#x59CB;&#x503C;&#x7C7B;&#x578B;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x5B57;&#x7B26;&#x578B;<code>Character</code>&#xFF0C;&#x5E76;&#x88AB;&#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E9B;&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684; ASCII &#x63A7;&#x5236;&#x5B57;&#x7B26;&#x3002;&#x5B57;&#x7B26;&#x503C;&#x7684;&#x63CF;&#x8FF0;&#x8BF7;&#x8BE6;&#x89C1;<a href="03_Strings_and_Characters.html">&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x5B57;&#x7B26;</a>&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x539F;&#x59CB;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B57;&#x7B26;&#xFF0C;&#x6216;&#x8005;&#x4EFB;&#x4F55;&#x6574;&#x578B;&#x503C;&#x6216;&#x6D6E;&#x70B9;&#x578B;&#x503C;&#x3002;&#x6BCF;&#x4E2A;&#x539F;&#x59CB;&#x503C;&#x5728;&#x5B83;&#x7684;&#x679A;&#x4E3E;&#x58F0;&#x660E;&#x4E2D;&#x5FC5;&#x987B;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;<br>&#x539F;&#x59CB;&#x503C;&#x548C;&#x76F8;&#x5173;&#x503C;&#x662F;&#x4E0D;&#x76F8;&#x540C;&#x7684;&#x3002;&#x5F53;&#x4F60;&#x5F00;&#x59CB;&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x5B9A;&#x4E49;&#x679A;&#x4E3E;&#x7684;&#x65F6;&#x5019;&#x539F;&#x59CB;&#x503C;&#x662F;&#x88AB;&#x9884;&#x5148;&#x586B;&#x5145;&#x7684;&#x503C;&#xFF0C;&#x50CF;&#x4E0A;&#x8FF0;&#x4E09;&#x4E2A; ASCII &#x7801;&#x3002;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x679A;&#x4E3E;&#x6210;&#x5458;&#xFF0C;&#x5B83;&#x7684;&#x539F;&#x59CB;&#x503C;&#x59CB;&#x7EC8;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;&#x76F8;&#x5173;&#x503C;&#x662F;&#x5F53;&#x4F60;&#x5728;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x7684;&#x65B0;&#x5E38;&#x91CF;&#x6216;&#x53D8;&#x91CF;&#x65F6;&#x624D;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#xFF0C;&#x5E76;&#x4E14;&#x6BCF;&#x6B21;&#x5F53;&#x4F60;&#x8FD9;&#x4E48;&#x505A;&#x5F97;&#x65F6;&#x5019;&#xFF0C;&#x5B83;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;</p>
+</blockquote>
+<p><a name="implicitly_assigned_raw_values"></a></p>
+<h3 id="&#x539F;&#x59CB;&#x503C;&#x7684;&#x9690;&#x5F0F;&#x8D4B;&#x503C;&#xFF08;implicitly-assigned-raw-values&#xFF09;">&#x539F;&#x59CB;&#x503C;&#x7684;&#x9690;&#x5F0F;&#x8D4B;&#x503C;&#xFF08;Implicitly Assigned Raw Values&#xFF09;</h3>
+<p>&#x5728;&#x4F7F;&#x7528;&#x539F;&#x59CB;&#x503C;&#x4E3A;&#x6574;&#x6570;&#x6216;&#x8005;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x7684;&#x679A;&#x4E3E;&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x7684;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x8D4B;&#x503C;&#xFF0C;&#x8FD9;&#x65F6;&#xFF0C;Swift&#x5C06;&#x4F1A;&#x81EA;&#x52A8;&#x4E3A;&#x4F60;&#x8D4B;&#x503C;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x6574;&#x6570;&#x4F5C;&#x4E3A;&#x539F;&#x59CB;&#x503C;&#x65F6;&#xFF0C;&#x9690;&#x5F0F;&#x8D4B;&#x503C;&#x7684;&#x503C;&#x4F9D;&#x6B21;&#x9012;&#x589E;1&#x3002;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x503C;&#x6CA1;&#x6709;&#x88AB;&#x8D4B;&#x521D;&#x503C;&#xFF0C;&#x5C06;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x7F6E;&#x4E3A;0&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x679A;&#x4E3E;&#x662F;&#x5BF9;&#x4E4B;&#x524D;<code>Planet</code>&#x8FD9;&#x4E2A;&#x679A;&#x4E3E;&#x7684;&#x4E00;&#x4E2A;&#x7EC6;&#x5316;&#xFF0C;&#x5229;&#x7528;&#x539F;&#x59CB;&#x6574;&#x578B;&#x503C;&#x6765;&#x8868;&#x793A;&#x6BCF;&#x4E2A; planet &#x5728;&#x592A;&#x9633;&#x7CFB;&#x4E2D;&#x7684;&#x987A;&#x5E8F;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">enum</span> <span class="token builtin">Planet</span><span class="token punctuation">:</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token builtin">Mercury</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">Venus</span><span class="token punctuation">,</span> <span class="token builtin">Earth</span><span class="token punctuation">,</span> <span class="token builtin">Mars</span><span class="token punctuation">,</span> <span class="token builtin">Jupiter</span><span class="token punctuation">,</span> <span class="token builtin">Saturn</span><span class="token punctuation">,</span> <span class="token builtin">Uranus</span><span class="token punctuation">,</span> <span class="token builtin">Neptune</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>Plant.Mercury</code>&#x8D4B;&#x4E86;&#x521D;&#x503C;<code>1</code>&#xFF0C;<code>Planet.Venus</code>&#x4F1A;&#x62E5;&#x6709;&#x9690;&#x5F0F;&#x8D4B;&#x503C;<code>2</code>&#xFF0C;&#x4F9D;&#x6B21;&#x7C7B;&#x63A8;&#x3002;</p>
+<p>&#x5F53;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x7684;&#x521D;&#x503C;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x7684;&#x9690;&#x5F0F;&#x521D;&#x503C;&#x5219;&#x4E3A;&#x8BE5;&#x6210;&#x5458;&#x7684;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x662F;<code>CompassPoint</code>&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x7684;&#x7CBE;&#x7B80;&#x7248;&#xFF0C;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x521D;&#x503C;&#x7C7B;&#x578B;&#xFF0C;&#x9690;&#x5F0F;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x5404;&#x4E2A;&#x65B9;&#x5411;&#x7684;&#x540D;&#x79F0;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">enum</span> <span class="token builtin">CompassPoint</span><span class="token punctuation">:</span> <span class="token builtin">String</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token builtin">North</span><span class="token punctuation">,</span> <span class="token builtin">South</span><span class="token punctuation">,</span> <span class="token builtin">East</span><span class="token punctuation">,</span> <span class="token builtin">West</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>CompassPoint.South</code>&#x62E5;&#x6709;&#x9690;&#x5F0F;&#x521D;&#x503C;<code>South</code>&#xFF0C;&#x4F9D;&#x6B21;&#x7C7B;&#x63A8;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x7684;<code>rawValue</code>&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8BE5;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x7684;&#x539F;&#x59CB;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">let</span> earthsOrder <span class="token operator">=</span> <span class="token builtin">Planet</span><span class="token punctuation">.</span><span class="token builtin">Earth</span><span class="token punctuation">.</span>rawValue
+<span class="token comment" spellcheck="true">// earthsOrder &#x503C;&#x4E3A; 3</span>
+
+<span class="token keyword">let</span> sunsetDirection <span class="token operator">=</span> <span class="token builtin">CompassPoint</span><span class="token punctuation">.</span><span class="token builtin">West</span><span class="token punctuation">.</span>rawValue
+<span class="token comment" spellcheck="true">// sunsetDirection &#x503C;&#x4E3A; &quot;West&quot;</span>
+</code></pre>
+<p><a name="initializing_from_a_raw_value"></a></p>
+<h3 id="&#x4F7F;&#x7528;&#x539F;&#x59CB;&#x503C;&#x521D;&#x59CB;&#x5316;&#x679A;&#x4E3E;&#x53D8;&#x91CF;&#xFF08;initializing-from-a-raw-value&#xFF09;">&#x4F7F;&#x7528;&#x539F;&#x59CB;&#x503C;&#x521D;&#x59CB;&#x5316;&#x679A;&#x4E3E;&#x53D8;&#x91CF;&#xFF08;Initializing from a Raw Value&#xFF09;</h3>
+<p>&#x5982;&#x679C;&#x5728;&#x5B9A;&#x4E49;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x4E86;&#x539F;&#x59CB;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x81EA;&#x52A8;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C06;&#x539F;&#x59CB;&#x503C;&#x7C7B;&#x578B;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x6216;<code>nil</code>&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x679A;&#x4E3E;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x901A;&#x8FC7;&#x539F;&#x59CB;&#x503C;<code>7</code>&#x4ECE;&#x800C;&#x521B;&#x5EFA;&#x679A;&#x4E3E;&#x6210;&#x5458;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">let</span> possiblePlanet <span class="token operator">=</span> <span class="token function">Planet<span class="token punctuation">(</span></span>rawValue<span class="token punctuation">:</span> <span class="token number">7</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// possiblePlanet &#x7C7B;&#x578B;&#x4E3A; Planet? &#x503C;&#x4E3A; Planet.Uranus</span>
+</code></pre>
+<p>&#x7136;&#x800C;&#xFF0C;&#x5E76;&#x975E;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x7684;<code>Int</code>&#x503C;&#x90FD;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x7684;&#x884C;&#x661F;&#x3002;&#x6B63;&#x56E0;&#x4E3A;&#x5982;&#x6B64;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<strong>&#x53EF;&#x9009;</strong>&#x7684;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x3002;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>possiblePlanet</code>&#x662F;<code>Planet?</code>&#x7C7B;&#x578B;&#xFF0C;&#x6216;&#x201C;&#x53EF;&#x9009;&#x7684;<code>Planet</code>&#x201D;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x539F;&#x59CB;&#x503C;&#x6784;&#x9020;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x5931;&#x8D25;&#x6784;&#x9020;&#x5668;&#xFF0C;&#x56E0;&#x4E3A;&#x5E76;&#x4E0D;&#x662F;&#x6BCF;&#x4E00;&#x4E2A;&#x539F;&#x59CB;&#x503C;&#x90FD;&#x6709;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x89C1;<a href="../chapter3/05_Declarations.html#failable_initializers">&#x53EF;&#x5931;&#x8D25;&#x6784;&#x9020;&#x5668;</a></p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x4F60;&#x8BD5;&#x56FE;&#x5BFB;&#x627E;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x4E3A;9&#x7684;&#x884C;&#x661F;&#xFF0C;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x4E3A;<code>rawValue</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x53EF;&#x9009;<code>Planet</code>&#x503C;&#x5C06;&#x662F;<code>nil</code>&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">let</span> positionToFind <span class="token operator">=</span> <span class="token number">9</span>
+<span class="token keyword">if</span> <span class="token keyword">let</span> somePlanet <span class="token operator">=</span> <span class="token function">Planet<span class="token punctuation">(</span></span>rawValue<span class="token punctuation">:</span> positionToFind<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> somePlanet <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token builtin">Earth</span><span class="token punctuation">:</span>
+        <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Mostly harmless&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;Not a safe place for humans&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">print<span class="token punctuation">(</span></span><span class="token string">&quot;There isn&apos;t a planet at position \(positionToFind)&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;There isn&apos;t a planet at position 9</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x8303;&#x4F8B;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#xFF08;optional binding&#xFF09;&#xFF0C;&#x901A;&#x8FC7;&#x539F;&#x59CB;&#x503C;<code>9</code>&#x8BD5;&#x56FE;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x884C;&#x661F;&#x3002;<code>if let somePlanet = Planet(rawValue: 9)</code>&#x8BED;&#x53E5;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x53EF;&#x9009;<code>Planet</code>&#xFF0C;&#x5982;&#x679C;&#x53EF;&#x9009;<code>Planet</code>&#x53EF;&#x4EE5;&#x88AB;&#x83B7;&#x5F97;&#xFF0C;&#x628A;<code>somePlanet</code>&#x8BBE;&#x7F6E;&#x6210;&#x8BE5;&#x53EF;&#x9009;<code>Planet</code>&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x8303;&#x4F8B;&#x4E2D;&#xFF0C;&#x65E0;&#x6CD5;&#x68C0;&#x7D22;&#x5230;&#x4F4D;&#x7F6E;&#x4E3A;<code>9</code>&#x7684;&#x884C;&#x661F;&#xFF0C;&#x6240;&#x4EE5;<code>else</code>&#x5206;&#x652F;&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<p><a name="recursive_enumerations"></a></p>
+<h2 id="&#x9012;&#x5F52;&#x679A;&#x4E3E;&#xFF08;recursive-enumerations&#xFF09;">&#x9012;&#x5F52;&#x679A;&#x4E3E;&#xFF08;Recursive Enumerations&#xFF09;</h2>
+<p>&#x5728;&#x5BF9;&#x64CD;&#x4F5C;&#x7B26;&#x8FDB;&#x884C;&#x63CF;&#x8FF0;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x6765;&#x5BF9;&#x6570;&#x636E;&#x5EFA;&#x6A21;&#x5F88;&#x65B9;&#x4FBF;&#xFF0C;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x8003;&#x8651;&#x7684;&#x60C5;&#x51B5;&#x56FA;&#x5B9A;&#x53EF;&#x679A;&#x4E3E;&#x3002;&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x5C06;&#x4E24;&#x4E2A;&#x7531;&#x6570;&#x5B57;&#x7EC4;&#x6210;&#x7684;&#x7B97;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5C06;<code>5</code>&#x8FDE;&#x63A5;&#x6210;&#x590D;&#x6742;&#x4E00;&#x4E9B;&#x7684;&#x8868;&#x8FBE;&#x5F0F;<code>5+4</code>&#x3002;</p>
+<p>&#x7B97;&#x672F;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7279;&#x6027;&#x662F;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x4F7F;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;<code>(5 + 4) * 2</code>&#x4E58;&#x53F7;&#x53F3;&#x8FB9;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5DE6;&#x8FB9;&#x5219;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x56E0;&#x4E3A;&#x6570;&#x636E;&#x662F;&#x5D4C;&#x5957;&#x7684;&#xFF0C;&#x56E0;&#x800C;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x4E5F;&#x8BB8;&#x8981;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x5D4C;&#x5957;&#x2014;&#x2014;&#x2014;&#x2014;&#x8FD9;&#x8868;&#x793A;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x9700;&#x8981;&#x652F;&#x6301;&#x9012;&#x5F52;&#x3002;</p>
+<p><code>&#x9012;&#x5F52;&#x679A;&#x4E3E;&#xFF08;recursive enumeration&#xFF09;</code>&#x662F;&#x4E00;&#x79CD;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#xFF0C;&#x8868;&#x793A;&#x5B83;&#x7684;&#x679A;&#x4E3E;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x62E5;&#x6709;&#x8BE5;&#x679A;&#x4E3E;&#x7684;&#x5176;&#x4ED6;&#x6210;&#x5458;&#x4F5C;&#x4E3A;&#x76F8;&#x5173;&#x503C;&#x3002;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x679A;&#x4E3E;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x5C42;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x679A;&#x4E3E;&#x6210;&#x5458;&#x524D;&#x52A0;&#x4E0A;<code>indirect</code>&#x6765;&#x8868;&#x793A;&#x8FD9;&#x6210;&#x5458;&#x53EF;&#x9012;&#x5F52;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x5B58;&#x50A8;&#x4E86;&#x7B80;&#x5355;&#x7684;&#x7B97;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">enum</span> <span class="token builtin">ArithmeticExpression</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token function">Number<span class="token punctuation">(</span></span><span class="token builtin">Int</span><span class="token punctuation">)</span>
+    indirect <span class="token keyword">case</span> <span class="token function">Addition<span class="token punctuation">(</span></span><span class="token builtin">ArithmeticExpression</span><span class="token punctuation">,</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">)</span>
+    indirect <span class="token keyword">case</span> <span class="token function">Multiplication<span class="token punctuation">(</span></span><span class="token builtin">ArithmeticExpression</span><span class="token punctuation">,</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x5F00;&#x5934;&#x52A0;&#x4E0A;<code>indirect</code>&#x5173;&#x952E;&#x5B57;&#x6765;&#x8868;&#x793A;&#x5B83;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#x90FD;&#x662F;&#x53EF;&#x9012;&#x5F52;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-swift">indirect <span class="token keyword">enum</span> <span class="token builtin">ArithmeticExpression</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token function">Number<span class="token punctuation">(</span></span><span class="token builtin">Int</span><span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token function">Addition<span class="token punctuation">(</span></span><span class="token builtin">ArithmeticExpression</span><span class="token punctuation">,</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token function">Multiplication<span class="token punctuation">(</span></span><span class="token builtin">ArithmeticExpression</span><span class="token punctuation">,</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x4E09;&#x79CD;&#x7B97;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;&#x7EAF;&#x6570;&#x5B57;&#x3001;&#x4E24;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x76F8;&#x52A0;&#x3001;&#x4E24;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x76F8;&#x4E58;&#x3002;<code>Addition</code> &#x548C; <code>Multiplication</code>&#x6210;&#x5458;&#x7684;&#x76F8;&#x5173;&#x503C;&#x4E5F;&#x662F;&#x7B97;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x2014;&#x2014;&#x2014;&#x2014;&#x8FD9;&#x4E9B;&#x76F8;&#x5173;&#x503C;&#x4F7F;&#x5F97;&#x5D4C;&#x5957;&#x8868;&#x8FBE;&#x5F0F;&#x6210;&#x4E3A;&#x53EF;&#x80FD;&#x3002;</p>
+<p>&#x9012;&#x5F52;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5F88;&#x76F4;&#x89C2;&#x5730;&#x4F7F;&#x7528;&#x5177;&#x6709;&#x9012;&#x5F52;&#x6027;&#x8D28;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x7B97;&#x672F;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="token keyword">func</span> <span class="token function">evaluate<span class="token punctuation">(</span></span>expression<span class="token punctuation">:</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> expression <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token function">Number<span class="token punctuation">(</span></span><span class="token keyword">let</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> value
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token function">Addition<span class="token punctuation">(</span></span><span class="token keyword">let</span> <span class="token keyword">left</span><span class="token punctuation">,</span> <span class="token keyword">let</span> <span class="token keyword">right</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token function">evaluate<span class="token punctuation">(</span></span><span class="token keyword">left</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">evaluate<span class="token punctuation">(</span></span><span class="token keyword">right</span><span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token punctuation">.</span><span class="token function">Multiplication<span class="token punctuation">(</span></span><span class="token keyword">let</span> <span class="token keyword">left</span><span class="token punctuation">,</span> <span class="token keyword">let</span> <span class="token keyword">right</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token function">evaluate<span class="token punctuation">(</span></span><span class="token keyword">left</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token function">evaluate<span class="token punctuation">(</span></span><span class="token keyword">right</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// &#x8BA1;&#x7B97; (5 + 4) * 2</span>
+<span class="token keyword">let</span> five <span class="token operator">=</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">.</span><span class="token function">Number<span class="token punctuation">(</span></span><span class="token number">5</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> four <span class="token operator">=</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">.</span><span class="token function">Number<span class="token punctuation">(</span></span><span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> sum <span class="token operator">=</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">.</span><span class="token function">Addition<span class="token punctuation">(</span></span>five<span class="token punctuation">,</span> four<span class="token punctuation">)</span>
+<span class="token keyword">let</span> product <span class="token operator">=</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">.</span><span class="token function">Multiplication<span class="token punctuation">(</span></span>sum<span class="token punctuation">,</span> <span class="token builtin">ArithmeticExpression</span><span class="token punctuation">.</span><span class="token function">Number<span class="token punctuation">(</span></span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">print<span class="token punctuation">(</span></span><span class="token function">evaluate<span class="token punctuation">(</span></span>product<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// &#x8F93;&#x51FA; &quot;18&quot;</span>
+</code></pre>
+<p>&#x8BE5;&#x51FD;&#x6570;&#x5982;&#x679C;&#x9047;&#x5230;&#x7EAF;&#x6570;&#x5B57;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x8BE5;&#x6570;&#x5B57;&#x7684;&#x503C;&#x3002;&#x5982;&#x679C;&#x9047;&#x5230;&#x7684;&#x662F;&#x52A0;&#x6CD5;&#x6216;&#x4E58;&#x6CD5;&#x8FD0;&#x7B97;&#xFF0C;&#x5219;&#x5206;&#x522B;&#x8BA1;&#x7B97;&#x5DE6;&#x8FB9;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x53F3;&#x8FB9;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x76F8;&#x52A0;&#x6216;&#x76F8;&#x4E58;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter2/07_Closures.html" class="navigation navigation-prev " aria-label="Previous page: 闭包"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter2/09_Classes_and_Structures.html" class="navigation navigation-next " aria-label="Next page: 类和结构体"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"prism":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
